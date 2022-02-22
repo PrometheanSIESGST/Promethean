@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
+import Card from "../Components/Card"
+import ContactUs from "../Components/Contactus"
+import Hero from "../Components/Hero/Hero"
 
 const Header = styled.h1`
   max-width: 1200px;
@@ -11,7 +14,9 @@ const Header = styled.h1`
 const LandingPage = () => {
     return (
         <>
-          <Header>Landing Page</Header>
+        {/* <Hero></Hero> */}
+          <Card></Card>
+          {/* <ContactUs></ContactUs> */}
         </>
       );
 };
