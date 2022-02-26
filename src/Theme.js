@@ -8,6 +8,7 @@ export const Theme = {
     Arial: `'Arial', sans-serif`,
     Poppins: `'Poppins', sans-serif`,
     Josefin: `'Josefin Sans', sans-serif;`,
+    Montserrat: `'Montserrat', sans-serif`,
   },
   MediaQueries: {
     s: {
