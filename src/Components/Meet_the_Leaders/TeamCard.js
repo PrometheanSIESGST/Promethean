@@ -8,7 +8,6 @@ const Team_Card = styled.img`
   height: 220px;
   left: 65px;
   top: 400px;
-
   background: #c4c4c4;
   border-radius: 5px 35px;
 `;
@@ -17,6 +16,7 @@ const Leader_detail_head = styled.p`
     position: relative;
     top: 480px;
     left: 95px;
+    width: fit-content;
     font-family: ${(props) => props.theme.Fonts.Montserrat};
     font-style: normal;
     font-weight: normal;
@@ -27,6 +27,7 @@ const Leader_detail_subhead = styled.p`
     position: relative;
     top: 470px;
     left: 123px;
+    width: fit-content;
     font-family: ${(props) => props.theme.Fonts.Montserrat};
     font-style: normal;
     font-weight: normal;

@@ -18,8 +18,8 @@ const LandingPage = () => {
         <>
         <TeamIntro></TeamIntro>
         <TeamCard></TeamCard>
-        {/* <Hero></Hero>
-          <Card></Card> */}
+         {/* <Hero></Hero> */}
+          {/* <Card></Card>  */}
           {/* <ContactUs></ContactUs> */}
         </>
       );

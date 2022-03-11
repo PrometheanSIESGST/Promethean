@@ -3,6 +3,8 @@ export const Theme = {
     PageBg: "#0B1D27",
     Header: "#FFFFFF",
     SubHeading: "#CEE002",
+    Para: "rgba(255, 255, 255, 0.6)",
+    LightBox: "rgba(206, 224, 2, 0.5)"
   },
   Fonts: {
     Arial: `'Arial', sans-serif`,
