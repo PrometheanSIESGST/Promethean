@@ -15,6 +15,7 @@ import Promethean from "./Pages/Promethean";
 
 //Component
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 import * as ROUTES from "./Constants/routes";
 
@@ -37,6 +38,7 @@ const App = () => {
          <Route path={ROUTES.PROMETHEAN} element={<Promethean />} />
          <Route path={ROUTES.GALLERY} element={<Gallery />} />
       </Routes>
+      {/* <Footer /> */}
     </ThemeProvider>
   );
 };

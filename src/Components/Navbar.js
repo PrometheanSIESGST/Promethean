@@ -1,4 +1,4 @@
-import React , { useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "../Images/logo.png";
 import Filter from "../Images/Filter.png";
@@ -6,32 +6,40 @@ import * as ROUTES from "../Constants/routes";
 
 const Nav = styled.nav`
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
   justify-content: space-between;
   align-items: center;
-  max-width:90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto !important;
+  z-index: 10;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    max-width: 700px;
+  }
   @media ${(props) => props.theme.MediaQueries.l.query} {
-    max-width: 1200px
+    max-width: 1200px;
   }
 `;
 
 const Logo = styled.img`
-  margin-left: 10px;
   height: 60px;
   width: auto;
+  margin-left: 10px;
   @media ${(props) => props.theme.MediaQueries.m.query} {
     height: 80px;
   }
 `;
- 
+
 const SideNavList = styled.ul`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 100%;
   padding: 30px 0;
   width: 100%;
   background: ${(props) => props.theme.Colors.SubHeading};
-  z-index: 10;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,17 +54,17 @@ const SideNavList = styled.ul`
     left: 100%;
   }
 
-  @media ${(props) => props.theme.MediaQueries.l.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     display: none;
   }
 `;
 
 const NavList = styled.ul`
   display: none;
-  @media ${(props) => props.theme.MediaQueries.l.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     display: flex;
   }
-`
+`;
 
 const SideNavContent = styled.a`
   color: ${(props) => props.theme.Colors.Header};
@@ -87,9 +95,6 @@ const FilterImg = styled.img`
   width: auto;
   margin-right: 10px;
   @media ${(props) => props.theme.MediaQueries.m.query} {
-    height: 20px;
-  }
-  @media ${(props) => props.theme.MediaQueries.l.query} {
     display: none;
   }
 `;
@@ -121,7 +126,7 @@ const Navbar = () => {
           <NavContent href={ROUTES.TEAM}>TEAM</NavContent>
           <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent>
         </NavList>
-        <FilterImg src={Filter} onClick={() => setNavOpen(true)}/>
+        <FilterImg src={Filter} onClick={() => setNavOpen(true)} />
       </Nav>
     </>
   );

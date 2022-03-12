@@ -1,36 +1,48 @@
 import React from "react";
 import styled from "styled-components";
 
-const TeamCard_Component_Header = styled.h1`
-  position: relative;
-  width: 300px;
-  height: 50px;
-  top: 200px;
-  left: 25px;
-  font-family: ${(props) => props.theme.Fonts.Poppins};
-  font-style: normal;
-  font-weight: 600;
-  color: ${(props) => props.theme.Colors.Header};
+const TeamDiv = styled.div`
+  padding: 30px 0;
+  text-align: center;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    padding: 50px 0;
+  }
 `;
 
-const TeamCard_Component_subheader = styled.p`
-    position: relative;
-    width: 250px;
-    height: 20px;
-    top: 180px;
-    left: 65px;
-    color: ${(props) => props.theme.Colors.Header};
-    font-family: ${(props) => props.theme.Fonts.Montserrat};
-    font-size: 15px
+const TeamHeader = styled.h1`
+  font-family: ${(props) => props.theme.Fonts.Poppins};
+  font-weight: 600;
+  font-size: 25px;
+  color: ${(props) => props.theme.Colors.Header};
+  @media ${(props) => props.theme.MediaQueries.s.query} {
+    font-size: 30px;
+  }
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    font-size: 40px;
+  }
+`;
 
-`
+const TeamGreen = styled.span`
+  color: ${(props) => props.theme.Colors.SubHeading};
+`;
 
-function TeamIntro() {
+const TeamSubheader = styled.p`
+  color: ${(props) => props.theme.Colors.Header};
+  font-family: ${(props) => props.theme.Fonts.Montserrat};
+  font-size: 12px;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    font-size: 16px;
+  }
+`;
+
+const TeamIntro = ({designation}) => {
   return (
-    <div>
-      <TeamCard_Component_Header>Meet the Leaders</TeamCard_Component_Header>
-      <TeamCard_Component_subheader>lorem ipsum lorem ipsum</TeamCard_Component_subheader>
-    </div>
+    <TeamDiv>
+      <TeamHeader>
+        MEET THE <TeamGreen>{designation}</TeamGreen>
+      </TeamHeader>
+      <TeamSubheader>lorem ipsum lorem ipsum</TeamSubheader>
+    </TeamDiv>
   );
 }
 

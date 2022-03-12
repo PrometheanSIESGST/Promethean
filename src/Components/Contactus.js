@@ -2,19 +2,20 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Contactsection = styled.div`
-  padding: 80px 0;
+  padding: 40px 0;
   text-align: center;
   @media ${(props) => props.theme.MediaQueries.m.query} {
-    width: 100%
+    width: 100%;
   }
 `;
 
 const Innerwidth = styled.div`
-  max-width: 600px;
+  max-width: 320px;
   margin: auto;
   padding: 0 20px;
-    @media ${(props) => props.theme.MediaQueries.m.query} {
-    width: 100%
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    width: 100%;
+    max-width: 700px;
   }
 `;
 
@@ -25,20 +26,19 @@ const Contacth2 = styled.h2`
   font-size: 25px;
   line-height: 35px;
   color: #ffffff;
-    @media ${(props) => props.theme.MediaQueries.m.query} {
-    width: 100%
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    width: 100%;
   }
 `;
 
-const Contacth1 = styled.h1`
+const Contacth1 = styled.p`
   font-size: 8px;
   color: #888;
   margin-bottom: 20px;
   text-transform: capitalize;
   letter-spacing: 2px;
-  font-weight: 400;
-    @media ${(props) => props.theme.MediaQueries.m.query} {
-    width: 100%
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    width: 100%;
   }
 `;
 
@@ -51,11 +51,11 @@ const Form_content = styled.input`
   color: #888;
   padding: 10px 6px;
   font-size: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   float: left;
   width: 270px;
-    @media ${(props) => props.theme.MediaQueries.m.query} {
-    width: 100%
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    width: 100%;
   }
 `;
 
@@ -72,29 +72,29 @@ const Message = styled.textarea`
   float: left;
   width: 270px;
   max-width: 100%;
-    @media ${(props) => props.theme.MediaQueries.m.query} {
-    width: 100%
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    width: 100%;
   }
 `;
 
 const Button_style = styled.button`
-  background: none;
   background-color: rgba(206, 224, 2, 0.5);
   color: white;
-  padding: 12px 40px;
+  padding: 12px 30px;
   border-radius: 8px;
   text-transform: uppercase;
   font-size: 14px;
-  transition: 0.4s linear;
+  transition: 0.3s linear;
   cursor: pointer;
-
+  outline:none;
   &:hover {
     border: 1px solid rgba(206, 224, 2, 0.5);
     background-color: transparent;
     color: #fff;
+    outline:none;
   }
-    @media ${(props) => props.theme.MediaQueries.m.query} {
-    width: 40%
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    width: 40%;
   }
 `;
 
