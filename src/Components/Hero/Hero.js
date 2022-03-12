@@ -47,12 +47,9 @@ export default function Slider() {
     }
   };
 
-<<<<<<< HEAD
-=======
   const moveDot = (index) => {
     setSlideIndex(index);
   };
->>>>>>> 4fe0a7ca1cc8c6545647715b952825206dd18d83
   return (
     <Slider_container>
       {ImageList.map((obj, index) => {
@@ -61,18 +58,12 @@ export default function Slider() {
             key={obj.id}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
-<<<<<<< HEAD
-            <HeroImage src={obj.image} className="image" />
-=======
             <img src={obj.image} className="image" />
->>>>>>> 4fe0a7ca1cc8c6545647715b952825206dd18d83
           </div>
         );
       })}
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
-<<<<<<< HEAD
-=======
 
       <div className="container-dots">
                 {Array.from({length: 5}).map((item, index) => (
@@ -83,7 +74,6 @@ export default function Slider() {
                 ))}
             </div>
 
->>>>>>> 4fe0a7ca1cc8c6545647715b952825206dd18d83
     </Slider_container>
   );
 }

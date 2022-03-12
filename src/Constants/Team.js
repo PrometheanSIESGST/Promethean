@@ -6,6 +6,53 @@ export const TeamInfo = [
       {
         head: [
           {
+            name: "Pradyumn",
+            post: "Chairperson",
+            photo: "images/pp.jpg",
+          },
+          {
+            name: "Anvesh",
+            post: "Chairperson",
+            photo: "images/pp.jpg",
+          },
+          {
+            name: "Riya",
+            post: "Chairperson",
+            photo: "images/pp.jpg",
+          },
+          {
+            name: "Pradyumn",
+            post: "Chairperson",
+            photo: "images/pp.jpg",
+          },
+        ],
+        coord: [
+        ],
+      },
+    ],
+  },
+  {
+    designation: "ADVISOR",
+    id: 2,
+    member: [
+      {
+        head: [
+          {
+            name: "abc",
+            post: "head",
+            photo: "images/pp.jpg",
+          },
+          {
+            name: "abc",
+            post: "head",
+            photo: "images/pp.jpg",
+          },
+          {
+            name: "abc",
+            post: "head",
+            photo: "images/pp.jpg",
+          },
+          {
             name: "abc",
             post: "head",
             photo: "images/pp.jpg",
@@ -22,12 +69,26 @@ export const TeamInfo = [
     ],
   },
   {
-    designation: "ADVISOR",
-    id: 2,
-  },
-  {
     designation: "TECHNICAL TEAM",
     id: 3,
+    member: [
+      {
+        head: [
+          {
+            name: "abc",
+            post: "head",
+            photo: "images/pp.jpg",
+          },
+        ],
+        coord: [
+          {
+            name: "abc",
+            post: "coord",
+            photo: "images/trial_img2.jpg",
+          },
+        ],
+      },
+    ],
   },
   {
     designation: "DESIGN TEAM",

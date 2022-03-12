@@ -22,7 +22,7 @@ const CardStyle = styled.h1`
   }
 `;
 
-const CardStyle_para = styled.p`
+const CardStylePara = styled.p`
   font-family: ${(props) => props.theme.Fonts.Poppins};
   font-style: normal;
   font-weight: normal;
@@ -31,12 +31,12 @@ const CardStyle_para = styled.p`
   color: rgba(255, 255, 255, 0.6);
   @media ${(props) => props.theme.MediaQueries.m.query} {
     font-size: 15px;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
     max-width: 450px;
   }
 `;
 
-const Bg_num = styled.p`
+const BgNum = styled.p`
   position: relative;
   margin-left: -60px;
   font-family: ${(props) => props.theme.Fonts.Poppins};
@@ -49,7 +49,7 @@ const Bg_num = styled.p`
   }
 `;
 
-const Bg_rect = styled.div`
+const BgRect = styled.div`
   background: ${(props) => props.theme.Colors.SubHeading};
   border-radius: 20px;
   width: 50px;
@@ -57,7 +57,7 @@ const Bg_rect = styled.div`
   margin-right: 10px;
 `;
 
-const Bg_content = styled.p`
+const BgContent = styled.p`
   font-family: ${(props) => props.theme.Fonts.Arial};
   font-size: 14px;
   line-height: 30px;
@@ -90,16 +90,16 @@ const ContentDiv = styled.div`
 const Card = ({subTitle , title , para , number}) => {
   return (
     <ContentCard>
-      <Bg_num>{number}</Bg_num>
+      <BgNum>{number}</BgNum>
       <ContentDiv>
         <FlexDiv>
-          <Bg_rect></Bg_rect>
-          <Bg_content>{subTitle}</Bg_content>
+          <BgRect></BgRect>
+          <BgContent>{subTitle}</BgContent>
         </FlexDiv>
         <CardStyle>{title}</CardStyle>
-        <CardStyle_para>
+        <CardStylePara>
           {para}
-        </CardStyle_para>
+        </CardStylePara>
       </ContentDiv>
     </ContentCard>
   );

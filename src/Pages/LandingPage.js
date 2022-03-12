@@ -152,7 +152,7 @@ const LandingPage = () => {
           <AboutImage src={PrometheanImage} right />
         </FlexDiv>
         <div data-aos='fade-up'>
-        <ContactUs />
+        {/* <ContactUs /> */}
         </div>
       </Main>
     </>

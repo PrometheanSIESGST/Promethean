@@ -38,7 +38,7 @@ const App = () => {
          <Route path={ROUTES.PROMETHEAN} element={<Promethean />} />
          <Route path={ROUTES.GALLERY} element={<Gallery />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </ThemeProvider>
   );
 };
