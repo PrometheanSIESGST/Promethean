@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Promethean/static/css/main.f8882360.css",
-    "main.js": "/Promethean/static/js/main.00e75cbe.js",
+    "main.js": "/Promethean/static/js/main.48ab2118.js",
     "static/media/team.jpg": "/Promethean/static/media/team.ef2edda051f9d0af5610.jpg",
     "static/media/FAQ.png": "/Promethean/static/media/FAQ.c2c44ca025db51b7057a.png",
     "static/media/Prompage.jpeg": "/Promethean/static/media/Prompage.f6a3e102f98f9d343acb.jpeg",
@@ -18,10 +18,10 @@
     "static/media/left-arrow.svg": "/Promethean/static/media/left-arrow.da21225bcf530088451874c9e21c215a.svg",
     "static/media/right-arrow.svg": "/Promethean/static/media/right-arrow.d19ce8f87764b5901ed2ca6f0ff22d03.svg",
     "main.f8882360.css.map": "/Promethean/static/css/main.f8882360.css.map",
-    "main.00e75cbe.js.map": "/Promethean/static/js/main.00e75cbe.js.map"
+    "main.48ab2118.js.map": "/Promethean/static/js/main.48ab2118.js.map"
   },
   "entrypoints": [
     "static/css/main.f8882360.css",
-    "static/js/main.00e75cbe.js"
+    "static/js/main.48ab2118.js"
   ]
 }
