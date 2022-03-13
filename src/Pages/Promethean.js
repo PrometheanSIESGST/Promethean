@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import prompage from "../Images/Prompage.jpeg";
 import trial_img from "../Images/trial_img1.jpg";
 import Hero from "../Components/Hero/Hero";
-import FAQ_Img from "../Images/FAQ.png"
-import Footer from "../Components/Footer"
+import FAQ_Img from "../Images/FAQ.png";
+import Footer from "../Components/Footer";
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
+import PromPageSchedule from "../Components/Schedule"
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const Header = styled.h1`
   max-width: 1200px;
@@ -13,12 +17,29 @@ const Header = styled.h1`
   font-family: ${(props) => props.theme.Fonts.Arial};
 `;
 
+const MainProm = styled.div`
+  max-width: 320px;
+  margin: 0 auto;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    max-width: 720px;
+  }
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    max-width: 1200px;
+  }
+`;
+
 const PromPageHeadText = styled.p`
   margin-left: 30px;
+  margin-bottom: 30px;
   font-size: 23px;
   color: ${(props) => props.theme.Colors.Header};
   font-family: ${(props) => props.theme.Fonts.Josefin};
   font-weight: bold;
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    text-align: center;
+    font-size: 30px;
+  }
 `;
 
 const PromPageRect = styled.img`
@@ -27,6 +48,10 @@ const PromPageRect = styled.img`
   margin-left: 37px;
   margin-top: 10px;
   border-radius: 15px;
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-top: 60px;
+  }
 `;
 
 const Greenbox = styled.rect`
@@ -34,7 +59,7 @@ const Greenbox = styled.rect`
   width: 40px;
   height: 40px;
   margin-left: 37px;
-  margin-top: -50px;
+  margin-top: -30px;
   background: ${(props) => props.theme.Colors.LightBox};
   border-radius: 0px 5px 5px 0px;
 `;
@@ -49,21 +74,83 @@ const PromPageRectHead = styled.p`
   font-weight: bold;
 `;
 
+const PromHeadGreen = styled.span`
+  color: ${(props) => props.theme.Colors.SubHeading};
+`;
+
 const PromPagepara = styled.p`
   margin-left: 30px;
   margin-top: 95px;
   font-size: 15px;
   color: ${(props) => props.theme.Colors.Para};
   font-family: ${(props) => props.theme.Fonts.Poppins};
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-left: 350px;
+    margin-top: -230px;
+  }
 `;
+
 const Divider = styled.rect`
   position: absolute;
-  width: 280px;
+  width: 87%;
   margin-top: 10px;
   margin-left: 23px;
   border: 1px solid;
   color: ${(props) => props.theme.Colors.Para};
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-left: 350px;
+    margin-top: 30px;
+    width: 65%;
+  }
 `;
+
+const Count_cont = styled.div`
+@media ${(props) => props.theme.MediaQueries.l.query} {
+  margin-left: 320px;
+}
+`
+
+const Count_cont_2 = styled.div`
+@media ${(props) => props.theme.MediaQueries.l.query} {
+  margin-left: 350px;
+  margin-top: -80px;
+}
+`
+
+const Count = styled.p`
+  margin-left: 35px;
+  margin-top: 40px;
+  font-size: 20px;
+  color: ${(props) => props.theme.Colors.SubHeading};
+  font-family: ${(props) => props.theme.Fonts.Poppins};
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-top: 60px;
+    width: 60%;
+    font-size: 30px;
+  }
+`;
+
+const CountDetail = styled.p`
+  margin-left: 25px;
+  margin-top: 2px;
+  font-size: 8px;
+  width: min-content;
+  text-align: center;
+  color: ${(props) => props.theme.Colors.Header};
+  font-family: ${(props) => props.theme.Fonts.Poppins};
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-top: 5px;
+    width: 60%;
+    width: min-content;
+    text-align: center;
+    font-size: 10px;
+  }
+`;
+
 const Button = styled.button`
   background-color: ${(props) => props.theme.Colors.SubHeading};
   border: none;
@@ -76,160 +163,96 @@ const Button = styled.button`
   font-size: 16px;
   margin: 10px 200px;
   border-radius: 8px;
-`;
-const Schedule_Bar = styled.line`
-  position: absolute;
-  width: 950px;
-  margin-left: -413px;
-  margin-top: 410px;
-  border: 2px solid;
-  color: ${(props) => props.theme.Colors.Header};
-  transform: rotate(-90deg);
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-left: 1110px;
+  }
 `;
 
-const Scheduled_barArrow = styled.rect`
-  position: absolute;
-  width: 50px;
-  margin-top: 0px;
-  margin-left: 60px;
-  border: 1px solid;
-  color: ${(props) => props.theme.Colors.Header};
+const MoreInfopara = styled.p`
+  margin-top: -42px;
+  margin-left: 200px;
+  font-size: 15px;
+  color: ${(props) => props.theme.Colors.Para};
+  font-family: ${(props) => props.theme.Fonts.Poppins};
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-left: 1110px;
+    width: max-content;
+    text-align: left;
+  }
 `;
 
-const Ellipse = styled.ellipse`
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  margin-top: -3.8px;
-  margin-left: 107px;
-  background-color: ${(props) => props.theme.Colors.Header};
-  border-radius: 50%;
-`;
 
-const ScheduleRect = styled.div`
-position: absolute;
-width: 150px;
-height: 100px;
-margin-left: 113px;
-margin-top: -46px;
-background: ${(props) => props.theme.Colors.SubHeading};
-border-radius: 10px;
-z-index: -1;
-
-`
-
-const Schedule = styled.p`
-font-family: ${(props) => props.theme.Fonts.Poppins};
-text-align: center;
-font-weight: bold;
-`
 
 const Promethean = () => {
+
+  const [toggle, setToggle] = useState(1);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 250, 
+      duration: 1000,
+      once: true
+    });
+  }, []);
+
   return (
     <>
-      <img src={prompage}></img>
-      <PromPageHeadText>ABOUT PROMETHEAN</PromPageHeadText>
-      <PromPageRect src={trial_img}></PromPageRect>
-      <PromPageRectHead>PROMETHEAN 2020</PromPageRectHead>
-      <Greenbox></Greenbox>
-      <PromPagepara>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
-        finibus ex et molestie. Suspendisse porta sem eget pellentesque
-        interdum. Suspendisse at consequat justo, nec semper mi. Mauris rhoncus
-        quam vitae magna auctor ullamcorper. Maecenas et tellus ut augue
-        efficitur sodales in in leo. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Ut finibus finibus ex et molestie. Suspendisse porta
-        sem eget pellentesque interdum. Suspendisse at consequat justo, nec
-        semper mi. Mauris rhoncus quam vitae magna auctor ullamcorper. Maecenas
-        et tellus ut augue efficitur sodales in in leo.{" "}
-      </PromPagepara>
-      <Divider></Divider>
-      <PromPagepara style={{ margin: "60px 0px 0px 200px" }}>
-        For more info
-      </PromPagepara>
-      <Button>Brouchre</Button>
-      <PromPageHeadText style={{ margin: "90px 0px 50px 40px" }}>
-        PREVIOUS POSTERS
-      </PromPageHeadText>
-      <Hero></Hero>
-      <PromPageHeadText style={{ margin: "90px 0px 90px 90px" }}>
-        SCHEDULE
-      </PromPageHeadText>
-      <Schedule_Bar></Schedule_Bar>
-
-
-      <Scheduled_barArrow></Scheduled_barArrow>
-      <Ellipse></Ellipse>
-      <ScheduleRect>
-        <Schedule>26th Feb 2022</Schedule>
-        <Schedule style = {{margin: "-10px"}}>Introduction to PROMETHEAN</Schedule>
-      </ScheduleRect>
-
-
-      <Scheduled_barArrow
-        style={{ margin: "130px 0px 90px 60px" }}
-      ></Scheduled_barArrow>
-      <Ellipse style={{ margin: "125.5px 0px 90px 107px" }}></Ellipse>
-      <ScheduleRect style={{ margin: "84px 0px 90px 112px" }}>
-        <Schedule>16th Mar 2022</Schedule>
-        <Schedule style = {{margin: "-10px"}}>Register for Promethean</Schedule>
-      </ScheduleRect>
-
-
-      <Scheduled_barArrow
-        style={{ margin: "260px 0px 90px 60px" }}
-      ></Scheduled_barArrow>
-      <Ellipse style={{ margin: "256px 0px 90px 107px" }}></Ellipse>
-      <ScheduleRect style={{ margin: "215px 0px 90px 112px" }}>
-        <Schedule>16th Mar 2022</Schedule>
-        <Schedule style = {{margin: "-10px"}}>Topic Selection for Teams</Schedule>
-      </ScheduleRect>
-
-
-      <Scheduled_barArrow
-        style={{ margin: "400px 0px 90px 60px" }}
-      ></Scheduled_barArrow>
-      <Ellipse style={{ margin: "396px 0px 90px 107px" }}></Ellipse>
-      <ScheduleRect style={{ margin: "350px 0px 90px 112px" }}>
-        <Schedule>21st Mar 2022</Schedule>
-        <Schedule style = {{margin: "-10px"}}>Promethean Mentoring Session</Schedule>
-      </ScheduleRect>
-
-
-      <Scheduled_barArrow
-        style={{ margin: "540px 0px 90px 60px" }}
-      ></Scheduled_barArrow>
-      <Ellipse style={{ margin: "536px 0px 90px 107px" }}></Ellipse>
-      <ScheduleRect style={{ margin: "490px 0px 90px 112px" }}>
-        <Schedule>1st Apr 2022</Schedule>
-        <Schedule style = {{margin: "-10px"}}>Elimination Round</Schedule>
-      </ScheduleRect>
-
-
-      <Scheduled_barArrow
-        style={{ margin: "680px 0px 90px 60px" }}
-      ></Scheduled_barArrow>
-      <Ellipse style={{ margin: "676px 0px 90px 107px" }}></Ellipse>
-      <ScheduleRect style={{ margin: "630px 0px 90px 112px" }}>
-        <Schedule>9th Apr 2022</Schedule>
-        <Schedule style = {{margin: "-10px"}}>Promethean first Round</Schedule>
-      </ScheduleRect>
-
-
-      <Scheduled_barArrow
-        style={{ margin: "820px 0px 90px 60px" }}
-      ></Scheduled_barArrow>
-      <Ellipse style={{ margin: "816px 0px 90px 107px" }}></Ellipse>
-      <ScheduleRect style={{ margin: "770px 0px 90px 112px" }}>
-        <Schedule>10th Apr 2022</Schedule>
-        <Schedule style = {{margin: "-10px"}}>Results !!!</Schedule>
-      </ScheduleRect>
-
-      <PromPageHeadText style={{ margin: "1070px 0px 50px 130px" }}>
-        FAQ
-      </PromPageHeadText>
-      <img src = {FAQ_Img}></img>
-      <Footer></Footer>
+      <MainProm>
+        <img src={prompage} style={{ width: "100%" }}></img>
+        <div data-aos='fade-up'>
+        <PromPageHeadText>
+          ABOUT <PromHeadGreen>PROMETHEAN</PromHeadGreen>
+        </PromPageHeadText>
+        <PromPageRect src={trial_img}></PromPageRect>
+        <PromPageRectHead>PROMETHEAN 2020</PromPageRectHead>
+        <Greenbox></Greenbox>
+        <PromPagepara>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
+          finibus ex et molestie. Suspendisse porta sem eget pellentesque
+          interdum. Suspendisse at consequat justo, nec semper mi. Mauris
+          rhoncus quam vitae magna auctor ullamcorper. Maecenas et tellus ut
+          augue efficitur sodales in in leo. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Ut finibus finibus ex et molestie.
+          Suspendisse porta sem eget pellentesque interdum. Suspendisse at
+          consequat justo, nec semper mi. Mauris rhoncus quam vitae magna auctor
+          ullamcorper. Maecenas et tellus ut augue efficitur sodales in in leo.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
+          finibus ex et molestie. Suspendisse porta sem eget pellentesque
+          interdum. Suspendisse at consequat justo, nec semper mi. Mauris
+          rhoncus quam vitae magna auctor ullamcorper. Maecenas et tellus ut
+          augue efficitur sodales in in leo. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Ut finibus finibus ex et molestie.
+          Suspendisse porta sem eget pellentesque interdum. Suspendisse at
+          consequat justo, nec semper mi. Mauris rhoncus quam vitae magna auctor
+          ullamcorper. Maecenas et tellus ut augue efficitur sodales in in leo.
+        </PromPagepara>
+        </div>
+        <Divider></Divider>
+        <Count_cont>
+        <Count>120</Count>
+        <CountDetail>Student's Participated</CountDetail>
+        </Count_cont>
+        <Count_cont_2>
+        <Count style={{ margin: "-56px 0px 0px 93px" }}>28</Count>
+        <CountDetail style={{ margin: "1px 0px 0px 91px" }}>Teams</CountDetail>
+        </Count_cont_2>
+        <MoreInfopara>For more info</MoreInfopara>
+        <Button>Brouchre</Button>
+        <div data-aos='fade-up'>
+        <PromPageHeadText style={{ margin: "85px 0px 50px 40px" }}>
+          PREVIOUS <PromHeadGreen>POSTERS</PromHeadGreen>
+        </PromPageHeadText>
+        <Hero></Hero>
+        </div>
+        <div data-aos='fade-up'>
+        <PromPageHeadText style={{ margin: "90px 0px 90px 90px" }}>
+          SCHE<PromHeadGreen>DULE</PromHeadGreen>
+        </PromPageHeadText>
+      </div>
+      <PromPageSchedule></PromPageSchedule>
+      </MainProm>
     </>
   );
 };

@@ -6,6 +6,7 @@ import rightArrow from "../../Images/right-arrow.svg";
 
 const ArrowButton = styled.button`
   background:none ;
+  background-color: ${(props) => props.theme.Colors.SubHeading};
   z-index: 1;
 `
 

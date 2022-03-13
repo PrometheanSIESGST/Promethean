@@ -56,17 +56,14 @@ const Tabs = styled.button`
   border-radius: 25px;
   margin: 0 10px 10px 0;
   transition: 0.3s ease;
-
   @media ${(props) => props.theme.MediaQueries.m.query} {
     font-size: 18px;
     margin: 0 15px 15px 0;
   }
-
   &:hover {
     background: ${(props) => props.theme.Colors.SubHeading};
     border-color: ${(props) => props.theme.Colors.SubHeading};
   }
-
   &.active {
     background: ${(props) => props.theme.Colors.SubHeading};
     border-color: ${(props) => props.theme.Colors.SubHeading};
@@ -135,11 +132,18 @@ const Team = () => {
             className={team === 6 ? "active" : "null"}
             onClick={() => setTeam(6)}
           >
-            Creative
+            Publicity
           </Tabs>
+
           <Tabs
             className={team === 7 ? "active" : "null"}
             onClick={() => setTeam(7)}
+          >
+            Creative
+          </Tabs>
+          <Tabs
+            className={team === 8 ? "active" : "null"}
+            onClick={() => setTeam(8)}
           >
             Social Media
           </Tabs>
