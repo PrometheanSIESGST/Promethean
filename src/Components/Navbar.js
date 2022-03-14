@@ -34,18 +34,19 @@ const Logo = styled.img`
 
 const SideNavList = styled.ul`
   position: absolute;
-  top: 0;
+  top: 0; 
   left: 100%;
   padding: 30px 0;
   width: 100%;
   background: ${(props) => props.theme.Colors.SubHeading};
   z-index: 100;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 
   &.toggleNav {
-    transition: 0.5s ease;
+    transition: 2s ease;
+    display: flex;
     left: 0;
   }
 
@@ -116,15 +117,15 @@ const Navbar = () => {
         <SideNavList className={navOpen ? "toggleNav" : "close"}>
           <Cross onClick={() => setNavOpen(false)}>X</Cross>
           <SideNavContent href={ROUTES.HOME}>HOME</SideNavContent>
-          <SideNavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</SideNavContent>
+          {/* <SideNavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</SideNavContent> */}
           <SideNavContent href={ROUTES.TEAM}>TEAM</SideNavContent>
-          <SideNavContent href={ROUTES.GALLERY}>GALLERY</SideNavContent>
+          {/* <SideNavContent href={ROUTES.GALLERY}>GALLERY</SideNavContent> */}
         </SideNavList>
         <NavList>
           <NavContent href={ROUTES.HOME}>HOME</NavContent>
-          <NavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</NavContent>
+          {/* <NavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</NavContent> */}
           <NavContent href={ROUTES.TEAM}>TEAM</NavContent>
-          <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent>
+          {/* <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent> */}
         </NavList>
         <FilterImg src={Filter} onClick={() => setNavOpen(true)} />
       </Nav>

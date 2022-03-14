@@ -16,8 +16,10 @@ export const FooterLinksContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top:30px;
   @media ${(props) => props.theme.MediaQueries.m.query} {
     padding: 3rem 20px;
+    margin-top:80px;
   }
   @media ${(props) => props.theme.MediaQueries.l.query} {
     padding: 4rem 20px;
@@ -82,7 +84,7 @@ export const FooterLink = styled(Link)`
   text-align: left;
   text-decoration: none;
   &:hover {
-    color: #000000;
+    color: ${(props) => props.theme.Colors.Header};
     transition: 0.3s ease-out;
   }
 `;
@@ -164,12 +166,12 @@ function Footer() {
             <FooterLink to="/Team" bottom>
               Team
             </FooterLink>
-            <FooterLink to="/Promethean" bottom>
+            {/* <FooterLink to="/Promethean" bottom>
               Promethean
             </FooterLink>
             <FooterLink to="/Gallery" bottom>
               Gallery
-            </FooterLink>
+            </FooterLink> */}
           </FooterLinkItems>
 
           <FooterLinkItems large>

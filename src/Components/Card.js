@@ -4,7 +4,7 @@ import greenLine from "../Images/green_line.jpeg";
 
 const ContentCard = styled.div`
   position: relative;
-  height: 440px;
+  height: 550px;
 `;
 
 const CardStyle = styled.h1`
@@ -32,7 +32,7 @@ const CardStylePara = styled.p`
   @media ${(props) => props.theme.MediaQueries.m.query} {
     font-size: 15px;
     margin: 0 0 0 20px;
-    max-width: 450px;
+    max-width: 500px;
   }
 `;
 

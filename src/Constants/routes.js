@@ -1,4 +1,4 @@
 export const HOME = "/"
 export const TEAM = "/team"
-export const GALLERY = "/gallery" 
-export const PROMETHEAN = "/event"
+// export const GALLERY = "/gallery" 
+// export const PROMETHEAN = "/event"

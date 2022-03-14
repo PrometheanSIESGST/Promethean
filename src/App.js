@@ -34,8 +34,8 @@ const App = () => {
       <Routes>
         <Route path={ROUTES.HOME} element={<LandingPage />} />
         <Route path={ROUTES.TEAM} element={<Team />} />
-        <Route path={ROUTES.PROMETHEAN} element={<Promethean />} />
-        <Route path={ROUTES.GALLERY} element={<Gallery />} />
+        {/* <Route path={ROUTES.PROMETHEAN} element={<Promethean />} />
+        <Route path={ROUTES.GALLERY} element={<Gallery />} /> */}
       </Routes>
       <Footer/>
     </ThemeProvider>
