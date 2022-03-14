@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/Promethean/static/css/main.f8882360.css",
-    "main.js": "/Promethean/static/js/main.22ca02a7.js",
+    "main.css": "/Promethean/static/css/main.4b89671c.css",
+    "main.js": "/Promethean/static/js/main.a3b31fae.js",
     "static/media/team.jpg": "/Promethean/static/media/team.ef2edda051f9d0af5610.jpg",
+    "static/media/promlanding1.jpg": "/Promethean/static/media/promlanding1.84c720fcb307ff2e0340.jpg",
     "static/media/FAQ.png": "/Promethean/static/media/FAQ.c2c44ca025db51b7057a.png",
+    "static/media/heroimg.jpg": "/Promethean/static/media/heroimg.95313601c03ce42743f3.jpg",
     "static/media/Prompage.jpeg": "/Promethean/static/media/Prompage.f6a3e102f98f9d343acb.jpeg",
     "static/media/logo.png": "/Promethean/static/media/logo.3976da10fe88f2939b20.png",
     "static/media/pp.jpg": "/Promethean/static/media/pp.f23b429d8152d9e90e9d.jpg",
@@ -17,11 +19,11 @@
     "index.html": "/Promethean/index.html",
     "static/media/left-arrow.svg": "/Promethean/static/media/left-arrow.da21225bcf530088451874c9e21c215a.svg",
     "static/media/right-arrow.svg": "/Promethean/static/media/right-arrow.d19ce8f87764b5901ed2ca6f0ff22d03.svg",
-    "main.f8882360.css.map": "/Promethean/static/css/main.f8882360.css.map",
-    "main.22ca02a7.js.map": "/Promethean/static/js/main.22ca02a7.js.map"
+    "main.4b89671c.css.map": "/Promethean/static/css/main.4b89671c.css.map",
+    "main.a3b31fae.js.map": "/Promethean/static/js/main.a3b31fae.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8882360.css",
-    "static/js/main.22ca02a7.js"
+    "static/css/main.4b89671c.css",
+    "static/js/main.a3b31fae.js"
   ]
 }
