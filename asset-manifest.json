@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Promethean/static/css/main.4b89671c.css",
-    "main.js": "/Promethean/static/js/main.a3b31fae.js",
+    "main.js": "/Promethean/static/js/main.40dd7fb3.js",
     "static/media/team.jpg": "/Promethean/static/media/team.ef2edda051f9d0af5610.jpg",
     "static/media/promlanding1.jpg": "/Promethean/static/media/promlanding1.84c720fcb307ff2e0340.jpg",
     "static/media/FAQ.png": "/Promethean/static/media/FAQ.c2c44ca025db51b7057a.png",
@@ -20,10 +20,10 @@
     "static/media/left-arrow.svg": "/Promethean/static/media/left-arrow.da21225bcf530088451874c9e21c215a.svg",
     "static/media/right-arrow.svg": "/Promethean/static/media/right-arrow.d19ce8f87764b5901ed2ca6f0ff22d03.svg",
     "main.4b89671c.css.map": "/Promethean/static/css/main.4b89671c.css.map",
-    "main.a3b31fae.js.map": "/Promethean/static/js/main.a3b31fae.js.map"
+    "main.40dd7fb3.js.map": "/Promethean/static/js/main.40dd7fb3.js.map"
   },
   "entrypoints": [
     "static/css/main.4b89671c.css",
-    "static/js/main.a3b31fae.js"
+    "static/js/main.40dd7fb3.js"
   ]
 }
