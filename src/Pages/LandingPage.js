@@ -34,8 +34,8 @@ const FlexDiv = styled.div`
 
 const AboutImage = styled.img`
   background-size: cover;
-  background-position:center;
-  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 10px;
   width: 250px;
   height: 250px;
@@ -57,12 +57,12 @@ const HeroDiv = styled.div`
   position: relative;
   height: 100vh;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  display:flex ;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  padding:20px;
-  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
 `;
 
 const Header = styled.h1`
@@ -77,26 +77,51 @@ const Header = styled.h1`
   @media ${(props) => props.theme.MediaQueries.l.query} {
     font-size: 90px;
   }
-`
+`;
 
 const SubHeader = styled.p`
   font-family: ${(props) => props.theme.Fonts.Josefin};
   font-weight: 300;
-  font-size: 16px;
+  font-size: 25px;
   color: ${(props) => props.theme.Colors.Header};
   @media ${(props) => props.theme.MediaQueries.m.query} {
     font-size: 25px;
   }
   @media ${(props) => props.theme.MediaQueries.l.query} {
-    font-size: 30px;
+    font-size: 40px;
   }
-`
+`;
+
+const RegBtn = styled.span`
+  background-color: ${(props) => props.theme.Colors.SubHeading};
+  border: none;
+  width: 130px;
+  height: 35px;
+  margin-top: 40px;
+  color: ${(props) => props.theme.Colors.Header};
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+`;
+
+const BtnLink = styled.a`
+  text-decoration: none;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 5px;
+  font-family: ${(props) => props.theme.Fonts.Poppins};
+  outline: none;
+  color: ${(props) => props.theme.Colors.Header};
+`;
 
 const LandingPage = () => {
   const [toggle, setToggle] = useState(1);
 
   useEffect(() => {
-    console.log("landing page")
+    console.log("landing page");
     AOS.init({
       offset: 250,
       duration: 1000,
@@ -112,8 +137,13 @@ const LandingPage = () => {
           backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${HeroImg})`,
         }}
       >
-      <Header>Promethean 2022</Header>
-      <SubHeader>Registration will be starting soon!</SubHeader>
+        <Header>Promethean 2022</Header>
+        <SubHeader>Register Now !!!</SubHeader>
+        <RegBtn>
+          <BtnLink href="https://forms.office.com/r/4XGMx15TVq">
+            Register Here
+          </BtnLink>
+        </RegBtn>
       </HeroDiv>
       <Main>
         <FlexDiv reverse data-aos="fade-up">
