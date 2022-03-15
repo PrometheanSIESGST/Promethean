@@ -168,7 +168,7 @@ const Button = styled.button`
   }
 
   @media ${(props) => props.theme.MediaQueries.l.query} {
-    margin-left: 1110px;
+    margin-left: 1090px;
   }
 `;
 
@@ -186,7 +186,7 @@ const MoreInfopara = styled.p`
   }
 
   @media ${(props) => props.theme.MediaQueries.l.query} {
-    margin-left: 1110px;
+    margin-left: 1090px;
     width: max-content;
     text-align: left;
   }
@@ -194,9 +194,11 @@ const MoreInfopara = styled.p`
 
 const Main = styled.div`
   max-width: 320px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
   width: device-width;
+  box-sizing:border-box;
+  overflow-x: hidden;
   @media ${(props) => props.theme.MediaQueries.s.query} {
     max-width: 560px;
   }
@@ -279,7 +281,7 @@ const Promethean = () => {
         <Hero></Hero>
         </div>
         <div data-aos='fade-up'>
-        <PromPageHeadText style={{ margin: "50px 0px 60px 90px" }}>
+        <PromPageHeadText style={{ margin: "-70px 0px 60px 90px" }}>
           SCHE<PromHeadGreen>DULE</PromHeadGreen>
         </PromPageHeadText>
       </div>
