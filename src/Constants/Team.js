@@ -99,7 +99,7 @@ export const TeamInfo = [
           {
               name: "Kashish",
               post: "head",
-              photo: "Images/Kashish Singh-IT_page-0001.jpg",
+              photo: "Images/Kashish Singh-IT.jpg",
             },
         ],
         coord: [

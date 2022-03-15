@@ -10,13 +10,6 @@ import PromPageSchedule from "../Components/Schedule"
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
-const Header = styled.h1`
-  max-width: 1200px;
-  margin: 0 auto;
-  color: ${(props) => props.theme.Colors.Header};
-  font-family: ${(props) => props.theme.Fonts.Arial};
-`;
-
 const MainProm = styled.div`
   max-width: 320px;
   margin: 0 auto;
@@ -99,6 +92,12 @@ const Divider = styled.rect`
   border: 1px solid;
   color: ${(props) => props.theme.Colors.Para};
 
+  @media ${(props) => props.theme.MediaQueries.xl.query} {
+    margin-left: 350px;
+    margin-top: 30px;
+    width: 45%;
+  }
+
   @media ${(props) => props.theme.MediaQueries.l.query} {
     margin-left: 350px;
     margin-top: 30px;
@@ -115,7 +114,7 @@ const Count_cont = styled.div`
 const Count_cont_2 = styled.div`
 @media ${(props) => props.theme.MediaQueries.l.query} {
   margin-left: 350px;
-  margin-top: -80px;
+  margin-top: -82px;
 }
 `
 
@@ -164,6 +163,10 @@ const Button = styled.button`
   margin: 10px 200px;
   border-radius: 8px;
 
+  @media ${(props) => props.theme.MediaQueries.xl.query} {
+    margin-left: 910px;
+  }
+
   @media ${(props) => props.theme.MediaQueries.l.query} {
     margin-left: 1110px;
   }
@@ -176,6 +179,12 @@ const MoreInfopara = styled.p`
   color: ${(props) => props.theme.Colors.Para};
   font-family: ${(props) => props.theme.Fonts.Poppins};
 
+  @media ${(props) => props.theme.MediaQueries.xl.query} {
+    margin-left: 110px;
+    width: max-content;
+    text-align: left;
+  }
+
   @media ${(props) => props.theme.MediaQueries.l.query} {
     margin-left: 1110px;
     width: max-content;
@@ -183,6 +192,28 @@ const MoreInfopara = styled.p`
   }
 `;
 
+const Main = styled.div`
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  width: device-width;
+  @media ${(props) => props.theme.MediaQueries.s.query} {
+    max-width: 560px;
+  }
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    max-width: 720px;
+  }
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    max-width: 1200px;
+  }
+`;
+
+const PromHero = styled.img`
+width: 100%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+`
 
 
 const Promethean = () => {
@@ -199,8 +230,9 @@ const Promethean = () => {
 
   return (
     <>
-      <MainProm>
-        <img src={prompage} style={{ width: "100%" }}></img>
+      <Main>
+        <PromHero src={prompage} >
+        </PromHero>
         <div data-aos='fade-up'>
         <PromPageHeadText>
           ABOUT <PromHeadGreen>PROMETHEAN</PromHeadGreen>
@@ -247,12 +279,12 @@ const Promethean = () => {
         <Hero></Hero>
         </div>
         <div data-aos='fade-up'>
-        <PromPageHeadText style={{ margin: "90px 0px 90px 90px" }}>
+        <PromPageHeadText style={{ margin: "50px 0px 60px 90px" }}>
           SCHE<PromHeadGreen>DULE</PromHeadGreen>
         </PromPageHeadText>
       </div>
       <PromPageSchedule></PromPageSchedule>
-      </MainProm>
+      </Main>
     </>
   );
 };
