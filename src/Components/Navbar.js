@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Images/logo.png";
 import Filter from "../Images/Filter.png";
@@ -34,7 +35,7 @@ const Logo = styled.img`
 
 const SideNavList = styled.ul`
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 100%;
   padding: 30px 0;
   width: 100%;
@@ -116,16 +117,24 @@ const Navbar = () => {
         <Logo src={logo} />
         <SideNavList className={navOpen ? "toggleNav" : "close"}>
           <Cross onClick={() => setNavOpen(false)}>X</Cross>
-          <SideNavContent href={ROUTES.HOME}>HOME</SideNavContent>
+          <Link to={ROUTES.HOME}>
+            <SideNavContent>HOME</SideNavContent>
+          </Link>
+          <Link to={ROUTES.TEAM}>
+            <SideNavContent href={ROUTES.TEAM}>TEAM</SideNavContent>
+          </Link>
           {/* <SideNavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</SideNavContent> */}
-          <SideNavContent href={ROUTES.TEAM}>TEAM</SideNavContent>
           {/* <SideNavContent href={ROUTES.GALLERY}>GALLERY</SideNavContent> */}
         </SideNavList>
         <NavList>
-          <NavContent href={ROUTES.HOME}>HOME</NavContent>
-          {/* <NavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</NavContent> */}
-          <NavContent href={ROUTES.TEAM}>TEAM</NavContent>
+          <Link to={ROUTES.HOME}>
+            <NavContent href={ROUTES.HOME}>HOME</NavContent>
+          </Link>
+          <Link to={ROUTES.TEAM}>
+            <NavContent href={ROUTES.TEAM}>TEAM</NavContent>
+          </Link>
           {/* <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent> */}
+          {/* <NavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</NavContent> */}
         </NavList>
         <FilterImg src={Filter} onClick={() => setNavOpen(true)} />
       </Nav>

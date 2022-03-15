@@ -96,6 +96,7 @@ const LandingPage = () => {
   const [toggle, setToggle] = useState(1);
 
   useEffect(() => {
+    console.log("landing page")
     AOS.init({
       offset: 250,
       duration: 1000,
