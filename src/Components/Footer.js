@@ -10,16 +10,16 @@ import { Link } from "react-router-dom";
 import Logo from "./logo1.png";
 
 export const FooterLinksContainer = styled.div`
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     #cee002;
   padding: 2rem 20px;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top:30px;
+  margin-top: 30px;
   @media ${(props) => props.theme.MediaQueries.m.query} {
     padding: 3rem 20px;
-    margin-top:80px;
+    margin-top: 80px;
   }
   @media ${(props) => props.theme.MediaQueries.l.query} {
     padding: 4rem 20px;
@@ -89,6 +89,19 @@ export const FooterLink = styled(Link)`
   }
 `;
 
+const FooterContact = styled.a`
+  color: rgba(255, 255, 255, 0.7);
+  font-family: ${(props) => props.theme.Fonts.Poppins};
+  margin-bottom: ${(props) => (props.bottom ? "10px" : "0")};
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  &:hover {
+    color: ${(props) => props.theme.Colors.Header};
+    transition: 0.3s ease-out;
+  }
+`;
+
 export const Para = styled.h5`
   color: rgba(255, 255, 255, 0.7);
   font-family: ${(props) => props.theme.Fonts.Poppins};
@@ -137,7 +150,7 @@ const SubFlex = styled.div`
 const PromLogo = styled.img`
   width: 250px;
   height: auto;
-`
+`;
 
 function Footer() {
   return (
@@ -151,9 +164,18 @@ function Footer() {
           </Para>
 
           <SocialIconLink>
-            <SocialIconImage src={Insta} alt="Insta" />
-            <SocialIconImage src={Facebook} alt="Facebook" />
-            <SocialIconImage src={Linkedin} alt="Linkedin" />
+            <a
+              href="https://www.instagram.com/promethean_siesgst/"
+              target="_blank"
+            >
+              <SocialIconImage src={Insta} alt="Insta" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/team-promethean-sies-gst/mycompany/"
+              target="_blank"
+            >
+              <SocialIconImage src={Linkedin} alt="Linkedin" />
+            </a>
           </SocialIconLink>
         </FooterGroup>
 
@@ -166,10 +188,10 @@ function Footer() {
             <FooterLink to="/Team" bottom>
               Team
             </FooterLink>
-            {/* <FooterLink to="/Promethean" bottom>
+            <FooterLink to="/event" bottom>
               Promethean
             </FooterLink>
-            <FooterLink to="/Gallery" bottom>
+            {/* <FooterLink to="/Gallery" bottom>
               Gallery
             </FooterLink> */}
           </FooterLinkItems>
@@ -178,12 +200,17 @@ function Footer() {
             <FooterLinkTitle>Reach Us</FooterLinkTitle>
             <SideIcons>
               <SideiconImg src={Call} alt="Call" />
-              <FooterLink to="/"> +91 123456789</FooterLink>
+              <FooterContact href="tel:+91 7208877440">
+                {" "}
+                +91 7208877440
+              </FooterContact>
             </SideIcons>
 
             <SideIcons>
               <SideiconImg src={Mail} alt="Mail" />
-              <FooterLink to="/">promethean@siesgst.ac.in</FooterLink>
+              <FooterContact href="mailto:promethean@siesgst.ac.in">
+                promethean@siesgst.ac.in
+              </FooterContact>
             </SideIcons>
 
             <SideIcons>

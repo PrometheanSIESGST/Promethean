@@ -9,7 +9,7 @@
     border: 2px solid;
     color: white;
     margin-top: 0px;
-    height: 175%;
+    height: 150%;
     background-color: white;
     border-radius: 2px;
 }
@@ -126,19 +126,22 @@
 }
 
 .Desktop{
-    margin-bottom: 370px;
+    margin-bottom: 280px;
 }
 
 
 
-@media screen and (min-width: 100px) and (max-width: 425px){
+@media screen and (min-width: 100px) and (max-width: 768px){
     .center_line{
-        left: 10%;
-        height: 140%
+        left: 30%;
+        transform: translate(-50px);
+        height: 100%;
+        margin-top:60px;
     }
 
     .right_arrow_container{
-        left: 11%;
+        left: 31%;
+        transform: translate(-50px);
         margin-top: -190px;
     }
     
@@ -169,8 +172,9 @@
     }
 
     .mobile_schedule{
+        max-width: 300px;
         display: block;
-        margin-bottom: 200px;
+        margin: 0 auto 30px auto;
     }
 
     .desktop_schedule{

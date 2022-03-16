@@ -95,11 +95,9 @@ const SubHeader = styled.p`
 const RegBtn = styled.span`
   background-color: ${(props) => props.theme.Colors.SubHeading};
   border: none;
-  width: 130px;
-  height: 35px;
   margin-top: 40px;
   color: ${(props) => props.theme.Colors.Header};
-  padding: 5px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -140,7 +138,7 @@ const LandingPage = () => {
         <Header>Promethean 2022</Header>
         <SubHeader>Register Now !!!</SubHeader>
         <RegBtn>
-          <BtnLink href="https://forms.office.com/r/4XGMx15TVq">
+          <BtnLink href="https://forms.office.com/r/4XGMx15TVq" target="_blank">
             Register Here
           </BtnLink>
         </RegBtn>

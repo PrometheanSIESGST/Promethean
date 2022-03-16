@@ -30,18 +30,19 @@ const TeamSubheader = styled.p`
   color: ${(props) => props.theme.Colors.Header};
   font-family: ${(props) => props.theme.Fonts.Montserrat};
   font-size: 12px;
+  line-height: 20px;
   @media ${(props) => props.theme.MediaQueries.m.query} {
     font-size: 16px;
   }
 `;
 
-const TeamIntro = ({designation}) => {
+const TeamIntro = ({designation , about}) => {
   return (
     <TeamDiv>
       <TeamHeader>
         MEET THE <TeamGreen>{designation}</TeamGreen>
       </TeamHeader>
-      <TeamSubheader>lorem ipsum lorem ipsum</TeamSubheader>
+      <TeamSubheader>{about}</TeamSubheader>
     </TeamDiv>
   );
 }
