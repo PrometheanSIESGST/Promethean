@@ -259,11 +259,11 @@ const Promethean = () => {
               <FlexDiv>
                 <CountMainDiv>
                   <CountDiv>
-                    <Count>120</Count>
+                    <Count>321</Count>
                     <CountDetail>Student's Participated</CountDetail>
                   </CountDiv>
                   <CountDiv>
-                    <Count>28</Count>
+                    <Count>72</Count>
                     <CountDetail>Teams</CountDetail>
                   </CountDiv>
                 </CountMainDiv>
