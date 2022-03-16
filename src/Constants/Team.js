@@ -10,7 +10,7 @@ export const TeamInfo = [
           {
             name: "Pradyumn",
             post: "Chairperson",
-            photo: "Image/Pradyumn Joshi EXTC_ccexpress.jpeg",
+            photo: "Image/Pradyumn Joshi EXTC_ccexpress.png",
           },
           {
             name: "Anvesh",
@@ -25,7 +25,7 @@ export const TeamInfo = [
           {
             name: "Sneha",
             post: "Treasurer",
-            photo: "public/Image/Sneha Shaji.jpg",
+            photo: "../../public/Image/Sneha Shaji.jpg",
           },
         ],
         coord: [],

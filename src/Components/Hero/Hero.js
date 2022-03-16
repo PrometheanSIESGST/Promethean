@@ -4,6 +4,7 @@ import BtnSlider from "./BtnSlider";
 import ImageList from "./ImageList";
 import styled from "styled-components";
 
+
 const Slider_container = styled.div`
   max-width: 100%;
   height: 500px;
@@ -58,7 +59,7 @@ export default function Slider() {
             key={obj.id}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
-            <img src={obj.image} className="image" />
+            <img src={obj.Image} className="image" />
           </div>
         );
       })}

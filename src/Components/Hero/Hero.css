@@ -10,7 +10,7 @@
 
 .slide img {
   width: 700px;
-  height: 70%;
+  height: 80%;
   object-fit: cover;
 }
 .active-anim {
@@ -36,12 +36,12 @@
   pointer-events: none;
 }
 .prev {
-  top: 25%;
+  top: 39%;
   left: 83px;
   transform: translateY(-60%);
 }
 .next {
-  top: 25%;
+  top: 39%;
   right: 68px;
   transform: translateY(-60%);
 }
