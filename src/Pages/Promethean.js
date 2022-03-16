@@ -114,7 +114,7 @@ const Count_cont = styled.div`
 const Count_cont_2 = styled.div`
 @media ${(props) => props.theme.MediaQueries.l.query} {
   margin-left: 350px;
-  margin-top: -82px;
+  margin-top: -82.5px;
 }
 `
 
@@ -273,7 +273,7 @@ const Promethean = () => {
         <CountDetail style={{ margin: "1px 0px 0px 91px" }}>Teams</CountDetail>
         </Count_cont_2>
         <MoreInfopara>For more info</MoreInfopara>
-        <Button>Brouchre</Button>
+        <Button><a href = "https://drive.google.com/uc?export=download&id=1P4RBz8BAoDFHw08nZf9G5MOwVmjfKY8Q" style = {{color: "white"}}>Brouchre</a></Button>
         <div data-aos='fade-up'>
         <PromPageHeadText style={{ margin: "85px 0px 50px 40px" }}>
           PREVIOUS <PromHeadGreen>POSTERS</PromHeadGreen>
