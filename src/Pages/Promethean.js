@@ -29,7 +29,7 @@ const PromPageHeadText = styled.p`
   font-family: ${(props) => props.theme.Fonts.Josefin};
   font-weight: bold;
 
-  @media ${(props) => props.theme.MediaQueries.l.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     text-align: center;
     font-size: 30px;
   }
@@ -42,7 +42,7 @@ const PromPageRect = styled.img`
   margin-top: 10px;
   border-radius: 15px;
 
-  @media ${(props) => props.theme.MediaQueries.l.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-top: 60px;
   }
 `;
@@ -78,7 +78,7 @@ const PromPagepara = styled.p`
   color: ${(props) => props.theme.Colors.Para};
   font-family: ${(props) => props.theme.Fonts.Poppins};
 
-  @media ${(props) => props.theme.MediaQueries.l.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-left: 350px;
     margin-top: -230px;
   }
@@ -92,13 +92,13 @@ const Divider = styled.rect`
   border: 1px solid;
   color: ${(props) => props.theme.Colors.Para};
 
-  @media ${(props) => props.theme.MediaQueries.xl.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-left: 350px;
     margin-top: 30px;
     width: 45%;
   }
 
-  @media ${(props) => props.theme.MediaQueries.l.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-left: 350px;
     margin-top: 30px;
     width: 65%;
@@ -106,15 +106,15 @@ const Divider = styled.rect`
 `;
 
 const Count_cont = styled.div`
-@media ${(props) => props.theme.MediaQueries.l.query} {
+@media ${(props) => props.theme.MediaQueries.m.query} {
   margin-left: 320px;
 }
 `
 
 const Count_cont_2 = styled.div`
-@media ${(props) => props.theme.MediaQueries.l.query} {
+@media ${(props) => props.theme.MediaQueries.m.query} {
   margin-left: 350px;
-  margin-top: -82.5px;
+  margin-top: -78.5px;
 }
 `
 
@@ -125,7 +125,7 @@ const Count = styled.p`
   color: ${(props) => props.theme.Colors.SubHeading};
   font-family: ${(props) => props.theme.Fonts.Poppins};
 
-  @media ${(props) => props.theme.MediaQueries.l.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-top: 60px;
     width: 60%;
     font-size: 30px;
@@ -141,7 +141,7 @@ const CountDetail = styled.p`
   color: ${(props) => props.theme.Colors.Header};
   font-family: ${(props) => props.theme.Fonts.Poppins};
 
-  @media ${(props) => props.theme.MediaQueries.l.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-top: 5px;
     width: 60%;
     width: min-content;
@@ -163,7 +163,7 @@ const Button = styled.button`
   margin: 10px 200px;
   border-radius: 8px;
 
-  @media ${(props) => props.theme.MediaQueries.xl.query} {
+  @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-left: 910px;
   }
 
@@ -179,8 +179,8 @@ const MoreInfopara = styled.p`
   color: ${(props) => props.theme.Colors.Para};
   font-family: ${(props) => props.theme.Fonts.Poppins};
 
-  @media ${(props) => props.theme.MediaQueries.xl.query} {
-    margin-left: 110px;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    margin-left: 1000px;
     width: max-content;
     text-align: left;
   }
