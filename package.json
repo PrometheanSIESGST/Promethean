@@ -1,7 +1,7 @@
 {
   "name": "promethean",
   "version": "0.1.0",
-  "homepage": "https://promethean.siesgst.ac.in/",
+  "homepage": "https://prometheansiesgst.github.io/Promethean/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.1",
