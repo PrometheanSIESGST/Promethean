@@ -29,6 +29,7 @@ const HeroImage = styled.img`
   opacity: 0.6;
 `;
 
+
 export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(1);
 
@@ -51,6 +52,7 @@ export default function Slider() {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
+  
   return (
     <Slider_container>
       {ImageList.map((obj, index) => {
@@ -63,17 +65,17 @@ export default function Slider() {
           </div>
         );
       })}
-      <BtnSlider moveSlide={nextSlide} direction={"next"} />
+     <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
-      <div className="container-dots">
+      {/* <div className="container-dots">
                 {Array.from({length: 5}).map((item, index) => (
                     <div 
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>
                 ))}
-            </div>
+            </div> */}
 
     </Slider_container>
   );

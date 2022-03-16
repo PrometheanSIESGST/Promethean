@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const MainProm = styled.div`
-  max-width: 320px;
+  max-width: 300px;
   margin: 0 auto;
   @media ${(props) => props.theme.MediaQueries.s.query} {
     max-width: 570px;
@@ -46,7 +46,8 @@ const PromPageHeadText = styled.p`
   font-weight: bold;
   text-align: center;
   @media ${(props) => props.theme.MediaQueries.m.query} {
-    font-size: 30px;
+    margin-bottom: 50px;
+    font-size: 35px;
   }
 `;
 
@@ -56,9 +57,8 @@ const PromPageRect = styled.img`
   /* margin-left: 37px; */
   margin-top: 10px;
   border-radius: 15px;
-
   @media ${(props) => props.theme.MediaQueries.m.query} {
-    margin-top: 60px;
+    margin-right: 40px;
   }
 `;
 
@@ -86,16 +86,15 @@ const PromHeadGreen = styled.span`
 `;
 
 const PromPagepara = styled.p`x;
-  margin-top: 95px;
-  font-size: 15px;
+  margin-top: 50px;
+  font-size: 14px;
   color: ${(props) => props.theme.Colors.Para};
   font-family: ${(props) => props.theme.Fonts.Poppins};
   padding-bottom: 20px;
   border-bottom: 1px solid ${(props) => props.theme.Colors.Para};
-
   @media ${(props) => props.theme.MediaQueries.m.query} {
-    margin-left: 350px;
-    margin-top: -230px;
+    margin-top: 0px;
+    font-size: 18px;
   }
 `;
 
@@ -135,9 +134,8 @@ const Count = styled.p`
   font-family: ${(props) => props.theme.Fonts.Poppins};
 
   @media ${(props) => props.theme.MediaQueries.m.query} {
-    margin-top: 60px;
-    width: 60%;
-    font-size: 30px;
+    margin-top: 20px;
+    font-size: 22px;
   }
 `;
 
@@ -206,6 +204,17 @@ const FlexDiv = styled.div`
   justify-content: space-between;
 `;
 
+const MainFlexDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    flex-direction: row;
+    align-items: start;
+  }
+`;
+
 const Promethean = () => {
   const [toggle, setToggle] = useState(1);
 
@@ -229,32 +238,23 @@ const Promethean = () => {
           <PromPageHeadText>
             ABOUT <PromHeadGreen>PROMETHEAN</PromHeadGreen>
           </PromPageHeadText>
-          <div>
+          <MainFlexDiv>
             <PromPageRect src={trial_img}></PromPageRect>
             {/* <PromPageRectHead>PROMETHEAN 2020</PromPageRectHead>
             <Greenbox></Greenbox> */}
             <div>
               <PromPagepara>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                finibus finibus ex et molestie. Suspendisse porta sem eget
-                pellentesque interdum. Suspendisse at consequat justo, nec
-                semper mi. Mauris rhoncus quam vitae magna auctor ullamcorper.
-                Maecenas et tellus ut augue efficitur sodales in in leo. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
-                finibus ex et molestie. Suspendisse porta sem eget pellentesque
-                interdum. Suspendisse at consequat justo, nec semper mi. Mauris
-                rhoncus quam vitae magna auctor ullamcorper. Maecenas et tellus
-                ut augue efficitur sodales in in leo. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Ut finibus finibus ex et
-                molestie. Suspendisse porta sem eget pellentesque interdum.
-                Suspendisse at consequat justo, nec semper mi. Mauris rhoncus
-                quam vitae magna auctor ullamcorper. Maecenas et tellus ut augue
-                efficitur sodales in in leo. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Ut finibus finibus ex et molestie.
-                Suspendisse porta sem eget pellentesque interdum. Suspendisse at
-                consequat justo, nec semper mi. Mauris rhoncus quam vitae magna
-                auctor ullamcorper. Maecenas et tellus ut augue efficitur
-                sodales in in leo.
+                Promethean is inspired by the Greek Titan Prometheus (Ancient
+                Greek Προμηθεύς "Fore thinker ") an innovator, problem solver
+                and a futuristic thinker. He was a champion of mankind and also
+                taught people agriculture so that they could progress and take
+                technology to new levels.PROMETHEAN is an annual poster
+                presentation event organized for our new GSTians, our FEs, to
+                convey how they would consider making our earth a better place
+                as an ENGINEER by proposing their own solutions. It is
+                associated with real-world environmental concerns. Technology is
+                all about working to improve people's lives, finding solutions,
+                and enabling humanity to achieve greater heights.
               </PromPagepara>
               <FlexDiv>
                 <CountMainDiv>
@@ -280,15 +280,18 @@ const Promethean = () => {
                 </div>
               </FlexDiv>
             </div>
-          </div>
+          </MainFlexDiv>
         </div>
 
         <div data-aos="fade-up">
-          <PromPageHeadText style={{ margin: "85px 0px 50px 40px" }}>
+          <PromPageHeadText>
             PREVIOUS <PromHeadGreen>POSTERS</PromHeadGreen>
           </PromPageHeadText>
           <Hero></Hero>
         </div>
+        <PromPageHeadText>
+          SCHE<PromHeadGreen>DULE</PromHeadGreen>
+        </PromPageHeadText>
         <PromPageSchedule></PromPageSchedule>
       </MainProm>
     </>
