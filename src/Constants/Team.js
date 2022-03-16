@@ -9,22 +9,22 @@ export const TeamInfo = [
           {
             name: "Pradyumn",
             post: "Chairperson",
-            photo: "Image/Pradyumn Joshi EXTC_ccexpress.jpeg",
+            photo: "images/Anvesh.jpeg",
           },
           {
             name: "Anvesh",
             post: "Secretary",
-            photo: "Image/Anvesh_ccexpress.jpeg",
+            photo: "/images/Anvesh.jpeg",
           },
           {
             name: "Riya",
             post: "Joint Secretary",
-            photo: "Image/Riya Singh_IT_ccexpress.jpeg",
+            photo: "images/Riya Singh_IT_ccexpress.jpeg",
           },
           {
             name: "Sneha",
             post: "Treasurer",
-            photo: "/Image/Sneha Shaji.jpg",
+            photo: "/images/Sneha Shaji.jpg",
           },
         ],
         coord: [
@@ -42,22 +42,22 @@ export const TeamInfo = [
           {
             name: "Arfah",
             post: "head",
-            photo: "Image/Arfah Upade_Heads.jpg",
+            photo: "images/Arfah Upade_Heads.jpg",
           },
           {
             name: "Dharani",
             post: "head",
-            photo: "Image/Dharani Arikrishnan_Heads.jpg",
+            photo: "images/Dharani Arikrishnan_Heads.jpg",
           },
           {
             name: "Malvika",
             post: "head",
-            photo: "Image/Malvika Selvan_Heads.jpeg",
+            photo: "images/Malvika Selvan_Heads.jpeg",
           },
           {
               name: "Priyanka",
               post: "head",
-              photo: "Image/Priyanka Barouliya_Heads.jpg",
+              photo: "images/Priyanka Barouliya_Heads.jpg",
             },
           
         ],
@@ -65,22 +65,22 @@ export const TeamInfo = [
           {
               name: "Shweta",
               post: "head",
-              photo: "Image/SHWETA TE-IT.jpg",
+              photo: "images/SHWETA TE-IT.jpg",
             },
           {
             name: "Vaishnavi",
             post: "head",
-            photo: "Image/Vaishnavi-Mantri_Heads.jpg",
+            photo: "images/Vaishnavi-Mantri_Heads.jpg",
           },
           {
               name: "S Ananthaselvi",
               post: "head",
-              photo: "Image/S Ananthaselvi_Heads.jpg",
+              photo: "images/S Ananthaselvi_Heads.jpg",
             },
           {
             name: "Santhiya",
             post: "head",
-            photo: "Image/Santhiya Ramesh_Heads.jpg",
+            photo: "images/Santhiya Ramesh_Heads.jpg",
           },
         ],
       },
@@ -96,24 +96,24 @@ export const TeamInfo = [
           {
             name: "Swarup",
             post: "head",
-            photo: "Image/Swarup Patil_IT_ccexpress.jpeg",
+            photo: "images/Swarup Patil_IT_ccexpress.jpeg",
           },
           {
               name: "Kashish",
               post: "head",
-              photo: "Image/Kashish Singh-IT_page-0001_ccexpress.jpeg",
+              photo: "images/Kashish Singh-IT_page-0001_ccexpress.jpeg",
             },
         ],
         coord: [
           {
             name: "Abhishek",
             post: "coord",
-            photo: "Image/Abhishek Tiwari_CE.jpg",
+            photo: "images/Abhishek Tiwari_CE.jpg",
           },
           {
               name: "Gaurav",
               post: "coord",
-              photo: "Image/Gaurav_EXTC.jpg",
+              photo: "images/Gaurav_EXTC.jpg",
             },
         ],
       },
@@ -129,29 +129,29 @@ export const TeamInfo = [
           {
             name: "Krishnaveni",
             post: "head",
-            photo: "Image/Krishnaveni Design Head.jpg",
+            photo: "images/Krishnaveni Design Head.jpg",
           },
           {
               name: "Shinit",
               post: "head",
-              photo: "Image/Shinit Shetty.jpg",
+              photo: "images/Shinit Shetty.jpg",
             },
         ],
         coord: [
           {
             name: "Nazeer",
             post: "coord",
-            photo: "Image/Nazeer_CE.jpeg",
+            photo: "images/Nazeer_CE.jpeg",
           },
           {
               name: "Shriya",
               post: "coord",
-              photo: "Image/Shriya Kolambkar_ECS_ccexpress.jpeg",
+              photo: "images/Shriya Kolambkar_ECS_ccexpress.jpeg",
             },
             {
               name: "Varad",
               post: "coord",
-              photo: "Image/Varadthorat_IT_ccexpress.jpeg",
+              photo: "images/Varadthorat_IT_ccexpress.jpeg",
             },
         ],
       },
@@ -168,29 +168,29 @@ export const TeamInfo = [
           {
             name: "Esha",
             post: "head",
-            photo: "Image/Esha Bawaskar_Comps_ccexpress.jpeg",
+            photo: "images/Esha Bawaskar_Comps_ccexpress.jpeg",
           },
           {
               name: "Ishaa",
               post: "head",
-              photo: "Image/Ishaa Abdul_COMPS_ccexpress.jpeg",
+              photo: "images/Ishaa Abdul_COMPS_ccexpress.jpeg",
             },
         ],
         coord: [
           {
             name: "S Parameswaran",
             post: "coord",
-            photo: "Image/S Parameswaran_CE.jpg",
+            photo: "images/S Parameswaran_CE.jpg",
           },
           {
               name: "Kritika",
               post: "coord",
-              photo: "Image/KRITIKA SURENDER PANDEY_ EXTC-A.jpg",
+              photo: "images/KRITIKA SURENDER PANDEY_ EXTC-A.jpg",
             },
             {
               name: "Subodh",
               post: "coord",
-              photo: "Image/Subodh Patil IT.jpg",
+              photo: "images/Subodh Patil IT.jpg",
             },
         ],
       },
@@ -206,29 +206,29 @@ export const TeamInfo = [
           {
             name: "Manish",
             post: "head",
-            photo: "Image/Manish CE_ccexpress.png",
+            photo: "images/Manish CE_ccexpress.png",
           },
           {
               name: "Chaitali",
               post: "head",
-              photo: "Image/Chaitali Nimse.jpeg",
+              photo: "images/Chaitali Nimse.jpeg",
             },
         ],
         coord: [
           {
             name: "Nidhi",
             post: "coord",
-            photo: "Image/Nidhi Kulkarni_EXTC.jpeg",
+            photo: "images/Nidhi Kulkarni_EXTC.jpeg",
           },
           {
               name: "Sohamm",
               post: "coord",
-              photo: "Image/Sohamm Swammy CE_ccexpress.jpeg",
+              photo: "images/Sohamm Swammy CE_ccexpress.jpeg",
             },
             {
               name: "Shreya",
               post: "coord",
-              photo: "Image/Shreya Murthy_ECS.jpg",
+              photo: "images/Shreya Murthy_ECS.jpg",
             },
         ],
       },
@@ -245,29 +245,29 @@ export const TeamInfo = [
             {
               name: "Siddesh",
               post: "head",
-              photo: "Image/Siddesh Shetty_Comps.jpg",
+              photo: "images/Siddesh Shetty_Comps.jpg",
             },
             {
                 name: "Shreya",
                 post: "head",
-                photo: "Image/Shreya_ccexpress.jpeg",
+                photo: "images/Shreya_ccexpress.jpeg",
               },
           ],
           coord: [
             {
               name: "Aayush",
               post: "coord",
-              photo: "Image/Aayush Bhatnagar Mech.jpeg",
+              photo: "images/Aayush Bhatnagar Mech.jpeg",
             },
             {
                 name: "Ashwini",
                 post: "coord",
-                photo: "Image/Ashwini Ramakrishnan_ECS.jpg",
+                photo: "images/Ashwini Ramakrishnan_ECS.jpg",
               },
               {
                 name: "Sahil",
                 post: "coord",
-                photo: "Image/Sahil Wake_CE.jpg",
+                photo: "images/Sahil Wake_CE.jpg",
               },
           ],
         },
@@ -284,24 +284,24 @@ export const TeamInfo = [
           {
             name: "Sneha",
             post: "head",
-            photo: "Image/Sneha Rana.jpg",
+            photo: "images/Sneha Rana.jpg",
           },
           {
               name: "Krutiventi",
               post: "head",
-              photo: "Image/Krutiventi_Meghana.jpg",
+              photo: "images/Krutiventi_Meghana.jpg",
             },
         ],
         coord: [
           {
             name: "Anurag",
             post: "coord",
-            photo: "Image/Anurag Singh IT.jpg",
+            photo: "images/Anurag Singh IT.jpg",
           },
           {
               name: "Kruti",
               post: "coord",
-              photo: "Image/Kruti Upasani_IT.jpg",
+              photo: "images/Kruti Upasani_IT.jpg",
             },
             
         ],
@@ -318,24 +318,24 @@ export const TeamInfo = [
           {
             name: "Harshita",
             post: "head",
-            photo: "Image/Harshita Shrivastav_EXTC.jpg",
+            photo: "images/Harshita Shrivastav_EXTC.jpg",
           },
           {
               name: "Khush",
               post: "head",
-              photo: "Image/Khush Patil_EXTC_ccexpress.png",
+              photo: "images/Khush Patil_EXTC_ccexpress.png",
             },
         ],
         coord: [
           {
             name: "Ruchika",
             post: "coord",
-            photo: "Image/Ruchika Mhetre_ECS.jpg",
+            photo: "images/Ruchika Mhetre_ECS.jpg",
           },
           {
               name: "Saurabh",
               post: "coord",
-              photo: "Image/Saurabh Shinde_CE.jpg",
+              photo: "images/Saurabh Shinde_CE.jpg",
             },
             
         ],

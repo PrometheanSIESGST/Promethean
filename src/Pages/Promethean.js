@@ -5,10 +5,10 @@ import trial_img from "../Images/trial_img1.jpg";
 import Hero from "../Components/Hero/Hero";
 import FAQ_Img from "../Images/FAQ.png";
 import Footer from "../Components/Footer";
-import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
-import PromPageSchedule from "../Components/Schedule"
+import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
+import PromPageSchedule from "../Components/Schedule";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 const MainProm = styled.div`
   max-width: 320px;
@@ -21,9 +21,23 @@ const MainProm = styled.div`
   }
 `;
 
+const HeroDiv = styled.div`
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 60vh;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    max-width: 100%;
+  }
+`;
+
 const PromPageHeadText = styled.p`
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 23px;
   color: ${(props) => props.theme.Colors.Header};
   font-family: ${(props) => props.theme.Fonts.Josefin};
@@ -106,17 +120,17 @@ const Divider = styled.rect`
 `;
 
 const Count_cont = styled.div`
-@media ${(props) => props.theme.MediaQueries.l.query} {
-  margin-left: 320px;
-}
-`
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-left: 320px;
+  }
+`;
 
 const Count_cont_2 = styled.div`
-@media ${(props) => props.theme.MediaQueries.l.query} {
-  margin-left: 350px;
-  margin-top: -82px;
-}
-`
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-left: 350px;
+    margin-top: -82px;
+  }
+`;
 
 const Count = styled.p`
   margin-left: 35px;
@@ -197,7 +211,7 @@ const Main = styled.div`
   margin: auto;
   padding: 0;
   width: device-width;
-  box-sizing:border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
   @media ${(props) => props.theme.MediaQueries.s.query} {
     max-width: 560px;
@@ -211,81 +225,83 @@ const Main = styled.div`
 `;
 
 const PromHero = styled.img`
-width: 100%;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-`
-
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+`;
 
 const Promethean = () => {
-
   const [toggle, setToggle] = useState(1);
 
   useEffect(() => {
     AOS.init({
-      offset: 250, 
+      offset: 250,
       duration: 1000,
-      once: true
+      once: true,
     });
   }, []);
 
   return (
     <>
+      <HeroDiv style={{
+          backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${prompage})`,
+        }} />
       <Main>
-        <PromHero src={prompage} >
-        </PromHero>
-        <div data-aos='fade-up'>
-        <PromPageHeadText>
-          ABOUT <PromHeadGreen>PROMETHEAN</PromHeadGreen>
-        </PromPageHeadText>
-        <PromPageRect src={trial_img}></PromPageRect>
-        <PromPageRectHead>PROMETHEAN 2020</PromPageRectHead>
-        <Greenbox></Greenbox>
-        <PromPagepara>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
-          finibus ex et molestie. Suspendisse porta sem eget pellentesque
-          interdum. Suspendisse at consequat justo, nec semper mi. Mauris
-          rhoncus quam vitae magna auctor ullamcorper. Maecenas et tellus ut
-          augue efficitur sodales in in leo. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Ut finibus finibus ex et molestie.
-          Suspendisse porta sem eget pellentesque interdum. Suspendisse at
-          consequat justo, nec semper mi. Mauris rhoncus quam vitae magna auctor
-          ullamcorper. Maecenas et tellus ut augue efficitur sodales in in leo.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
-          finibus ex et molestie. Suspendisse porta sem eget pellentesque
-          interdum. Suspendisse at consequat justo, nec semper mi. Mauris
-          rhoncus quam vitae magna auctor ullamcorper. Maecenas et tellus ut
-          augue efficitur sodales in in leo. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Ut finibus finibus ex et molestie.
-          Suspendisse porta sem eget pellentesque interdum. Suspendisse at
-          consequat justo, nec semper mi. Mauris rhoncus quam vitae magna auctor
-          ullamcorper. Maecenas et tellus ut augue efficitur sodales in in leo.
-        </PromPagepara>
+        <div data-aos="fade-up">
+          <PromPageHeadText>
+            ABOUT <PromHeadGreen>PROMETHEAN</PromHeadGreen>
+          </PromPageHeadText>
+          <PromPageRect src={trial_img}></PromPageRect>
+          <PromPageRectHead>PROMETHEAN 2020</PromPageRectHead>
+          <Greenbox></Greenbox>
+          <PromPagepara>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus
+            finibus ex et molestie. Suspendisse porta sem eget pellentesque
+            interdum. Suspendisse at consequat justo, nec semper mi. Mauris
+            rhoncus quam vitae magna auctor ullamcorper. Maecenas et tellus ut
+            augue efficitur sodales in in leo. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Ut finibus finibus ex et molestie.
+            Suspendisse porta sem eget pellentesque interdum. Suspendisse at
+            consequat justo, nec semper mi. Mauris rhoncus quam vitae magna
+            auctor ullamcorper. Maecenas et tellus ut augue efficitur sodales in
+            in leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            finibus finibus ex et molestie. Suspendisse porta sem eget
+            pellentesque interdum. Suspendisse at consequat justo, nec semper
+            mi. Mauris rhoncus quam vitae magna auctor ullamcorper. Maecenas et
+            tellus ut augue efficitur sodales in in leo. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Ut finibus finibus ex et
+            molestie. Suspendisse porta sem eget pellentesque interdum.
+            Suspendisse at consequat justo, nec semper mi. Mauris rhoncus quam
+            vitae magna auctor ullamcorper. Maecenas et tellus ut augue
+            efficitur sodales in in leo.
+          </PromPagepara>
         </div>
         <Divider></Divider>
         <Count_cont>
-        <Count>120</Count>
-        <CountDetail>Student's Participated</CountDetail>
+          <Count>120</Count>
+          <CountDetail>Student's Participated</CountDetail>
         </Count_cont>
         <Count_cont_2>
-        <Count style={{ margin: "-56px 0px 0px 93px" }}>28</Count>
-        <CountDetail style={{ margin: "1px 0px 0px 91px" }}>Teams</CountDetail>
+          <Count style={{ margin: "-56px 0px 0px 93px" }}>28</Count>
+          <CountDetail style={{ margin: "1px 0px 0px 91px" }}>
+            Teams
+          </CountDetail>
         </Count_cont_2>
         <MoreInfopara>For more info</MoreInfopara>
         <Button>Brouchre</Button>
-        <div data-aos='fade-up'>
-        <PromPageHeadText style={{ margin: "85px 0px 50px 40px" }}>
-          PREVIOUS <PromHeadGreen>POSTERS</PromHeadGreen>
-        </PromPageHeadText>
-        <Hero></Hero>
+        <div data-aos="fade-up">
+          <PromPageHeadText style={{ margin: "85px 0px 50px 40px" }}>
+            PREVIOUS <PromHeadGreen>POSTERS</PromHeadGreen>
+          </PromPageHeadText>
+          <Hero></Hero>
         </div>
-        <div data-aos='fade-up'>
-        <PromPageHeadText style={{ margin: "-70px 0px 60px 90px" }}>
-          SCHE<PromHeadGreen>DULE</PromHeadGreen>
-        </PromPageHeadText>
-      </div>
-      <PromPageSchedule></PromPageSchedule>
+        <div data-aos="fade-up">
+          <PromPageHeadText style={{ margin: "-70px 0px 60px 90px" }}>
+            SCHE<PromHeadGreen>DULE</PromHeadGreen>
+          </PromPageHeadText>
+        </div>
+        <PromPageSchedule></PromPageSchedule>
       </Main>
     </>
   );

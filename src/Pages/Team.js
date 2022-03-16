@@ -86,7 +86,6 @@ const Team = () => {
 
   return (
     <>
-     {console.log("team page")}
       <HeroDiv
         style={{
           backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${TeamImage})`,
@@ -151,7 +150,7 @@ const Team = () => {
         </Tab>
       </HeroDiv>
       <Main>
-        <TeamIntro designation={TeamInfo[team].designation} />;
+        <TeamIntro designation={TeamInfo[team].designation} about={TeamInfo[team].about}/>;
         <FlexDiv>
           {TeamInfo[team].member.map((data) => {
             if (data.head.length !== 0)

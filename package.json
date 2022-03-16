@@ -1,10 +1,10 @@
 {
   "name": "promethean",
   "version": "0.1.0",
-  "homepage": "https://PrometheanSIESGST.github.io/Promethean/",
+  "homepage": "https://prometheansiesgst.github.io/",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.8.1", 
+    "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.4.4",
     "@mui/material": "^5.4.4",
