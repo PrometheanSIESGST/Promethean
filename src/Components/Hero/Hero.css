@@ -37,12 +37,12 @@
   pointer-events: none;
 }
 .prev {
-  top: 39%;
+  top: 43%;
   left: 83px;
   transform: translateY(-60%);
 }
 .next {
-  top: 39%;
+  top: 43%;
   right: 68px;
   transform: translateY(-60%);
 }
@@ -86,12 +86,12 @@
     pointer-events: none;
   }
   .prev {
-    top: 40%;
+    top: 50%;
     left: 20px;
     transform: translateY(-60%);
   }
   .next {
-    top: 40%;
+    top: 50%;
     right: 20px;
     transform: translateY(-60%);
   }

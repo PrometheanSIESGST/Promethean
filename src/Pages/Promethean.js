@@ -48,6 +48,7 @@ const PromPageHeadText = styled.p`
   @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-bottom: 50px;
     font-size: 35px;
+    margin-top: 60px;
   }
 `;
 
