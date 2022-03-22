@@ -292,7 +292,7 @@ export const TeamInfo = [
             photo: "Image/Sneha Rana.jpg",
           },
           {
-            name: "Krutiventi",
+            name: "Meghana",
             post: "head",
             photo: "Image/Krutiventi_Meghana.jpg",
           },
