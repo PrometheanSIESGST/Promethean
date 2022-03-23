@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Hero.css";
 import BtnSlider from "./BtnSlider";
-import ImageList from "./ImageList";
+import ImageList from "../../Constants/ImageList";
 import styled from "styled-components";
 
 

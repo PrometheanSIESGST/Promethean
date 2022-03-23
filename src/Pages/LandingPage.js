@@ -8,6 +8,7 @@ import Event1 from "../Images/promlanding1.jpg";
 import HeroImg from "../Images/heroimg.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Timerworking from "../Components/Timer"
 
 const Main = styled.div`
   max-width: 320px;
@@ -135,13 +136,14 @@ const LandingPage = () => {
           backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${HeroImg})`,
         }}
       >
+        <Timerworking/>
         <Header>Promethean 2022</Header>
-        <SubHeader>Register Now !!!</SubHeader>
+        {/* <SubHeader>Register Now !!!</SubHeader>
         <RegBtn>
           <BtnLink href="https://forms.office.com/r/4XGMx15TVq" target="_blank">
             Register Here
           </BtnLink>
-        </RegBtn>
+        </RegBtn> */}
       </HeroDiv>
       <Main>
         <FlexDiv reverse data-aos="fade-up">
