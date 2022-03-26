@@ -11,7 +11,7 @@ export const TeamInfo = [
           {
             name: "Dr. Smitha S kumar",
             post: "Faculty Coordinator",
-            photo: "Image/Arfah Upade_Heads.jpg",
+            photo: "Image/Sumitra S Maam.jpeg",
           },
         ],
         coord: [],
