@@ -3,7 +3,7 @@ export const TeamInfo = [
   {
     designation: "Faculty Coordinator",
     about:
-      "Advisors assist the organization in developing goals and planning events and to make suggestions that will empower members of the organization.",
+      "The Faculty Incharge leads the team in the right direction, disseminates and impart knowledge and assists students with applying the knowledge.",
     id: 1,
     member: [
       {
