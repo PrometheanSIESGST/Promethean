@@ -5,12 +5,12 @@
 
 .App {
   text-align: center;
-  height: 250px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .clock {
@@ -21,7 +21,6 @@
   justify-content: center;
   align-items: center;
   background: transparent;
-  height: 180px;
   width: 360px;
   color: transparent;
 }
@@ -51,7 +50,6 @@
 @media screen and (min-width: 100px) and (max-width: 768px) {
   .App {
     text-align: center;
-    height: 210px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -66,7 +64,6 @@
     justify-content: center;
     align-items: center;
     background: transparent;
-    height: 150px;
     width: 250px;
     color: transparent;
   }
@@ -79,7 +76,7 @@
     padding: 10px;
   }
   .clock section p {
-    font-size: 36px;
+    font-size: 48px;
     color: white;
   }
   .clock section small {
@@ -88,7 +85,7 @@
   
   .colon{
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 20px;
   }
 }
