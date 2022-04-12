@@ -11,7 +11,7 @@ function Timerworking() {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("April 6 2022").getTime();
+    const countDownDate = new Date("April 23 2022").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
