@@ -9,7 +9,7 @@
     border: 2px solid;
     color: white;
     margin-top: 0px;
-    height: 165%;
+    height: 800px;
     background-color: white;
     border-radius: 2px;
 }
@@ -136,7 +136,7 @@
     .center_line{
         left: 30%;
         transform: translate(-50px);
-        height: 104%;
+        height: 500px;
         margin-top:60px;
     }
 
