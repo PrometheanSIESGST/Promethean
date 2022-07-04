@@ -138,7 +138,7 @@ const LandingPage = () => {
       >
         {/* <Timerworking/> */}
         <Header>Promethean 2022</Header>
-        <SubHeader>An engineer's solution to environmental problems</SubHeader>
+        <SubHeader>An engineer's solutions to environmental problems</SubHeader>
         {/* <SubHeader>Register Now !!!</SubHeader>
         <RegBtn>
           <BtnLink href="https://forms.office.com/r/4XGMx15TVq" target="_blank">
