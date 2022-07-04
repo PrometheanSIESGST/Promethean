@@ -15,9 +15,9 @@ import Promethean from "./Pages/Promethean";
 
 //Component
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 import * as ROUTES from "./Constants/routes";
-
 
 const Header = styled.h1`
   max-width: 1200px;
@@ -32,11 +32,12 @@ const App = () => {
       <GlobalStyle />
       <Navbar />
       <Routes>
-         <Route path={ROUTES.HOME} element={<LandingPage />} />
-         <Route path={ROUTES.TEAM} element={<Team />} />
-         <Route path={ROUTES.PROMETHEAN} element={<Promethean />} />
-         <Route path={ROUTES.GALLERY} element={<Gallery />} />
+        <Route path={ROUTES.HOME} element={<LandingPage />} />
+        <Route path={ROUTES.TEAM} element={<Team />} />
+        <Route path={ROUTES.PROMETHEAN} element={<Promethean />} />
+        {/* <Route path={ROUTES.GALLERY} element={<Gallery />} /> */}
       </Routes>
+      <Footer/>
     </ThemeProvider>
   );
 };

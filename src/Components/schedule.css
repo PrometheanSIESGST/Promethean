@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center_line{
+    position: absolute;
+    left: 52.8%;
+    border: 2px solid;
+    color: white;
+    margin-top: 0px;
+    height: 800px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.right_arrow_container{
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    left: 53%;
+}
+
+.left_arrow_container{
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    right: 47%;
+}
+
+.right_horizontal_line{
+    display: inline-flex;
+    flex-direction: row;
+    width: 50px;
+    height: 2px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius:2px;
+}
+
+.left_horizontal_line{
+    display: inline-flex;
+    flex-direction: row;
+    width: 50px;
+    height: 2px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius:2px;
+}
+
+.right_ellipse{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    left: 100%;
+    height: 20px;
+    width: 20px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.left_ellipse{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    right: 28%;
+    height: 20px;
+    width: 20px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.separator{
+    height: 150px;
+    z-index: -1;
+}
+
+.right_schedule_content{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: black;
+    background: #CEE002;
+    width: 250px;
+    height: 150px;
+    padding: 5px;
+    padding-left: 35px;
+    margin-left: 7px;
+    border: 10px solid #CEE002;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.left_schedule_content{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: black;
+    background: #CEE002;
+    width: 250px;
+    height: 150px;
+    padding: 25px;
+    padding-right: 20px;
+    margin-right: 1.5px;
+    border: 10px solid #CEE002;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.mobile_schedule{
+    display: none;
+}
+
+.Desktop{
+    margin-top: 30px;
+    margin-bottom: 280px;
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 768px){
+    .center_line{
+        left: 30%;
+        transform: translate(-50px);
+        height: 500px;
+        margin-top:60px;
+    }
+
+    .right_arrow_container{
+        left: 31%;
+        transform: translate(-50px);
+        margin-top: -190px;
+    }
+    
+    .left_arrow_container{
+        left: 11%;
+    }
+    
+    .left_ellipse{
+        left: 100%;
+    }
+    
+    .separator{
+        height: 150px;
+    }
+    
+    .left_schedule_content{
+        padding-left: 15px;
+        margin-left: 7px;
+  
+    }
+
+    .right_schedule_content{
+        padding-left: 15px;
+        margin-left: 7px;
+        height: 100px;
+        width: 200px;
+        margin-top: 0px;
+    }
+
+    .mobile_schedule{
+        max-width: 300px;
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+
+    .desktop_schedule{
+        display: none;
+    }
+}
+

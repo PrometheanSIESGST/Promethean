@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.clock {
+  position: relative;
+  margin: a;
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 360px;
+  color: transparent;
+}
+
+.clock section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.clock section p {
+  font-size: 4rem;
+  color: white;
+}
+.clock section small {
+  color: white;
+}
+
+.colon{
+  color: white;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  .App {
+    text-align: center;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clock {
+    position: relative;
+    margin: a;
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 250px;
+    color: transparent;
+  }
+
+  .clock section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .clock section p {
+    font-size: 48px;
+    color: white;
+  }
+  .clock section small {
+    color: white;
+  }
+  
+  .colon{
+    color: white;
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+}
