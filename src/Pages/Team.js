@@ -106,12 +106,6 @@ const Team = () => {
             Core
           </Tabs>
           <Tabs
-            className={team === 2 ? "active" : "null"}
-            onClick={() => setTeam(2)}
-          >
-            Advisor
-          </Tabs>
-          <Tabs
             className={team === 3 ? "active" : "null"}
             onClick={() => setTeam(3)}
           >
