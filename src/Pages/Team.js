@@ -109,48 +109,42 @@ const Team = () => {
             className={team === 2 ? "active" : "null"}
             onClick={() => setTeam(2)}
           >
-            Advisor
+            Technical
           </Tabs>
           <Tabs
             className={team === 3 ? "active" : "null"}
             onClick={() => setTeam(3)}
           >
-            Technical
+            Design
           </Tabs>
           <Tabs
             className={team === 4 ? "active" : "null"}
             onClick={() => setTeam(4)}
           >
-            Design
+            Marketing
           </Tabs>
           <Tabs
             className={team === 5 ? "active" : "null"}
             onClick={() => setTeam(5)}
           >
-            Marketing
+            Public Relation
           </Tabs>
           <Tabs
             className={team === 6 ? "active" : "null"}
             onClick={() => setTeam(6)}
           >
-            Public Relation
-          </Tabs>
-          <Tabs
-            className={team === 7 ? "active" : "null"}
-            onClick={() => setTeam(7)}
-          >
             Publicity
           </Tabs>
 
           <Tabs
-            className={team === 8 ? "active" : "null"}
-            onClick={() => setTeam(8)}
+            className={team === 7 ? "active" : "null"}
+            onClick={() => setTeam(7)}
           >
             Creative
           </Tabs>
           <Tabs
-            className={team === 9 ? "active" : "null"}
-            onClick={() => setTeam(9)}
+            className={team === 8 ? "active" : "null"}
+            onClick={() => setTeam(8)}
           >
             Social Media
           </Tabs>

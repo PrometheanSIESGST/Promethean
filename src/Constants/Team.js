@@ -30,111 +30,68 @@ export const TeamInfo = [
           {
             name: "Ruchika Mhethre",
             post: "Chairperson",
-            photo: "Image/Pradyumn Joshi EXTC_ccexpress.png",
+            photo: "Image/Ruchika .jpg",
           },
           {
-            name: "Anvesh Lokhande",
+            name: "Subodh Patil",
             post: "Secretary",
-            photo: "Image/Anvesh_ccexpress.jpeg",
+            photo: "Image/Subodh Patil IT.jpg",
           },
           {
-            name: "Riya Singh",
+            name: "Shreya Murthy",
             post: "Joint Secretary",
-            photo: "Image/Riya Singh_IT_ccexpress.jpeg",
+            photo: "Image/Shreya Murthy_Joint Secretary .jpg",
           },
           {
-            name: "Sneha Shaji",
+            name: "S Parameswaran",
             post: "Treasurer",
-            photo: "/Image/Sneha Shaji.jpg",
+            photo: "/Image/S Parameswaran_CE.jpg",
           },
         ],
         coord: [],
       },
     ],
   },
+  
   {
-    designation: "ADVISOR",
+    designation: "TECHNICAL TEAM",
     about:
-      "Advisors assist the organization in developing goals and planning events and to make suggestions that will empower members of the organization.",
+      "Using various technologies to create and update websites and applications. Exhibiting leadership skills and staying up to date on the latest innovations.",
     id: 3,
     member: [
       {
         head: [
           {
-            name: "Arfah Upade",
-            post: "head",
-            photo: "Image/Arfah Upade_Heads.jpg",
-          },
-          {
-            name: "Dharani Arikrishnan",
-            post: "head",
-            photo: "Image/Dharani Arikrishnan_Heads.jpg",
-          },
-          {
-            name: "Malvika Selvan",
-            post: "head",
-            photo: "Image/Malvika Selvan_Heads.jpeg",
-          },
-          {
-            name: "Priyanka Barouliya",
-            post: "head",
-            photo: "Image/Priyanka Barouliya_Heads.jpg",
-          },
-        ],
-        coord: [
-          {
-            name: "Shweta Pal",
-            post: "head",
-            photo: "Image/SHWETA TE-IT.jpg",
-          },
-          {
-            name: "Vaishnavi Mantri",
-            post: "head",
-            photo: "Image/Vaishnavi-Mantri_Heads.jpg",
-          },
-          {
-            name: "S Ananthaselvi",
-            post: "head",
-            photo: "Image/S Ananthaselvi_Heads.jpg",
-          },
-          {
-            name: "Santhiya Udiyar",
-            post: "head",
-            photo: "Image/Santhiya Ramesh_Heads.jpg",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    designation: "TECHNICAL TEAM",
-    about:
-      "Using various technologies to create and update websites and applications. Exhibiting leadership skills and staying up to date on the latest innovations.",
-    id: 4,
-    member: [
-      {
-        head: [
-          {
-            name: "Swarup Patil",
-            post: "head",
-            photo: "Image/Swarup Patil_IT_ccexpress.jpeg",
-          },
-          {
-            name: "Kashish Singh",
-            post: "head",
-            photo: "Image/Kashish Singh-IT_page-0001_ccexpress.jpeg",
-          },
-        ],
-        coord: [
-          {
             name: "Abhishek Tiwari",
-            post: "coord",
+            post: "Head",
             photo: "Image/Abhishek Tiwari_CE.jpg",
           },
           {
             name: "Gaurav Patil",
-            post: "coord",
+            post: "Head",
             photo: "Image/Gaurav_EXTC.jpg",
+          },
+          {
+            name: "Dhiraj Shelke",
+            post: "Head",
+            photo: "Image/Dhiraj Shelke(Tech Head).jpg",
+          },
+        ],
+        coord: [
+          {
+            name: "Avaneesh Karthikeyan Iyer",
+            post: "Coordinator",
+            photo: "Image/Avaneesh Karthikeyan Technical _coord.jpg",
+          },
+          {
+            name: "Abinaya Jeyapandi",
+            post: "Coordinator",
+            photo: "Image/Abinaya_Techcoord.jpg",
+          },
+          {
+            name: "Avishkar Phawade",
+            post: "Coordinator",
+            photo: "Image/Avishkar Phawade_Tech.jpg",
           },
         ],
       },
@@ -144,36 +101,36 @@ export const TeamInfo = [
     designation: "DESIGN TEAM",
     about:
       "Creating innovative posts that will amaze everyone with their vibrant, appealing, and instructive content. They are creative and hardworking individuals that have a real interest in and ability for design.",
-    id: 5,
+    id: 4,
     member: [
       {
         head: [
           {
-            name: "Krishnaveni Doki",
-            post: "head",
-            photo: "Image/Krishnaveni Design Head.jpg",
+            name: "Shriya Kolambkar",
+            post: "Head",
+            photo: "Image/ShriyaKolambkar_Design_Head.JPG",
           },
           {
-            name: "Shinit Shetty",
-            post: "head",
-            photo: "Image/Shinit Shetty.jpg",
+            name: "Varad Thorat",
+            post: "Head",
+            photo: "Image/Varad Thorat Design head.jpg",
           },
         ],
         coord: [
           {
-            name: "Nazeer Ahmed",
-            post: "coord",
-            photo: "Image/Nazeer_CE.jpeg",
+            name: "Harshvinder Kaur Bal",
+            post: "Coordinator",
+            photo: "Image/Harshvinder Kaur Bal.jpeg",
           },
           {
-            name: "Shriya Kolambkar",
-            post: "coord",
-            photo: "Image/Shriya Kolambkar_ECS_ccexpress.jpeg",
+            name: "Devdatta Temgire",
+            post: "Coordinator",
+            photo: "Image/DEVDATTA_TEMGIRE_DESIGN.jpg",
           },
           {
-            name: "Varad Thorat",
-            post: "coord",
-            photo: "Image/Varadthorat_IT_ccexpress.jpeg",
+            name: "Preksha Siyal",
+            post: "Coordinator",
+            photo: "Image/Preksha_Siyal_Design_Co-ord_.jpg",
           },
         ],
       },
@@ -183,36 +140,36 @@ export const TeamInfo = [
     designation: "MARKETING TEAM",
     about:
       "The Marketing team makes the events a tremendous success by recruiting sponsors and pushing students to participate as much as possible.",
-    id: 6,
+    id: 5,
     member: [
       {
         head: [
           {
-            name: "Esha Bawaskar",
-            post: "head",
-            photo: "Image/Esha Bawaskar_Comps_ccexpress.jpeg",
+            name: "Kritika Pandey",
+            post: "Head",
+            photo: "Image/Kritika_Pandey_.jpg",
           },
           {
-            name: "Ishaa Abdul",
-            post: "head",
-            photo: "Image/Ishaa Abdul_COMPS_ccexpress.jpeg",
+            name: "Sarika Hire",
+            post: "Head",
+            photo: "Image/Sarika Hire.jpg",
+          },
+          {
+            name: "Siddhant Singh",
+            post: "Head",
+            photo: "Image/Siddhant Singh.jpg",
           },
         ],
         coord: [
           {
-            name: "S Parameswaran",
-            post: "coord",
-            photo: "Image/S Parameswaran_CE.jpg",
+            name: "Abhinav Tiwari",
+            post: "Coordinator",
+            photo: "Image/Abhinav Tiwari_marketing co-ord.png",
           },
           {
-            name: "Kritika Pandey",
-            post: "coord",
-            photo: "Image/KRITIKA SURENDER PANDEY_ EXTC-A.jpg",
-          },
-          {
-            name: "Subodh Patil",
-            post: "coord",
-            photo: "Image/Subodh Patil IT.jpg",
+            name: "Samyak Randive",
+            post: "Coordinator",
+            photo: "Image/Samyak Randive _Marketing_.jpg",
           },
         ],
       },
@@ -222,36 +179,31 @@ export const TeamInfo = [
     designation: "PUBLIC RELATION TEAM",
     about:
       "It is solely responsible for all external communication from the institute. It aims to position and popularize the Promethean on a variety of platforms.",
-    id: 7,
+    id: 6,
     member: [
       {
         head: [
           {
-            name: "Manish Venkateswaran",
-            post: "head",
-            photo: "Image/Manish CE_ccexpress.png",
-          },
-          {
-            name: "Chaitali Nimse",
-            post: "head",
-            photo: "Image/Chaitali Nimse.jpeg",
-          },
-        ],
-        coord: [
-          {
             name: "Nidhi Kulkarni",
-            post: "coord",
+            post: "Head",
             photo: "Image/Nidhi Kulkarni_EXTC.jpeg",
           },
           {
             name: "Sohamm Swamy",
-            post: "coord",
+            post: "Head",
             photo: "Image/Sohamm Swammy CE_ccexpress.jpeg",
           },
+        ],
+        coord: [
           {
-            name: "Shreya Murthy",
-            post: "coord",
-            photo: "Image/Shreya Murthy_ECS.jpg",
+            name: "Nandana Anil",
+            post: "Coordinator",
+            photo: "Image/Nandana Anil_PR.jpg",
+          },
+          {
+            name: "Shreyoshi Roy",
+            post: "Coordinator",
+            photo: "Image/SHREYOSHI ROY PR.jpg",
           },
         ],
       },
@@ -262,36 +214,41 @@ export const TeamInfo = [
     designation: "PUBLICITY TEAM",
     about:
       "The team is in charge of gathering, illustrating, and disseminating important information to students.",
-    id: 8,
+    id: 7,
     member: [
       {
         head: [
           {
-            name: "Siddesh Shetty",
-            post: "head",
-            photo: "Image/Siddesh Shetty_Comps.jpg",
+            name: "Aayush Bhatnagar",
+            post: "Head",
+            photo: "Image/Aayush Bhatnagar.JPG",
           },
           {
-            name: "Shreya Sampath",
-            post: "head",
-            photo: "Image/Shreya_ccexpress.jpeg",
+            name: "Mansi Kore",
+            post: "Head",
+            photo: "Image/Mansi Kore_Publicity head.jpeg",
+          },
+          {
+            name: "Sahil Wake",
+            post: "Head",
+            photo: "Image/Sahil Wake_CE.jpg",
           },
         ],
         coord: [
           {
-            name: "Aayush Bhatnagar",
-            post: "coord",
-            photo: "Image/Aayush Bhatnagar Mech.jpeg",
+            name: "Alisha Fatima",
+            post: "Coordinator",
+            photo: "Image/Alisha Fatima_Publicity.jpg",
           },
           {
-            name: "Ashwini Ramakrishnan",
-            post: "coord",
-            photo: "Image/Ashwini Ramakrishnan_ECS.jpg",
+            name: "Aryan Chalke",
+            post: "Coordinator",
+            photo: "Image/Aryan Chalke _ Publicity .jpg",
           },
           {
-            name: "Sahil Wake",
-            post: "coord",
-            photo: "Image/Sahil Wake_CE.jpg",
+            name: "Lokeshwar Nelvai",
+            post: "Coordinator",
+            photo: "Image/Lokeshwar Nelvai_Publicity.jpeg",
           },
         ],
       },
@@ -302,31 +259,31 @@ export const TeamInfo = [
     designation: "CREATIVE TEAM",
     about:
       "They have established their benchmark by working together to achieve a specific goal. Using their creativity, they make the events as appealing as possible. ",
-    id: 9,
+    id: 8,
     member: [
       {
         head: [
           {
-            name: "Sneha Rana",
-            post: "head",
-            photo: "Image/Sneha Rana.jpg",
+            name: "Anurag Singh",
+            post: "Head",
+            photo: "Image/Anurag Creative.jpeg",
           },
           {
-            name: "Meghana Krutiventi",
-            post: "head",
-            photo: "Image/Krutiventi_Meghana.jpg",
+            name: "Kruti Upasani",
+            post: "Head",
+            photo: "Image/Kruti Upasani_IT.jpg",
           },
         ],
         coord: [
           {
-            name: "Anurag Singh",
-            post: "coord",
-            photo: "Image/Anurag Singh IT.jpg",
+            name: "Lavanya Kurup ",
+            post: "Coordinator",
+            photo: "Image/Lavanya kurup creative_.jpg",
           },
           {
-            name: "Kruti Upasani",
-            post: "coord",
-            photo: "Image/Kruti Upasani_IT.jpg",
+            name: "Rushikesh Joshi",
+            post: "Coordinator",
+            photo: "Image/Rushikesh Joshi _ Creative team_1.jpg",
           },
         ],
       },
@@ -336,31 +293,26 @@ export const TeamInfo = [
     designation: "SOCIAL MEDIA TEAM",
     about:
       "Creating visually appealing posts with well-written descriptions. Enhancing Promethean’s  internet presence through promoting activities and keeping students updated about contemporary affairs.",
-    id: 10,
+    id: 9,
     member: [
       {
         head: [
           {
-            name: "Harshita Shrivastav",
-            post: "head",
-            photo: "Image/Harshita Shrivastav_EXTC.jpg",
-          },
-          {
-            name: "Khush Patil",
-            post: "head",
-            photo: "Image/Khush Patil_EXTC_ccexpress.png",
+            name: "Saurabh Shinde",
+            post: "Head",
+            photo: "Image/Saurabh Shinde.jpeg",
           },
         ],
         coord: [
           {
-            name: "Ruchika Mhetre",
-            post: "coord",
-            photo: "Image/Ruchika Mhetre_ECS.jpg",
+            name: "Soham Wagh",
+            post: "Coordinator",
+            photo: "Image/Soham Wagh_.jpg",
           },
           {
-            name: "Saurabh Shinde",
-            post: "coord",
-            photo: "Image/Saurabh Shinde_CE.jpg",
+            name: "Sujal Gaikwad ",
+            post: "Coordinator",
+            photo: "Image/Sujal Gaikwad .jpg",
           },
         ],
       },

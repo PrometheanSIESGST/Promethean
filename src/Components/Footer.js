@@ -152,78 +152,112 @@ const PromLogo = styled.img`
   height: auto;
 `;
 
+const CreditDiv = styled.div`
+  background: ${(props) => props.theme.Colors.PageBg};
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding: 10px 20px;
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    padding: 20px 20px;
+  }
+`;
+export const CreditTitle = styled.p`
+  font-family: ${(props) => props.theme.Fonts.Poppins};
+  font-weight: 300;
+  font-size: 18px;
+  margin:0 auto;
+  color: ${(props) => props.theme.Colors.White};
+  margin-bottom: 15px;
+  @media ${(props) => props.theme.MediaQueries.s.query} {
+    font-size: 16px;
+  }
+`;
+
+const ContentTag = styled.a `
+  color: ${(props) => props.theme.Colors.White};
+  cursor: pointer ;
+`
+
 function Footer() {
   return (
-    <FooterLinksContainer>
-      <FooterLinksWrapper>
-        <FooterGroup>
-          <PromLogo src={Logo} alt="Logo" />
-          <Para>
-            You can always follow us and contact us on our social media
-            platforms! Feel free to check out:
-          </Para>
+    <>
+      <FooterLinksContainer>
+        <FooterLinksWrapper>
+          <FooterGroup>
+            <PromLogo src={Logo} alt="Logo" />
+            <Para>
+              You can always follow us and contact us on our social media
+              platforms! Feel free to check out:
+            </Para>
 
-          <SocialIconLink>
-            <a
-              href="https://www.instagram.com/promethean_siesgst/"
-              target="_blank"
-            >
-              <SocialIconImage src={Insta} alt="Insta" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/team-promethean-sies-gst/mycompany/"
-              target="_blank"
-            >
-              <SocialIconImage src={Linkedin} alt="Linkedin" />
-            </a>
-          </SocialIconLink>
-        </FooterGroup>
+            <SocialIconLink>
+              <a
+                href="https://www.instagram.com/promethean_siesgst/"
+                target="_blank"
+              >
+                <SocialIconImage src={Insta} alt="Insta" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/team-promethean-sies-gst/mycompany/"
+                target="_blank"
+              >
+                <SocialIconImage src={Linkedin} alt="Linkedin" />
+              </a>
+            </SocialIconLink>
+          </FooterGroup>
 
-        <SubFlex>
-          <FooterLinkItems>
-            <FooterLinkTitle>Useful Links </FooterLinkTitle>
-            <FooterLink to="/" bottom>
-              About
-            </FooterLink>
-            <FooterLink to="/Team" bottom>
-              Team
-            </FooterLink>
-            <FooterLink to="/event" bottom>
-              Promethean
-            </FooterLink>
-            {/* <FooterLink to="/Gallery" bottom>
+          <SubFlex>
+            <FooterLinkItems>
+              <FooterLinkTitle>Useful Links </FooterLinkTitle>
+              <FooterLink to="/" bottom>
+                About
+              </FooterLink>
+              <FooterLink to="/Team" bottom>
+                Team
+              </FooterLink>
+              <FooterLink to="/event" bottom>
+                Promethean
+              </FooterLink>
+              {/* <FooterLink to="/Gallery" bottom>
               Gallery
             </FooterLink> */}
-          </FooterLinkItems>
+            </FooterLinkItems>
 
-          <FooterLinkItems large>
-            <FooterLinkTitle>Reach Us</FooterLinkTitle>
-            <SideIcons>
-              <SideiconImg src={Call} alt="Call" />
-              <FooterContact href="tel:+91 7208877440">
-                {" "}
-                +91 7208877440
-              </FooterContact>
-            </SideIcons>
+            <FooterLinkItems large>
+              <FooterLinkTitle>Reach Us</FooterLinkTitle>
+              <SideIcons>
+                <SideiconImg src={Call} alt="Call" />
+                <FooterContact href="tel:+91 7208877440">
+                  {" "}
+                  +91 7208877440
+                </FooterContact>
+              </SideIcons>
 
-            <SideIcons>
-              <SideiconImg src={Mail} alt="Mail" />
-              <FooterContact href="mailto:promethean@siesgst.ac.in">
-                promethean@siesgst.ac.in
-              </FooterContact>
-            </SideIcons>
+              <SideIcons>
+                <SideiconImg src={Mail} alt="Mail" />
+                <FooterContact href="mailto:promethean@siesgst.ac.in">
+                  promethean@siesgst.ac.in
+                </FooterContact>
+              </SideIcons>
 
-            <SideIcons>
-              <SideiconImg src={Map} alt="Map" />
-              <FooterLink to="/">
-                SIES Graduate School of Technology, Plot 1-C D&E, Sector-V, Navi
-                Mumbai, Maharashtra.
-              </FooterLink>
-            </SideIcons>
-          </FooterLinkItems>
-        </SubFlex>
-      </FooterLinksWrapper>
-    </FooterLinksContainer>
+              <SideIcons>
+                <SideiconImg src={Map} alt="Map" />
+                <FooterLink to="/">
+                  SIES Graduate School of Technology, Plot 1-C D&E, Sector-V,
+                  Navi Mumbai, Maharashtra.
+                </FooterLink>
+              </SideIcons>
+            </FooterLinkItems>
+          </SubFlex>
+        </FooterLinksWrapper>
+      </FooterLinksContainer>
+      <CreditDiv>
+        <CreditTitle>
+          Designed by <ContentTag href="https://www.linkedin.com/in/yashwagh31/">Yash Wagh</ContentTag> and Developed By Technical team of Promethean
+        </CreditTitle>
+      </CreditDiv>
+    </>
   );
 }
 

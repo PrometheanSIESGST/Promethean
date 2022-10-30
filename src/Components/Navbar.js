@@ -126,7 +126,9 @@ const Navbar = () => {
           <Link to={ROUTES.PROMETHEAN}>
             <SideNavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</SideNavContent>
           </Link>
-          {/* <SideNavContent href={ROUTES.GALLERY}>GALLERY</SideNavContent> */}
+          {/*<Link to={ROUTES.GALLERY}>
+            <SideNavContent href={ROUTES.GALLERY}>GALLERY</SideNavContent>
+  </Link>*/}
         </SideNavList>
         <NavList>
           <Link to={ROUTES.HOME}>
@@ -135,10 +137,12 @@ const Navbar = () => {
           <Link to={ROUTES.TEAM}>
             <NavContent href={ROUTES.TEAM}>TEAM</NavContent>
           </Link>
-          {/* <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent> */}
           <Link to={ROUTES.PROMETHEAN}>
             <NavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</NavContent>
           </Link>
+          {/*<Link to={ROUTES.GALLERY}>
+            <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent>
+</Link>*/}
         </NavList>
         <FilterImg src={Filter} onClick={() => setNavOpen(true)} />
       </Nav>
