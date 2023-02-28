@@ -10,9 +10,9 @@ import PromPageSchedule from "../Components/Schedule";
 import sponsor_logo from "../Images/mds logo.jpg";
 import { textAlign } from "@mui/system";
 import AOS from "aos";
-import sponsor_logo from "../Images/mds logo.jpg";
+// import sponsor_logo from "../Images/mds logo.jpg";
 import "aos/dist/aos.css";
-import { textAlign } from "@mui/system";
+// import { textAlign } from "@mui/system";
 
 const MainProm = styled.div`
   max-width: 300px;
@@ -294,10 +294,10 @@ const Promethean = () => {
           </PromPageHeadText>
           <Hero></Hero>
         </div>
-        {/* <PromPageHeadText>
+         {/* <PromPageHeadText>
           SCHE<PromHeadGreen>DULE</PromHeadGreen>
         </PromPageHeadText>
-        <PromPageSchedule></PromPageSchedule>
+        <PromPageSchedule></PromPageSchedule> */}
       </MainProm>
     </>
   );
