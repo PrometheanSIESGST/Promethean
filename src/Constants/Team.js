@@ -28,7 +28,7 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Ruchika Mhetre",
+            name: "Ruchika Mhethre",
             post: "Chairperson",
             photo: "Image/Ruchika .jpg",
           },
