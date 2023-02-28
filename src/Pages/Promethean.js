@@ -10,7 +10,9 @@ import PromPageSchedule from "../Components/Schedule";
 import sponsor_logo from "../Images/mds logo.jpg";
 import { textAlign } from "@mui/system";
 import AOS from "aos";
+import sponsor_logo from "../Images/mds logo.jpg";
 import "aos/dist/aos.css";
+import { textAlign } from "@mui/system";
 
 const MainProm = styled.div`
   max-width: 300px;
@@ -294,19 +296,8 @@ const Promethean = () => {
         </div>
         {/* <PromPageHeadText>
           SCHE<PromHeadGreen>DULE</PromHeadGreen>
-        </PromPageHeadText> */}
-        {/* <PromPageSchedule></PromPageSchedule> */}
-        {/* <div style={{ textAlign: "center" }}>
-          <PromPageRect src={sponsor_logo}></PromPageRect>
-        </div>
-        <br />
-        <p style={{ textAlign: "center",color: "blue" }}>
-          <PromPagepara>
-            Looking for a boost in your business ? Time to get more online presence
-            with MDS Digital Media PVT LTD, To know more talk to our experts now
-            : 8789669927
-          </PromPagepara>
-        </p> */}
+        </PromPageHeadText>
+        <PromPageSchedule></PromPageSchedule>
       </MainProm>
     </>
   );
