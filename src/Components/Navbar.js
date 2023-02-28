@@ -140,9 +140,9 @@ const Navbar = () => {
           <Link to={ROUTES.PROMETHEAN}>
             <NavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</NavContent>
           </Link>
-          {/*<Link to={ROUTES.GALLERY}>
+          <Link to={ROUTES.GALLERY}>
             <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent>
-</Link>*/}
+</Link>
         </NavList>
         <FilterImg src={Filter} onClick={() => setNavOpen(true)} />
       </Nav>

@@ -137,7 +137,7 @@ const LandingPage = () => {
         }}
       >
         {/* <Timerworking/> */}
-        <Header>Promethean 2022</Header>
+        <Header>Promethean 2023</Header>
         <SubHeader>An engineer's solutions to environmental problems</SubHeader>
         {/* <SubHeader>Register Now !!!</SubHeader>
         <RegBtn>

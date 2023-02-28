@@ -1,19 +1,19 @@
 const ImageList = [
   {
     id: 1,
-    Image: 'Image/p1.png'
+    Image: 'Image/GRP-6 -Solution for effects of plastic pollution on marine e.png'
   },
   {
     id: 2,
-    Image: "Image/p2.png"
+    Image: "Image/p1.png"
     },
   {
     id: 3,
-    Image: 'Image/p3.png',
+    Image: 'Image/Group 8-Technical Strategies to reduce Deforestation .png',
   },
   {
     id: 4,
-    Image: 'Image/p4.jpg',
+    Image: 'Image/Group 10-Technical Alternatives for Fluorinated Gases used in Refrigerants.png',
   },
 ];
 

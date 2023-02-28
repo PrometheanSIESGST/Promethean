@@ -1,19 +1,154 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import CloseIcon from '@mui/icons-material/Close';
+import Gpic from "../Images/GBG.jpg";
+import Gallerycard from "../Constants/GalleryCard";
+import { Data } from "../Constants/GalleryData.js"
 
-const Header = styled.h1`
-  max-width: 1200px;
+
+const Main = styled.div`
+  max-width: 320px;
   margin: 0 auto;
-  color: ${(props) => props.theme.Colors.Header};
-  font-family: ${(props) => props.theme.Fonts.Arial};
+  @media ${(props) => props.theme.MediaQueries.s.query} {
+    max-width: 560px;
+  }
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    max-width: 720px;
+  }
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    max-width: 1200px;
+  }
 `;
 
+
+const Tab = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  bottom: -300px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 95%;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    max-width: 600px;
+  }
+`;
+
+const Tabs = styled.button`
+  cursor: pointer;
+  background: none;
+  color: ${(props) => props.theme.Colors.White};
+  border: 1px solid ${(props) => props.theme.Colors.White};
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 30px;
+  margin: 0 10px 10px 0;
+  transition: 0.3s ease;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    font-size: 18px;
+    margin: 0 15px 15px 0;
+  }
+  &:hover {
+    background: ${(props) => props.theme.Colors.SubHeading};
+    border-color: ${(props) => props.theme.Colors.SubHeading};
+  }
+  &.active {
+    background: ${(props) => props.theme.Colors.SubHeading};
+    border-color: ${(props) => props.theme.Colors.SubHeading};
+  }
+`;
+
+const HeroDiv = styled.div`
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 60vh;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    max-width: 100%;
+  }
+`;
+
+const FlexDiv = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+`;
+
+
 const Gallery = () => {
-  return (
-    <>
-      <Header>Gallery</Header>
-    </>
-  );
-};
+ 
+  const [gallery, setGallery] = useState(0);
+  return(
+      <>
+      <HeroDiv
+        style={{
+          backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(${Gpic})`,
+        }}
+        >
+      <Tab>
+      <Tabs
+            className={gallery === 0 ? "active" : "null"}
+            onClick={() => setGallery(0)}
+
+          >
+            All
+          </Tabs>
+
+        <Tabs
+            className={gallery === 1 ? "active" : "null"}
+            onClick={() => setGallery(1)}
+          >
+            Promethean 2022
+          </Tabs>
+
+          <Tabs
+            className={gallery === 2 ? "active" : "null"}
+            onClick={() => setGallery(2)}
+          >
+            Team
+          </Tabs>
+          <Tabs
+            className={gallery === 3 ? "active" : "null"}
+            onClick={() => setGallery(3)}
+          >
+            Promethean 2023
+          </Tabs>
+        </Tab>
+  </HeroDiv>
+  
+  <Main>
+         <FlexDiv>
+          {Data[gallery].Photo.map((data) => {
+            if (data.image.length !== 0)
+              return data.image.map((result) => {
+                return <Gallerycard photo={result.photo}/>;
+              });
+          })}
+        </FlexDiv>
+        <FlexDiv>
+          {Data[gallery].Photo.map((data) => {
+            if (data.images.length !== 0)
+              return data.images.map((result) => {
+                return <Gallerycard photo={result.photo}/>;
+              });
+          })}
+        </FlexDiv>
+      </Main>
+  
+ 
+      </>
+  )
+  
+}
+
 
 export default Gallery;

@@ -194,13 +194,13 @@ function Footer() {
             <SocialIconLink>
               <a
                 href="https://www.instagram.com/promethean_siesgst/"
-                target="_blank"
+                target="blank"
               >
                 <SocialIconImage src={Insta} alt="Insta" />
               </a>
               <a
                 href="https://www.linkedin.com/company/team-promethean-sies-gst/mycompany/"
-                target="_blank"
+                target="blank"
               >
                 <SocialIconImage src={Linkedin} alt="Linkedin" />
               </a>
@@ -219,18 +219,18 @@ function Footer() {
               <FooterLink to="/event" bottom>
                 Promethean
               </FooterLink>
-              {/* <FooterLink to="/Gallery" bottom>
+              <FooterLink to="/Gallery" bottom>
               Gallery
-            </FooterLink> */}
+            </FooterLink>
             </FooterLinkItems>
 
             <FooterLinkItems large>
               <FooterLinkTitle>Reach Us</FooterLinkTitle>
               <SideIcons>
                 <SideiconImg src={Call} alt="Call" />
-                <FooterContact href="tel:+91 7208877440">
+                <FooterContact href="tel:+91 8425933013">
                   {" "}
-                  +91 7208877440
+                  +91 8425933013
                 </FooterContact>
               </SideIcons>
 
@@ -254,7 +254,8 @@ function Footer() {
       </FooterLinksContainer>
       <CreditDiv>
         <CreditTitle>
-          Designed by <ContentTag href="https://www.linkedin.com/in/yashwagh31/">Yash Wagh</ContentTag> and Developed By Technical team of Promethean
+          {/* Designed by <ContentTag href="https://www.linkedin.com/in/yashwagh31/">Yash Wagh</ContentTag> and */}
+          Developed By Technical team of Promethean
         </CreditTitle>
       </CreditDiv>
     </>
