@@ -126,9 +126,9 @@ const Navbar = () => {
           <Link to={ROUTES.PROMETHEAN}>
             <SideNavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</SideNavContent>
           </Link>
-          {/*<Link to={ROUTES.GALLERY}>
+          <Link to={ROUTES.GALLERY}>
             <SideNavContent href={ROUTES.GALLERY}>GALLERY</SideNavContent>
-  </Link>*/}
+  </Link>
         </SideNavList>
         <NavList>
           <Link to={ROUTES.HOME}>
