@@ -294,7 +294,7 @@ export const TeamInfo = [
           {
             name: "Rutuja Wagh",
             post: "Coordinator",
-            photo: "Image/rutuja_creative cord.png",
+            photo: "Image/rutuja_creative cord.jpg",
           },
           {
             name: "Ashutosh Sonwal",
