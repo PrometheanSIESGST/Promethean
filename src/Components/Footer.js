@@ -222,6 +222,9 @@ function Footer() {
               <FooterLink to="/Gallery" bottom>
               Gallery
             </FooterLink>
+             <FooterLink to="/Blogs" bottom>
+                Blogs 
+              </FooterLink>
             </FooterLinkItems>
 
             <FooterLinkItems large>

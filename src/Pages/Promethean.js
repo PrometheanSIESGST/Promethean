@@ -10,9 +10,8 @@ import PromPageSchedule from "../Components/Schedule";
 import sponsor_logo from "../Images/mds logo.jpg";
 import { textAlign } from "@mui/system";
 import AOS from "aos";
-// import sponsor_logo from "../Images/mds logo.jpg";
 import "aos/dist/aos.css";
-// import { textAlign } from "@mui/system";
+
 
 const MainProm = styled.div`
   max-width: 300px;
@@ -272,17 +271,19 @@ const Promethean = () => {
                     <CountDetail>Teams</CountDetail>
                   </CountDiv>
                 </CountMainDiv>
+                {/*
                 <div>
                   <MoreInfopara>For more info</MoreInfopara>
                   <Button>
                     <a
                       href="https://drive.google.com/uc?export=download&id=1P4RBz8BAoDFHw08nZf9G5MOwVmjfKY8Q"
-                      style={{ color: "white" }}
+                      style={{ color: "black" , fontWeight: "bold" }}
                     >
                       Brouchre
                     </a>
                   </Button>
                 </div>
+                */}
               </FlexDiv>
             </div>
           </MainFlexDiv>
@@ -294,10 +295,7 @@ const Promethean = () => {
           </PromPageHeadText>
           <Hero></Hero>
         </div>
-         {/* <PromPageHeadText>
-          SCHE<PromHeadGreen>DULE</PromHeadGreen>
-        </PromPageHeadText>
-        <PromPageSchedule></PromPageSchedule> */}
+      
       </MainProm>
     </>
   );

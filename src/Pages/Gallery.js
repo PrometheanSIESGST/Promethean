@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import CloseIcon from '@mui/icons-material/Close';
+//import CloseIcon from '@mui/icons-material/Close';
 import Gpic from "../Images/GBG.jpg";
-import Gallerycard from "../Constants/GalleryCard";
-import { Data } from "../Constants/GalleryData.js"
+import Section from "../Constants/Section.js";
 
 
 const Main = styled.div`
@@ -72,18 +71,6 @@ const HeroDiv = styled.div`
   }
 `;
 
-const FlexDiv = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  @media ${(props) => props.theme.MediaQueries.m.query} {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-`;
-
-
 const Gallery = () => {
  
   const [gallery, setGallery] = useState(0);
@@ -98,57 +85,40 @@ const Gallery = () => {
       <Tabs
             className={gallery === 0 ? "active" : "null"}
             onClick={() => setGallery(0)}
-
           >
             All
           </Tabs>
-
         <Tabs
             className={gallery === 1 ? "active" : "null"}
             onClick={() => setGallery(1)}
           >
-            Promethean 2022
+            2020-21
           </Tabs>
-
           <Tabs
             className={gallery === 2 ? "active" : "null"}
             onClick={() => setGallery(2)}
           >
-            Team
+            2021-22
           </Tabs>
           <Tabs
             className={gallery === 3 ? "active" : "null"}
             onClick={() => setGallery(3)}
           >
-            Promethean 2023
+            2022-23
+          </Tabs>
+          <Tabs
+            className={gallery === 4 ? "active" : "null"}
+            onClick={() => setGallery(4)}
+          >
+            2023-24
           </Tabs>
         </Tab>
-  </HeroDiv>
-  
-  <Main>
-         <FlexDiv>
-          {Data[gallery].Photo.map((data) => {
-            if (data.image.length !== 0)
-              return data.image.map((result) => {
-                return <Gallerycard photo={result.photo}/>;
-              });
-          })}
-        </FlexDiv>
-        <FlexDiv>
-          {Data[gallery].Photo.map((data) => {
-            if (data.images.length !== 0)
-              return data.images.map((result) => {
-                return <Gallerycard photo={result.photo}/>;
-              });
-          })}
-        </FlexDiv>
-      </Main>
-  
- 
+    </HeroDiv>
+    <Main>
+    <Section gallery={gallery}/> 
+    </Main>
       </>
   )
-  
 }
-
 
 export default Gallery;

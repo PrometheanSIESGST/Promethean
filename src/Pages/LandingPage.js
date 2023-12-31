@@ -5,6 +5,7 @@ import ContactUs from "../Components/Contactus";
 import Hero from "../Components/Hero/Hero";
 import PrometheanImage from "../Images/pp.jpg";
 import Event1 from "../Images/promlanding1.jpg";
+import Event2 from "../Images/Event2.jpg";
 import HeroImg from "../Images/heroimg.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -137,7 +138,7 @@ const LandingPage = () => {
         }}
       >
         {/* <Timerworking/> */}
-        <Header>Promethean 2023</Header>
+        <Header>Promethean 2024</Header>
         <SubHeader>An engineer's solutions to environmental problems</SubHeader>
         {/* <SubHeader>Register Now !!!</SubHeader>
         <RegBtn>
@@ -155,7 +156,7 @@ const LandingPage = () => {
             para="Promethean is inspired by the Greek Titan Prometheus (Ancient Greek Προμηθεύς - Fore thinker ). An innovator, problem solver and a futuristic thinker he was a champion of mankind known for his wily intelligence, who gave fire to mortals and also taught them agriculture so that they could progress and take technology to new levels.
               It focuses on real world problems happening in and around the world. Engineering is all about making life better, solving problems and allowing humankind to achieve new feats."
           />
-          <AboutImage src={PrometheanImage} right />
+          <AboutImage src={PrometheanImage} />
         </FlexDiv>
         <FlexDiv data-aos="fade-up">
           <AboutImage src={Event1} />
@@ -164,11 +165,12 @@ const LandingPage = () => {
             subTitle="Event"
             title="Promethean"
             para="
-            PROMETHEAN is an annual poster presentation event organized for our new GSTians, our FEs, to convey how they would consider making our earth a better place as an ENGINEER by proposing solutions.
+            Previously called as PROMETHEAN is an annual poster presentation event organized for our new GSTians, our FEs, to convey how they would consider making our earth a better place as an ENGINEER by proposing solutions.
             "
           />
         </FlexDiv>
         <FlexDiv data-aos="fade-up">
+        <AboutImage src={PrometheanImage} />
           <Card
             number="03"
             subTitle="Event"
@@ -177,8 +179,17 @@ const LandingPage = () => {
             We cannot survive without the environment, which is the backbone of our survival. To make people aware of this we invite some committed environmental leaders who are also engineers, who work to ensure that mankind preserves the desirable human-nature interaction.
             "
           />
-          <AboutImage src={PrometheanImage} right />
         </FlexDiv>
+        <FlexDiv data-aos="fade-up">
+          <Card
+            number="04"
+            subTitle="Event"
+            title="Matrix"
+            para="Matrix is annual Quiz organised for our new GSTians, our FEs, where they can use their previous knowledge they have studied so far in a very interesting way.
+            "
+          />
+        <AboutImage src={Event2} />
+        </FlexDiv>      
         <div data-aos="fade-up">{/* <ContactUs /> */}</div>
       </Main>
     </>
