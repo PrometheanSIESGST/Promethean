@@ -271,17 +271,19 @@ const Promethean = () => {
                     <CountDetail>Teams</CountDetail>
                   </CountDiv>
                 </CountMainDiv>
+                {/*
                 <div>
                   <MoreInfopara>For more info</MoreInfopara>
                   <Button>
                     <a
                       href="https://drive.google.com/uc?export=download&id=1P4RBz8BAoDFHw08nZf9G5MOwVmjfKY8Q"
-                      style={{ color: "white" }}
+                      style={{ color: "black" , fontWeight: "bold" }}
                     >
                       Brouchre
                     </a>
                   </Button>
                 </div>
+                */}
               </FlexDiv>
             </div>
           </MainFlexDiv>

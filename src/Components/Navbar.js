@@ -129,6 +129,9 @@ const Navbar = () => {
           <Link to={ROUTES.GALLERY}>
             <SideNavContent href={ROUTES.GALLERY}>GALLERY</SideNavContent>
           </Link>
+          <Link to={ROUTES.BLOGS}>
+            <SideNavContent href={ROUTES.BLOGS}>BLOGS</SideNavContent>
+          </Link>
           <Link to={ROUTES.REGISTER}>
             <SideNavContent href={ROUTES.REGISTER}>REGISTER</SideNavContent>
          </Link>
@@ -145,6 +148,9 @@ const Navbar = () => {
           </Link>
           <Link to={ROUTES.GALLERY}>
             <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent>
+          </Link>
+          <Link to={ROUTES.BLOGS}>
+            <NavContent href={ROUTES.BLOGS}>BLOGS</NavContent>
           </Link>
           <Link to={ROUTES.REGISTER}>
             <NavContent href={ROUTES.REGISTER}>REGISTER</NavContent>

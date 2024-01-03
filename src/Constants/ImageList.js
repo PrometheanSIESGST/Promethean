@@ -1,20 +1,29 @@
 const ImageList = [
   {
     id: 1,
-    Image: 'Image/GRP-6 -Solution for effects of plastic pollution on marine e.png'
+    Image: 'Image/carbon footprint and greenhouse effect.jpg',
   },
+
   {
     id: 2,
-    Image: "Image/p1.png"
+    Image: 'Image/soil_degradation_due_to_industrial_and_agricultural_activities.jpg',
     },
+
   {
     id: 3,
-    Image: 'Image/Group 8-Technical Strategies to reduce Deforestation .png',
+    Image: 'Image/oils_spills.jpg',
   },
+  
   {
     id: 4,
-    Image: 'Image/Group 10-Technical Alternatives for Fluorinated Gases used in Refrigerants.png',
+    Image: 'Image/GRP-6 -Solution for effects of plastic pollution on marine e.png',
   },
+
+  {
+    id: 5,
+    Image: 'Image/Group 8-Technical Strategies to reduce Deforestation .png',
+  },
+  
 ];
 
 export default ImageList;
