@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
 import Card from "../Components/Card";
 import ContactUs from "../Components/Contactus";
 import Hero from "../Components/Hero/Hero";
@@ -9,6 +9,8 @@ import HeroImg from "../Images/heroimg.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Timerworking from "../Components/Timer";
+import { Link } from 'react-router-dom';
+import Register from "./Register";
 
 const Main = styled.div`
   max-width: 320px;
@@ -93,17 +95,44 @@ const SubHeader = styled.p`
   }
 `;
 
+const rainbowAnimation = keyframes`
+  0% {
+    border-color: red;
+  }
+  16.666% {
+    border-color: orange;
+  }
+  33.333% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: green;
+  }
+  66.666% {
+    border-color: blue;
+  }
+  83.333% {
+    border-color: indigo;
+  }
+  100% {
+    border-color: violet;
+  }
+`;
+
 const RegBtn = styled.span`
-  background-color: ${(props) => props.theme.Colors.SubHeading};
-  border: none;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
   margin-top: 40px;
-  color: ${(props) => props.theme.Colors.Header};
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
+  border: 2px solid transparent;
+  animation: ${rainbowAnimation} 4s linear infinite;
+  background-color:black;
 `;
 
 const BtnLink = styled.a`
@@ -139,12 +168,17 @@ const LandingPage = () => {
         {/* <Timerworking/> */}
         <Header>Promethean 2023</Header>
         <SubHeader>An engineer's solutions to environmental problems</SubHeader>
-        {/* <SubHeader>Register Now !!!</SubHeader>
+        <SubHeader>Register Now !!!</SubHeader>
         <RegBtn>
-          <BtnLink href="https://forms.office.com/r/4XGMx15TVq" target="_blank">
+          {/* <BtnLink href="https://forms.office.com/r/4XGMx15TVq" target="_blank">
+            Register Here
+          </BtnLink> */}
+          <Link to="/register">
+          <BtnLink target="_blank">
             Register Here
           </BtnLink>
-        </RegBtn> */}
+          </Link>
+        </RegBtn>
       </HeroDiv>
       <Main>
         <FlexDiv reverse data-aos="fade-up">

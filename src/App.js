@@ -18,6 +18,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
 import * as ROUTES from "./Constants/routes";
+import Register from "./Pages/Register";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Header = styled.h1`
   max-width: 1200px;
@@ -36,6 +38,7 @@ const App = () => {
         <Route path={ROUTES.TEAM} element={<Team />} />
         <Route path={ROUTES.PROMETHEAN} element={<Promethean />} />
         <Route path={ROUTES.GALLERY} element={<Gallery />} />
+        <Route path={ROUTES.REGISTER} element={<Register />} />
       </Routes>
       <Footer/>
     </ThemeProvider>
