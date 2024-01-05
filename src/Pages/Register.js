@@ -224,31 +224,32 @@ const handleFormSubmit = async () => {
         "email3": email3Value,
         "contact3": contact3Value
       })
-      // if (data.id){
-      //     console.log("Success");
-      //     setBranch('');
-      //     setLeadName('');
-      //     setPrn('');
-      //     setEmail('');
-      //     setContact('');
-      //     setMem1('');
-      //     setPrn1('');
-      //     setEmail1('');
-      //     setContact1('');
-      //     setMem2('');
-      //     setPrn2('');
-      //     setEmail2('');
-      //     setContact2('');
-      //     setMem3('');
-      //     setPrn3('');
-      //     setEmail3('');
-      //     setContact3('');
-      //     return toast.success("Registered Successfully");
-      // }
-      // else{
-      //   console.log('Invalid');
-      //   return toast.error("Trial again");
-      // }
+     // return toast.success("Registered Successfully");
+      if (data.id){
+          console.log("Success");
+          setBranch('');
+          setLeadName('');
+          setPrn('');
+          setEmail('');
+          setContact('');
+          setMem1('');
+          setPrn1('');
+          setEmail1('');
+          setContact1('');
+          setMem2('');
+          setPrn2('');
+          setEmail2('');
+          setContact2('');
+          setMem3('');
+          setPrn3('');
+          setEmail3('');
+          setContact3('');
+          return toast.success("Registered Successfully");
+      }
+      else{
+        console.log('Invalid');
+        return toast.error("Trial again");
+      }
   } catch (error) {
       const errMsg = error?.response?.data?.message || error?.message || "something went wrong"
       console.log(errMsg)
