@@ -343,7 +343,7 @@ return(
                 <FormInput type="text" name="contact3" value={contact3} onChange={(e)=>{setContact3(e.target.value);handlePhoneChange3(e);}}/>
                 {!phoneValid3 && contact3 !== '' && <span style={{ color: 'red' }}>Invalid Phone Number</span>}
             </FormLabel>
-            {(emailValid && phoneValid) && (
+            {(emailValid && phoneValid && emailValid1 && phoneValid1 && emailValid2 && phoneValid2 && emailValid3 && phoneValid3) && (
               <FormButton type="submit">Submit</FormButton>
             )}
         </FormContainer>
