@@ -89,24 +89,122 @@ const [prn3,setPrn3]=useState("");
 const [email3,setEmail3]=useState("");
 const [contact3,setContact3]=useState("");
 
+  const [emailValid, setEmailValid] = useState(true);
+  const [phoneValid, setPhoneValid] = useState(true);
+  const [emailValid1, setEmailValid1] = useState(true);
+  const [phoneValid1, setPhoneValid1] = useState(true);
+  const [emailValid2, setEmailValid2] = useState(true);
+  const [phoneValid2, setPhoneValid2] = useState(true);
+  const [emailValid3, setEmailValid3] = useState(true);
+  const [phoneValid3, setPhoneValid3] = useState(true);
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    const phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phone);
+  };
+
+  const handleEmailChange = (e) => {
+    const emailValue = e.target.value;
+    setEmail(emailValue);
+
+    if (emailValue === '' || validateEmail(emailValue)) {
+      setEmailValid(true);
+    } else {
+      setEmailValid(false);
+    }
+  };
+
+  const handleEmailChange1 = (e) => {
+    const emailValue1 = e.target.value;
+    setEmail1(emailValue1);
+
+    if (emailValue1 === '' || validateEmail(emailValue1)) {
+      setEmailValid1(true);
+    } else {
+      setEmailValid1(false);
+    }
+  };
+
+  const handleEmailChange2 = (e) => {
+    const emailValue2 = e.target.value;
+    setEmail2(emailValue2);
+
+    if (emailValue2 === '' || validateEmail(emailValue2)) {
+      setEmailValid2(true);
+    } else {
+      setEmailValid2(false);
+    }
+  };
+
+  const handleEmailChange3 = (e) => {
+    const emailValue3 = e.target.value;
+    setEmail3(emailValue3);
+
+    if (emailValue3 === '' || validateEmail(emailValue3)) {
+      setEmailValid3(true);
+    } else {
+      setEmailValid3(false);
+    }
+  };
+
+  const handlePhoneChange = (e) => {
+    const phoneValue = e.target.value;
+    setContact(phoneValue);
+
+    if (phoneValue === '' || validatePhone(phoneValue)) {
+      setPhoneValid(true);
+    } else {
+      setPhoneValid(false);
+    }
+  };
+  const handlePhoneChange1 = (e) => {
+    const phoneValue1 = e.target.value;
+    setContact1(phoneValue1);
+
+    if (phoneValue1 === '' || validatePhone(phoneValue1)) {
+      setPhoneValid1(true);
+    } else {
+      setPhoneValid1(false);
+    }
+  };
+  const handlePhoneChange2 = (e) => {
+    const phoneValue2 = e.target.value;
+    setContact2(phoneValue2);
+
+    if (phoneValue2 === '' || validatePhone(phoneValue2)) {
+      setPhoneValid2(true);
+    } else {
+      setPhoneValid2(false);
+    }
+  };
+  const handlePhoneChange3 = (e) => {
+    const phoneValue3 = e.target.value;
+    setContact3(phoneValue3);
+
+    if (phoneValue3 === '' || validatePhone(phoneValue3)) {
+      setPhoneValid3(true);
+    } else {
+      setPhoneValid3(false);
+    }
+  };
+
+
 const handleFormSubmit = async () => {
    // setLoading(true)
+   const mem3Value = mem3.trim() === '' ? 'none' : mem3;
+   const prn3Value = prn3.trim() === '' ? 'none' : prn3;
+   const email3Value = email3.trim() === '' ? 'none' : email3;
+   const contact3Value = contact3.trim() === '' ? 'none' : contact3;
+  if (!branch || !leadname || !prn || !email || !contact|| !mem1 || !prn1 || !email1 || !contact1|| !mem2 || !prn2 || !email2 || !contact2 ) {
+    return toast.error("Please fill in all required fields.");
+  }
   try {
-      if (!branch || !leadname || !prn || !email || !contact|| !mem1 || !prn1 || !email1 || !contact1|| !mem2 || !prn2 || !email2 || !contact2|| !mem3 || !prn3 || !email3 || !contact3 ) {
-        return toast.error("Please fill in all required fields.");
-      }
-
-      // // Email validation
-      // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      // if (!emailRegex.test(email)) {
-      //   return toast.error("Please enter a valid email address.");
-      // }
-
-      // // Phone number validation 
-      // const phoneRegex = /^\d{10}$/;
-      // if (!phoneRegex.test(contact)) {
-      //   return toast.error("Please enter a valid 10-digit phone number.");
-      // }
+    //Try to give out status in backend api next time so that data.status can be used
       const data = await AuthAPI.postRegister({
         "branch": branch,
         "leadname": leadname,
@@ -121,38 +219,36 @@ const handleFormSubmit = async () => {
         "prn2": prn2,
         "email2": email2,
         "contact2":contact2,
-        "mem3": mem3,
-        "prn3": prn3,
-        "email3": email3,
-        "contact3": contact3
+        "mem3": mem3Value,
+        "prn3": prn3Value,
+        "email3": email3Value,
+        "contact3": contact3Value
       })
-
-      if (data){
-          console.log("Success");
-          setBranch('');
-          setLeadName('');
-          setPrn('');
-          setEmail('');
-          setContact('');
-          setMem1('');
-          setPrn1('');
-          setEmail1('');
-          setContact1('');
-          setMem2('');
-          setPrn2('');
-          setEmail2('');
-          setContact2('');
-          setMem3('');
-          setPrn3('');
-          setEmail3('');
-          setContact3('');
-          return toast.success("Registered Successfully");
-          
-      }
-      else{
-        console.log('Invalid');
-        return toast.error("Trial again");
-      }
+      // if (data.id){
+      //     console.log("Success");
+      //     setBranch('');
+      //     setLeadName('');
+      //     setPrn('');
+      //     setEmail('');
+      //     setContact('');
+      //     setMem1('');
+      //     setPrn1('');
+      //     setEmail1('');
+      //     setContact1('');
+      //     setMem2('');
+      //     setPrn2('');
+      //     setEmail2('');
+      //     setContact2('');
+      //     setMem3('');
+      //     setPrn3('');
+      //     setEmail3('');
+      //     setContact3('');
+      //     return toast.success("Registered Successfully");
+      // }
+      // else{
+      //   console.log('Invalid');
+      //   return toast.error("Trial again");
+      // }
   } catch (error) {
       const errMsg = error?.response?.data?.message || error?.message || "something went wrong"
       console.log(errMsg)
@@ -184,11 +280,13 @@ return(
             </FormLabel>
             <FormLabel>
                 Email:
-                <FormInput type="text" name="email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+                <FormInput type="text" name="email" value={email} onChange={(e)=>{setEmail(e.target.value);handleEmailChange(e);}}/>
+                {!emailValid && email !== '' && <span style={{ color: 'red' }}>Invalid Email</span>}
             </FormLabel>
             <FormLabel>
                 Contact:
-                <FormInput type="text" name="contact" value={contact} onChange={(e)=>{setContact(e.target.value)}}/>
+                <FormInput type="text" name="contact" value={contact} onChange={(e)=>{setContact(e.target.value);handlePhoneChange(e);}}/>
+                {!phoneValid && contact !== '' && <span style={{ color: 'red' }}>Invalid Phone Number</span>}
             </FormLabel>
             <FormLabel>
                 Member 1 Name:
@@ -200,11 +298,13 @@ return(
             </FormLabel>
             <FormLabel>
                 Email:
-                <FormInput type="text" name="email1" value={email1} onChange={(e)=>{setEmail1(e.target.value)}}/>
+                <FormInput type="text" name="email1" value={email1} onChange={(e)=>{setEmail1(e.target.value);handleEmailChange1(e);}}/>
+                {!emailValid1 && email1 !== '' && <span style={{ color: 'red' }}>Invalid Email</span>}
             </FormLabel>
             <FormLabel>
                 Contact:
-                <FormInput type="text" name="contact1" value={contact1} onChange={(e)=>{setContact1(e.target.value)}}/>
+                <FormInput type="text" name="contact1" value={contact1} onChange={(e)=>{setContact1(e.target.value);handlePhoneChange1(e);}}/>
+                {!phoneValid1 && contact1 !== '' && <span style={{ color: 'red' }}>Invalid Phone Number</span>}
             </FormLabel>
             <FormLabel>
                 Member 2 Name:
@@ -216,11 +316,13 @@ return(
             </FormLabel>
             <FormLabel>
                 Email:
-                <FormInput type="text" name="email2" value={email2} onChange={(e)=>{setEmail2(e.target.value)}} />
+                <FormInput type="text" name="email2" value={email2} onChange={(e)=>{setEmail2(e.target.value);handleEmailChange2(e);}} />
+                {!emailValid2 && email2 !== '' && <span style={{ color: 'red' }}>Invalid Email</span>}
             </FormLabel>
             <FormLabel>
                 Contact:
-                <FormInput type="text" name="contact2" value={contact2} onChange={(e)=>{setContact2(e.target.value)}} />
+                <FormInput type="text" name="contact2" value={contact2} onChange={(e)=>{setContact2(e.target.value);handlePhoneChange2(e);}} />
+                {!phoneValid2 && contact2 !== '' && <span style={{ color: 'red' }}>Invalid Phone Number</span>}
             </FormLabel>
             <FormLabel>
                 Member 3 Name:
@@ -232,13 +334,17 @@ return(
             </FormLabel>
             <FormLabel>
                 Email:
-                <FormInput type="text" name="email3" value={email3} onChange={(e)=>{setEmail3(e.target.value)}}/>
+                <FormInput type="text" name="email3" value={email3} onChange={(e)=>{setEmail3(e.target.value);handleEmailChange3(e);}}/>
+                {!emailValid3 && email3 !== '' && <span style={{ color: 'red' }}>Invalid Email</span>}
             </FormLabel>
             <FormLabel>
                 Contact:
-                <FormInput type="text" name="contact3" value={contact3} onChange={(e)=>{setContact3(e.target.value)}}/>
+                <FormInput type="text" name="contact3" value={contact3} onChange={(e)=>{setContact3(e.target.value);handlePhoneChange3(e);}}/>
+                {!phoneValid3 && contact3 !== '' && <span style={{ color: 'red' }}>Invalid Phone Number</span>}
             </FormLabel>
-            <FormButton type="submit">Submit</FormButton>
+            {(emailValid && phoneValid) && (
+              <FormButton type="submit">Submit</FormButton>
+            )}
         </FormContainer>
         </Main>
       </>

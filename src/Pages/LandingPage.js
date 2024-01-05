@@ -54,12 +54,13 @@ const AboutImage = styled.img`
   
 `;
 const AboutImage1 = styled.img`
+  margin-top:-50px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   @media ${(props) => props.theme.MediaQueries.l.query} {
     margin-right: 40px;
     width: 450px;
@@ -83,6 +84,27 @@ const Image = styled.img`
     width: 350px;
     height: 350px;
   }
+`;
+const Hide = styled.img`
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  display: none;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    display: block; 
+  }
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    margin-right: 40px;
+    width: 350px;
+    height: 350px;
+  }
+  @media ${(props) => props.theme.MediaQueries.xl.query} {
+    margin: ${(props) => (props.right ? "0 120px 0 0" : "0 0 0 80px")};
+  }
+  
 `;
 
 const HeroDiv = styled.div`
@@ -245,7 +267,7 @@ const LandingPage = () => {
             We cannot survive without the environment, which is the backbone of our survival. To make people aware of this we invite some committed environmental leaders who are also engineers, who work to ensure that mankind preserves the desirable human-nature interaction.
             "
           />
-          <AboutImage src={PrometheanImage} />
+          <Hide src={PrometheanImage} />
         </FlexDiv>
         <FlexDiv data-aos="fade-up">
           <AboutImage1 src={Event2} />

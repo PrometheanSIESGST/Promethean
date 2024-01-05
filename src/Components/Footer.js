@@ -158,6 +158,7 @@ const CreditDiv = styled.div`
   justify-content:center;
   align-items:center;
   padding: 10px 20px;
+  text-align: center;
   @media ${(props) => props.theme.MediaQueries.l.query} {
     padding: 20px 20px;
   }
@@ -231,9 +232,9 @@ function Footer() {
               <FooterLinkTitle>Reach Us</FooterLinkTitle>
               <SideIcons>
                 <SideiconImg src={Call} alt="Call" />
-                <FooterContact href="tel:+91 8425933013">
+                <FooterContact href="tel:+91 9372874136">
                   {" "}
-                  +91 8425933013
+                  +91 9372874136
                 </FooterContact>
               </SideIcons>
 
@@ -258,7 +259,7 @@ function Footer() {
       <CreditDiv>
         <CreditTitle>
           {/* Designed by <ContentTag href="https://www.linkedin.com/in/yashwagh31/">Yash Wagh</ContentTag> and */}
-          Developed By Technical team of Promethean
+          Developed With &hearts; By Technical team of Promethean 
         </CreditTitle>
       </CreditDiv>
     </>

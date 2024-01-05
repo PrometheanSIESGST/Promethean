@@ -26,12 +26,12 @@ export const Data = [
         sectionTitle:"Promethean 2020-21",
         image: [
           {
-            photo: "Gallery/Prom 2020-21/Promethean 2020/a1.jpg",
+            photo: "Gallery/Prom 2020-21/Promethean 2020/a3.jpg",
           },
           {
             photo: "Gallery/Prom 2020-21/Promethean 2020/a2.jpg",
           },{
-            photo: "Gallery/Prom 2020-21/Promethean 2020/a3.jpg",
+            photo: "Gallery/Prom 2020-21/Promethean 2020/a1.jpg",
           },{
             photo: "Gallery/Prom 2020-21/Promethean 2020/a4.jpg",
           },{
@@ -196,13 +196,13 @@ export const Data = [
         sectionTitle:"FE Induction",
         image: [
           {
-            photo: "Gallery/Prom 2021-22/FE Induction/i11.jpg",
+            photo: "Gallery/Prom 2021-22/FE induction/fe1.jpg",
           },
           {
-            photo: "Gallery/Prom 2021-22/FE Induction/i22.jpg",
+            photo: "Gallery/Prom 2021-22/FE induction/fe2.jpg",
           },
           {
-            photo: "Gallery/Prom 2021-22/FE Induction/i33.jpg",
+            photo: "Gallery/Prom 2021-22/FE induction/fe3.jpg",
           },
     ],
     },
@@ -456,10 +456,10 @@ export const Data = [
         photo: "Gallery/Prom 2022-23/Promethean R2/r17.jpg",
       },
       {
-        photo: "Gallery/Prom 2022-23/Promethean R2/r18.jpg",
+        photo: "Gallery/Prom 2022-23/Promethean R2/r18.JPG",
       },
       {
-        photo: "Gallery/Prom 2022-23/Promethean R2/r19.jpg",
+        photo: "Gallery/Prom 2022-23/Promethean R2/r18.JPG",
       },
       {
         photo: "Gallery/Prom 2022-23/Promethean R2/r20.jpg",
@@ -577,31 +577,13 @@ export const Data = [
     sectionTitle:"Behind the Scene",
     image: [
     {
-      photo: "Gallery/Prom 2022-23/BTS/b1.jpg",
-    },
-    {
-      photo: "Gallery/Prom 2022-23/BTS/b2.jpg",
-    },
-    {
-      photo: "Gallery/Prom 2022-23/BTS/b3.jpg",
-    },
-    {
-      photo: "Gallery/Prom 2022-23/BTS/b4.jpg",
-    },
-    {
-      photo: "Gallery/Prom 2022-23/BTS/b5.jpg",
-    },
-    {
-      photo: "Gallery/Prom 2022-23/BTS/b6.jpg",
-    },
-    {
-      photo: "Gallery/Prom 2022-23/BTS/b7.jpg",
+      photo: "Gallery/Prom 2022-23/BTS/b9.jpg",
     },
     {
       photo: "Gallery/Prom 2022-23/BTS/b8.jpg",
     },
     {
-      photo: "Gallery/Prom 2022-23/BTS/b9.jpg",
+      photo: "Gallery/Prom 2022-23/BTS/b7.jpg",
     },
     {
       photo: "Gallery/Prom 2022-23/BTS/b10.jpg",
@@ -638,6 +620,24 @@ export const Data = [
     },
     {
       photo: "Gallery/Prom 2022-23/BTS/b21.jpg",
+    },
+    {
+      photo: "Gallery/Prom 2022-23/BTS/b1.jpg",
+    },
+    {
+      photo: "Gallery/Prom 2022-23/BTS/b2.jpg",
+    },
+    {
+      photo: "Gallery/Prom 2022-23/BTS/b3.jpg",
+    },
+    {
+      photo: "Gallery/Prom 2022-23/BTS/b4.jpg",
+    },
+    {
+      photo: "Gallery/Prom 2022-23/BTS/b5.jpg",
+    },
+    {
+      photo: "Gallery/Prom 2022-23/BTS/b6.jpg",
     },
   ],
   },
@@ -733,28 +733,28 @@ export const Data = [
           sectionTitle:"Matrix",
           image: [
             {
-              photo: "Gallery/Prom 2023-24/Matrix/m1.jpg",
+              photo: "Gallery/Prom 2023-24/Matrix/m1.JPG",
             },
             {
-              photo: "Gallery/Prom 2023-24/Matrix/m2.jpg",
+              photo: "Gallery/Prom 2023-24/Matrix/m2.JPG",
             },
             {
-              photo: "Gallery/Prom 2023-24/Matrix/m3.jpg",
+              photo: "Gallery/Prom 2023-24/Matrix/m3.JPG",
             },
             {
-              photo: "Gallery/Prom 2023-24/Matrix/m4.jpg",
+              photo: "Gallery/Prom 2023-24/Matrix/m4.JPG",
             },
             {
-              photo: "Gallery/Prom 2023-24/Matrix/m5.jpg",
+              photo: "Gallery/Prom 2023-24/Matrix/m5.JPG",
             },
             {
-              photo: "Gallery/Prom 2023-24/Matrix/m6.jpg",
+              photo: "Gallery/Prom 2023-24/Matrix/m6.JPG",
             },
             {
-              photo: "Gallery/Prom 2023-24/Matrix/m7.jpg",
+              photo: "Gallery/Prom 2023-24/Matrix/m7.JPG",
             },
             {
-              photo: "Gallery/Prom 2023-24/Matrix/m8.jpg",
+              photo: "Gallery/Prom 2023-24/Matrix/m8.JPG",
             },
             {
               photo: "Gallery/Prom 2023-24/Matrix/m9.jpg",
@@ -825,6 +825,36 @@ export const Data = [
         {
           sectionTitle:"Behind The Scenes",
           image: [
+            {
+              photo: "Gallery/2023_24/b1.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b2.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b3.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b4.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b5.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b6.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b7.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b8.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b9.jpg",
+            },
+            {
+              photo: "Gallery/2023_24/b10.jpg",
+            },
             {
               photo: "Gallery/Prom 2023-24/BTS/b11.jpg",
             },
