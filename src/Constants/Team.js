@@ -123,7 +123,7 @@ export const TeamInfo = [
           {
             name: "Harshvinder Kaur Bal",
             post: "Head",
-            photo: "Image/Harshvinder Kaur Bal.jpg",
+            photo: "Image/Harshvinder Kaur Bal.JPG",
           },
           {
             name: "Preksha Siyal",
@@ -174,7 +174,7 @@ export const TeamInfo = [
           {
             name: "Ayaan Dwivedi",
             post: "Coordinator",
-            photo: "Image/Ayaan_marketing cord.jpg",
+            photo: "Image/ayaan.jpg",
           },
           {
             name: "Adhira Digraskar",
@@ -328,7 +328,7 @@ export const TeamInfo = [
           {
             name: "Kanya Vagal",
             post: "Coordinator",
-            photo: "Image/Kanya_SM cord new.jpg",
+            photo: "Image/kanya.jpg",
           },
           {
             name: "Vishvesh Joshi ",
