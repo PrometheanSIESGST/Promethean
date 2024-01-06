@@ -221,7 +221,7 @@ const LandingPage = () => {
         }}
       >
         {/* <Timerworking/> */}
-        <Header>Promethean 2024</Header>
+        <Header>SUSTAIN-X 2024</Header>
         <SubHeader>An engineer's solutions to environmental problems</SubHeader>
         <SubHeader>Register Now !!!</SubHeader>
         <RegBtn>

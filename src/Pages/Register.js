@@ -326,7 +326,7 @@ return(
                 {!phoneValid2 && contact2 !== '' && <span style={{ color: 'red' }}>Invalid Phone Number</span>}
             </FormLabel>
             <FormLabel>
-                Member 3 Name:
+                Member 3<span style={{ color: 'white' }}>(Optional)</span> Name:
                 <FormInput type="text" name="mem3" value={mem3} onChange={(e)=>{setMem3(e.target.value)}}/>
             </FormLabel>
             <FormLabel>
