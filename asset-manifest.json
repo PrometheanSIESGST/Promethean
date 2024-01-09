@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.724e017b.css",
-    "main.js": "/static/js/main.7c9a47fb.js",
+    "main.js": "/static/js/main.a09b3f8d.js",
     "static/media/Event2.jpg": "/static/media/Event2.7cf84ec920fdfd7488d4.jpg",
     "static/media/team.jpg": "/static/media/team.ef2edda051f9d0af5610.jpg",
     "static/media/river.jpg": "/static/media/river.2d4d65f87c013d37f529.jpg",
@@ -46,10 +46,10 @@
     "static/media/left-arrow.svg": "/static/media/left-arrow.da21225bcf530088451874c9e21c215a.svg",
     "static/media/right-arrow.svg": "/static/media/right-arrow.d19ce8f87764b5901ed2ca6f0ff22d03.svg",
     "main.724e017b.css.map": "/static/css/main.724e017b.css.map",
-    "main.7c9a47fb.js.map": "/static/js/main.7c9a47fb.js.map"
+    "main.a09b3f8d.js.map": "/static/js/main.a09b3f8d.js.map"
   },
   "entrypoints": [
     "static/css/main.724e017b.css",
-    "static/js/main.7c9a47fb.js"
+    "static/js/main.a09b3f8d.js"
   ]
 }
