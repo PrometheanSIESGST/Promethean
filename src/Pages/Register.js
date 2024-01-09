@@ -194,39 +194,108 @@ const [contact3,setContact3]=useState("");
   };
 
 
-const handleFormSubmit = async () => {
-   // setLoading(true)
-   const mem3Value = mem3.trim() === '' ? 'none' : mem3;
-   const prn3Value = prn3.trim() === '' ? 'none' : prn3;
-   const email3Value = email3.trim() === '' ? 'none' : email3;
-   const contact3Value = contact3.trim() === '' ? 'none' : contact3;
+// const handleFormSubmit = async () => {
+//    // setLoading(true)
+//    const mem3Value = mem3.trim() === '' ? 'none' : mem3;
+//    const prn3Value = prn3.trim() === '' ? 'none' : prn3;
+//    const email3Value = email3.trim() === '' ? 'none' : email3;
+//    const contact3Value = contact3.trim() === '' ? 'none' : contact3;
+//   if (!branch || !leadname || !prn || !email || !contact|| !mem1 || !prn1 || !email1 || !contact1|| !mem2 || !prn2 || !email2 || !contact2|| !mem3 || !prn3 || !email3 || !contact3 ) {
+//     return toast.error("Please fill in all required fields.");
+//   }
+//   try {
+//     //Try to give out status in backend api next time so that data.status can be used
+//       const data = await AuthAPI.postRegister({
+//         "branch": branch,
+//         "leadname": leadname,
+//         "prn": prn,
+//         "email": email,
+//         "contact": contact,
+//         "mem1": mem1,
+//         "prn1": prn1,
+//         "email1": email1,
+//         "contact1": contact1,
+//         "mem2": mem2,
+//         "prn2": prn2,
+//         "email2": email2,
+//         "contact2":contact2,
+//         "mem3": mem3Value,
+//         "prn3": prn3Value,
+//         "email3": email3Value,
+//         "contact3": contact3Value
+//       })
+//      // return toast.success("Registered Successfully");
+//       if (data.id){
+//           console.log("Success");
+//           setBranch('');
+//           setLeadName('');
+//           setPrn('');
+//           setEmail('');
+//           setContact('');
+//           setMem1('');
+//           setPrn1('');
+//           setEmail1('');
+//           setContact1('');
+//           setMem2('');
+//           setPrn2('');
+//           setEmail2('');
+//           setContact2('');
+//           setMem3('');
+//           setPrn3('');
+//           setEmail3('');
+//           setContact3('');
+//           return toast.success("Registered Successfully");
+//       }
+//       else{
+//         console.log('Invalid');
+//         return toast.error("Trial again");
+//       }
+//   } catch (error) {
+//       const errMsg = error?.response?.data?.message || error?.message || "something went wrong"
+//       console.log(errMsg)
+//       return toast.error("Oops,something went wrong");
+//   } finally {
+//       // setLoading(false)
+//   }
+// }
+const handleFormSubmit = async (e) => {
+  e.preventDefault();
   if (!branch || !leadname || !prn || !email || !contact|| !mem1 || !prn1 || !email1 || !contact1|| !mem2 || !prn2 || !email2 || !contact2|| !mem3 || !prn3 || !email3 || !contact3 ) {
-    return toast.error("Please fill in all required fields.");
-  }
+        return toast.error("Please fill in all required fields.");
+      }
   try {
-    //Try to give out status in backend api next time so that data.status can be used
-      const data = await AuthAPI.postRegister({
-        "branch": branch,
-        "leadname": leadname,
-        "prn": prn,
-        "email": email,
-        "contact": contact,
-        "mem1": mem1,
-        "prn1": prn1,
-        "email1": email1,
-        "contact1": contact1,
-        "mem2": mem2,
-        "prn2": prn2,
-        "email2": email2,
-        "contact2":contact2,
-        "mem3": mem3Value,
-        "prn3": prn3Value,
-        "email3": email3Value,
-        "contact3": contact3Value
-      })
-     // return toast.success("Registered Successfully");
-      if (data.id){
-          console.log("Success");
+    const response = await fetch('https://sheetdb.io/api/v1/e5mvwkq9xzkus', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        data: [
+            {
+              "Branch": branch,
+              "Lead Name": leadname,
+              "Prn": prn,
+              "Email": email,
+              "Contact": contact,
+              "Member_1_Name": mem1,
+              "Prn_of_Mem_1": prn1,
+              "Email_of_Mem_1": email1,
+              "Contact_of_Mem_1": contact1,
+              "Member_2_Name": mem2,
+              "Prn_of_Mem_2": prn2,
+              "Email_of_Mem_2": email2,
+              "Contact_of_Mem_2":contact2,
+              "Member_3_Name": mem3,
+              "Prn_of_Mem_3": prn3,
+              "Email_of_Mem_3": email3,
+              "Contact_of_Mem_3": contact3
+            }
+          ]
+        })
+      });
+      console.log(response.ok);
+      if (response.ok===true) {
           setBranch('');
           setLeadName('');
           setPrn('');
@@ -244,21 +313,18 @@ const handleFormSubmit = async () => {
           setPrn3('');
           setEmail3('');
           setContact3('');
-          return toast.success("Registered Successfully");
-      }
-      else{
+        return toast.success("Registered Successfully");
+      } else {
         console.log('Invalid');
         return toast.error("Trial again");
       }
-  } catch (error) {
-      const errMsg = error?.response?.data?.message || error?.message || "something went wrong"
-      console.log(errMsg)
-      return toast.error("Oops,something went wrong");
-  } finally {
-      // setLoading(false)
-  }
-}
-
+    } catch (error) {
+      const errMsg = error?.response?.data?.message || error?.message || "something went wrong";
+      console.log(errMsg);
+      return toast.error("Oops, something went wrong");
+    }
+  };
+  
 return(
       <>
         <ToastContainer />
