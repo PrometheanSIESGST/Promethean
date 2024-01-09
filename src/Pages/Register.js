@@ -200,7 +200,7 @@ const handleFormSubmit = async () => {
    const prn3Value = prn3.trim() === '' ? 'none' : prn3;
    const email3Value = email3.trim() === '' ? 'none' : email3;
    const contact3Value = contact3.trim() === '' ? 'none' : contact3;
-  if (!branch || !leadname || !prn || !email || !contact|| !mem1 || !prn1 || !email1 || !contact1|| !mem2 || !prn2 || !email2 || !contact2 ) {
+  if (!branch || !leadname || !prn || !email || !contact|| !mem1 || !prn1 || !email1 || !contact1|| !mem2 || !prn2 || !email2 || !contact2|| !mem3 || !prn3 || !email3 || !contact3 ) {
     return toast.error("Please fill in all required fields.");
   }
   try {
@@ -326,7 +326,7 @@ return(
                 {!phoneValid2 && contact2 !== '' && <span style={{ color: 'red' }}>Invalid Phone Number</span>}
             </FormLabel>
             <FormLabel>
-                Member 3<span style={{ color: 'white' }}>(Optional)</span> Name:
+                Member 3 Name:
                 <FormInput type="text" name="mem3" value={mem3} onChange={(e)=>{setMem3(e.target.value)}}/>
             </FormLabel>
             <FormLabel>
