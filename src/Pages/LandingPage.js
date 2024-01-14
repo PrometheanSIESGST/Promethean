@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Timerworking from "../Components/Timer";
 import { Link } from 'react-router-dom';
-import Register from "../apis/constant/Register";
+import Register from "../Pages/Register";
 import Terratalk from "../Images/terra11.jpg"
 const Main = styled.div`
   max-width: 320px;

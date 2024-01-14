@@ -61,7 +61,7 @@ import Gallery from "./Pages/Gallery";
 import Team from "./Pages/Team";
 import Promethean from "./Pages/Promethean";
 import Blogs from "./Pages/Blogs";
-import Register from "./apis/constant/Register";
+import Register from "./Pages/Register";
 
 //Component
 import Navbar from "./Components/Navbar";
