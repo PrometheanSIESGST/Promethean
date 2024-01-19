@@ -223,17 +223,14 @@ const LandingPage = () => {
         {/* <Timerworking/> */}
         <Header>SUSTAIN-X 2024</Header>
         <SubHeader>An engineer's solutions to environmental problems</SubHeader>
-        <SubHeader>Register Now !!!</SubHeader>
+        {/* <SubHeader>Register Now !!!</SubHeader>
         <RegBtn>
-          {/* <BtnLink href="https://forms.office.com/r/4XGMx15TVq" target="_blank">
-            Register Here
-          </BtnLink> */}
           <Link to="/register">
           <BtnLink target="_blank">
             Register Here
           </BtnLink>
           </Link>
-        </RegBtn>
+        </RegBtn> */}
       </HeroDiv>
       <Main>
         <FlexDiv reverse data-aos="fade-up">

@@ -1,21 +1,3 @@
-import { api } from "./config/axiosConfig";
-import { defineCancelApiObject } from "./config/axiosUtils";
-
-
-export const AuthAPI = {
-
-    postRegister: async (login, cancel = false) => {
-        const response = await api.request({
-            url: "api/Team/",
-            method: "POST",
-            data: login,
-            signal: cancel ? cancelApiObject[this.get.name].handleRequestCancellation().signal : undefined
-        });
-
-        return response.data;
-    },
-
-
-}
-
-const cancelApiObject = defineCancelApiObject(AuthAPI);
+export const BASE_URL='https://sheetdb.io/api/v1/e5mvwkq9xzkus';
+//'https://sheetdb.io/api/v1/e5mvwkq9xzkus'
+//https://django-app-pmh0.onrender.com/api/Team/

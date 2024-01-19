@@ -132,9 +132,9 @@ const Navbar = () => {
           <Link to={ROUTES.BLOGS}>
             <SideNavContent href={ROUTES.BLOGS}>BLOGS</SideNavContent>
           </Link>
-          <Link to={ROUTES.REGISTER}>
+          {/* <Link to={ROUTES.REGISTER}>
             <SideNavContent href={ROUTES.REGISTER}>REGISTER</SideNavContent>
-         </Link>
+         </Link> */}
         </SideNavList>
         <NavList>
           <Link to={ROUTES.HOME}>
@@ -152,9 +152,9 @@ const Navbar = () => {
           <Link to={ROUTES.BLOGS}>
             <NavContent href={ROUTES.BLOGS}>BLOGS</NavContent>
           </Link>
-          <Link to={ROUTES.REGISTER}>
+          {/* <Link to={ROUTES.REGISTER}>
             <NavContent href={ROUTES.REGISTER}>REGISTER</NavContent>
-         </Link>
+         </Link> */}
         </NavList>
         <FilterImg src={Filter} onClick={() => setNavOpen(true)} />
       </Nav>
