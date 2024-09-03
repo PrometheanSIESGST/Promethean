@@ -221,16 +221,16 @@ const LandingPage = () => {
         }}
       >
         {/* <Timerworking/> */}
-        <Header>SUSTAIN-X 2024</Header>
-        <SubHeader>An engineer's solutions to environmental problems</SubHeader>
-        {/* <SubHeader>Register Now !!!</SubHeader>
+        <Header>Promethean 2024- 2025</Header>
+        <SubHeader>An engineer's solutions to environmental problems </SubHeader> <br />
+        <SubHeader>Register For MATRIX 2024 !!!</SubHeader>
         <RegBtn>
-          <Link to="/register">
+          <Link to="/matrix">
           <BtnLink target="_blank">
             Register Here
           </BtnLink>
           </Link>
-        </RegBtn> */}
+        </RegBtn>
       </HeroDiv>
       <Main>
         <FlexDiv reverse data-aos="fade-up">
@@ -284,7 +284,7 @@ const LandingPage = () => {
 
 export default LandingPage;
 
-{/* <Main>
+/* <Main>
 <FlexDiv reverse data-aos="fade-up">
   <Card
     number="01"
@@ -318,4 +318,4 @@ export default LandingPage;
   <AboutImage src={PrometheanImage} right />
 </FlexDiv>
 <div data-aos="fade-up"> <ContactUs /> </div>
-</Main> */}
+</Main> */
