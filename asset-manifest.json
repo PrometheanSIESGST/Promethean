@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.724e017b.css",
-    "main.js": "/static/js/main.55b0d4d0.js",
+    "main.js": "/static/js/main.09edf79a.js",
     "static/media/Event2.jpg": "/static/media/Event2.7cf84ec920fdfd7488d4.jpg",
     "static/media/team.jpg": "/static/media/team.ef2edda051f9d0af5610.jpg",
+    "static/media/second.png": "/static/media/second.aed11d6c8cf72bf608fb.png",
     "static/media/river.jpg": "/static/media/river.2d4d65f87c013d37f529.jpg",
     "static/media/plastic.jpg": "/static/media/plastic.dcea5cd59ee41590cd80.jpg",
     "static/media/promlanding1.jpg": "/static/media/promlanding1.84c720fcb307ff2e0340.jpg",
@@ -18,6 +19,7 @@
     "static/media/cartoll.jpg": "/static/media/cartoll.17a00feff4cbad08cd22.jpg",
     "static/media/heroimg.jpg": "/static/media/heroimg.95313601c03ce42743f3.jpg",
     "static/media/GBG.jpg": "/static/media/GBG.ba10db04dcec4fe40290.jpg",
+    "static/media/treasurer_qr.jpg": "/static/media/treasurer_qr.843ee72655fe734ccb26.jpg",
     "static/media/Blog9.jpg": "/static/media/Blog9.6dfc22d41bfe685a63d4.jpg",
     "static/media/Greenfuture.jpeg": "/static/media/Greenfuture.82af32f91581dad56c6e.jpeg",
     "static/media/Blog5.webp": "/static/media/Blog5.de9ff727027fb6f630c4.webp",
@@ -46,10 +48,10 @@
     "static/media/left-arrow.svg": "/static/media/left-arrow.da21225bcf530088451874c9e21c215a.svg",
     "static/media/right-arrow.svg": "/static/media/right-arrow.d19ce8f87764b5901ed2ca6f0ff22d03.svg",
     "main.724e017b.css.map": "/static/css/main.724e017b.css.map",
-    "main.55b0d4d0.js.map": "/static/js/main.55b0d4d0.js.map"
+    "main.09edf79a.js.map": "/static/js/main.09edf79a.js.map"
   },
   "entrypoints": [
     "static/css/main.724e017b.css",
-    "static/js/main.55b0d4d0.js"
+    "static/js/main.09edf79a.js"
   ]
 }
