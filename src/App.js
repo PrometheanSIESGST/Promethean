@@ -49,6 +49,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 //style
 import { ThemeProvider } from "styled-components";
 import styled from "styled-components";
@@ -62,6 +63,7 @@ import Team from "./Pages/Team";
 import Promethean from "./Pages/Promethean";
 import Blogs from "./Pages/Blogs";
 import Register from "./Pages/Register";
+import MatrixReg from "./Pages/MatrixReg";
 
 //Component
 import Navbar from "./Components/Navbar";
@@ -109,6 +111,7 @@ const App = () => {
         <Route path={ROUTES.GALLERY} element={<Gallery />} />
         <Route path={ROUTES.BLOGS} element={<Blogs/>} />
         <Route path={ROUTES.REGISTER} element={<Register />} />
+        <Route path={ROUTES.MATRIX} element={<MatrixReg />} />
         <Route path={ROUTES.BLOG_ONE} element={<BLOG_ONE/>} />
         <Route path={ROUTES.BLOG_TWO} element={<BLOG_TWO/>} />
         <Route path={ROUTES.BLOG_THREE} element={<BLOG_THREE/>} />
