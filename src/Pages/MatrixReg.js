@@ -25,27 +25,62 @@ const fadeIn = keyframes`
 `;
 
 const Main = styled.div`
-  max-width: 560px;
-  width:100%;
-  margin: 100px auto;
+  width: 100%;
   animation: ${fadeIn} 1s ease-out;
-  padding: 10px;
+  padding:10px;
+  padding-top: 50px;
+  padding-bottom:50px;
   background-image: url(${second});
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay; 
   background-size: cover; 
+  background-attachment: fixed; /* Keeps the background fixed */
+  overflow: auto;
 
   @media ${(props) => props.theme.MediaQueries.s.query} {
     max-width: 560px;
-    padding-top: 20px;
+    padding-top: 50px;
+    padding:0px;
+    height: 100vh; /* Full height on mobile */
+    overflow: hidden; /* Prevents the Main container from scrolling */
   }
+
   @media ${(props) => props.theme.MediaQueries.m.query} {
     max-width: 720px;
+    overflow: auto;
   }
+
   @media ${(props) => props.theme.MediaQueries.l.query} {
     max-width: 1200px;
+    overflow: auto;
   }
 `;
+
+
+// const Main = styled.div`
+//   max-width: 560px;
+//   width:100%;
+//   margin: 100px auto;
+//   animation: ${fadeIn} 1s ease-out;
+//   padding: 10px;
+//   background-image: url(${second});
+//   background-color: rgba(0, 0, 0, 0.4);
+//   background-blend-mode: overlay; 
+//   background-size: fit; 
+
+//   @media ${(props) => props.theme.MediaQueries.s.query} {
+//     ${'' /* max-width: 320px; */}
+//     max-height:412px
+//     padding-top: 20px;
+//     background-size:fit;
+//   }
+//   @media ${(props) => props.theme.MediaQueries.m.query} {
+//     max-width: 720px;
+//   }
+//   @media ${(props) => props.theme.MediaQueries.l.query} {
+//     max-width: 1200px;
+//   }
+// `;
 
 const PromPageHeadText = styled.p`
   margin-bottom: 20px;
@@ -79,18 +114,12 @@ const BranchOption = styled.option`
   color: #000000;
 `;
 
-// Shared Styles
 const FormContainer = styled.form`
   border: 2px solid #ffffff;
   padding: 30px;
   margin: 20px;
-  ${'' /* background-image: url(${first}); */}
-  border-radius: 10px;
-  ${'' /* background-size: cover; 
-  background-position: center;  */}
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8); 
-  ${'' /* background-blend-mode: overlay;  */}
   animation: ${fadeIn} 1s ease-out;
   display: flex;
   flex-direction: column;
@@ -108,10 +137,46 @@ const FormContainer = styled.form`
 
   @media ${(props) => props.theme.MediaQueries.s.query} {
     padding-top: 40px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
     margin: 50px;
+    height: 80vh; /* Adjust height based on preference */
+    overflow-y: auto; /* Allows the form content to scroll */
   }
 `;
+
+// // Shared Styles
+// const FormContainer = styled.form`
+//   border: 2px solid #ffffff;
+//   padding: 30px;
+//   margin: 20px;
+//   ${'' /* background-image: url(${first}); */}
+//   border-radius: 10px;
+//   ${'' /* background-size: cover; 
+//   background-position: center;  */}
+//   border-radius: 10px;
+//   background-color: rgba(0, 0, 0, 0.8); 
+//   ${'' /* background-blend-mode: overlay;  */}
+//   animation: ${fadeIn} 1s ease-out;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   &:hover {
+//     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+//     transform: scale(1.025);
+//   }
+//   transition: all 0.3s ease;
+
+//   @media ${(props) => props.theme.MediaQueries.m.query} {
+//     padding: 50px;
+//     margin: 50px;
+//   }
+
+//   @media ${(props) => props.theme.MediaQueries.s.query} {
+//     padding-top: 40px;
+//     padding-bottom:40px;
+//     margin: 50px;
+//   }
+// `;
 
 const FormLabel = styled.label`
   display: block;
@@ -273,6 +338,9 @@ const MatrixReg = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    if(!teamName || branch0 || mem0 || prn0 || email0 || contact0 || branch1 || mem1 || prn1 || email1 || contact1 || branch2 || mem2 || prn2 || email2 || contact2 || branch3 || mem3 || prn3 || email3 || contact3){
+      return toast.error("All Fields are Required !")
+    }
   
     try {
       const formData = {
@@ -357,7 +425,7 @@ const MatrixReg = () => {
           <Section>
             <FormLabel>
               Team Name : 
-              <FormInput
+              <FormInput 
                 type="text"
                 name="teamName"
                 value={teamName}
@@ -367,17 +435,17 @@ const MatrixReg = () => {
           </Section>
           
           <Section>
-            <FormLabel>Member 1</FormLabel>
+            <FormLabel><b>Member 1</b></FormLabel>
             <FormLabel>
               Branch : 
-              <FormSelect
+              <FormSelect 
                 name="branch0"
                 value={branch0}
                 onChange={(e) => setBranch0(e.target.value)}
               >
-                <BranchOption value="">Select Branch</BranchOption>
+                <BranchOption value="" >Select Branch</BranchOption>
                 {branchOptions.map((branch) => (
-                  <BranchOption key={branch} value={branch}>
+                  <BranchOption key={branch} value={branch} >
                     {branch}
                   </BranchOption>
                 ))}
@@ -385,7 +453,7 @@ const MatrixReg = () => {
             </FormLabel>
             <FormLabel>
               Name : 
-              <FormInput
+              <FormInput 
                 type="text"
                 name="mem0"
                 value={mem0}
@@ -394,7 +462,7 @@ const MatrixReg = () => {
             </FormLabel>
             <FormLabel>
               Roll No. : 
-              <FormInput
+              <FormInput 
                 type="text"
                 name="prn0"
                 value={prn0}
@@ -412,7 +480,7 @@ const MatrixReg = () => {
             </FormLabel>
             <FormLabel>
               Contact : 
-              <FormInput
+              <FormInput 
                 type="text"
                 name="contact0"
                 value={contact0}
@@ -422,17 +490,17 @@ const MatrixReg = () => {
           </Section>
 
           <Section>
-            <FormLabel>Member 2</FormLabel>
+            <FormLabel><b>Member 2</b></FormLabel>
             <FormLabel>
               Branch : 
-              <FormSelect
+              <FormSelect 
                 name="branch1"
                 value={branch1}
                 onChange={(e) => setBranch1(e.target.value)}
               >
                 <BranchOption value="">Select Branch</BranchOption>
                 {branchOptions.map((branch) => (
-                  <BranchOption key={branch} value={branch}>
+                  <BranchOption key={branch} value={branch} >
                     {branch}
                   </BranchOption>
                 ))}
@@ -440,7 +508,7 @@ const MatrixReg = () => {
             </FormLabel>
             <FormLabel>
               Name : 
-              <FormInput
+              <FormInput 
                 type="text"
                 name="mem1"
                 value={mem1}
@@ -477,7 +545,7 @@ const MatrixReg = () => {
           </Section>
 
           <Section>
-            <FormLabel>Member 3</FormLabel>
+            <FormLabel><b>Member 3</b></FormLabel>
             <FormLabel>
               Branch : 
               <FormSelect
@@ -532,7 +600,7 @@ const MatrixReg = () => {
           </Section>
 
           <Section>
-            <FormLabel>Member 4</FormLabel>
+            <FormLabel><b>Member 4</b></FormLabel>
             <FormLabel>
               Branch : 
               <FormSelect
