@@ -28,45 +28,45 @@ export const TeamInfo = [
       {
         head: [
           {
-            name:"subodh Patil",
+            name:"Preksha Siyal",
             post:"Chapter Head",
-            photo:"Image/Subodh Patil IT.jpg"
+            photo:"Image/Preksha_Siyal_Design_Co-ord_.jpg"
           },
 
           {
-            name: "Sohamm Swamy",
+            name: "Devdatta Temgire",
             post: "Chairperson",
-            photo: "Image/soham swammy chairperson.jpg",
+            photo: "Image/Devdatta_Temgire Joint Secretary.jpg",
           },
           
           {
-            name: "Shreya Murthy",
+            name: "Rushikesh Joshi",
             post: "Secretary",
-            photo: "Image/Shreya Murthy_Secretary .jpg",
+            photo: "Image/Rushikesh Joshi _ Treasurer.jpg",
           },
          
           
         ],
         coord: [
           {
-            name: "Nandana Anil",
+            name: "Shreyash Marathe",
             post: "Vice Chairperson",
-            photo: "Image/Nandana Anil_PR.jpg",
+            photo: "Image/shreyash_design cord new.jpg",
           },
           {
-            name: "Devdatta Temgire",
+            name: "T Naresh",
             post: "Joint Secretary",
-            photo: "Image/Devdatta_Temgire Joint Secretary.jpg",
+            photo: "Image/Naresh_technical cord.jpg",
           },
           {
-            name: "Shreyoshi Roy",
+            name: "Adhira Digraskar",
             post: "Joint Secretary",
-            photo: "Image/SHREYOSHI ROY PR.jpg",
+            photo: "Image/adhira_marketing cord.png",
           },
           {
-            name: "Rushikesh Joshi",
+            name: "Omkar Raut",
             post: "Treasurer",
-            photo: "Image/Rushikesh Joshi _ Treasurer.jpg",
+            photo: "Image/omkar_technical cord.jpg",
           },
         ],
       },
@@ -82,31 +82,31 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Avaneesh Karthikeyan Iyer",
+            name: "Omkar Raut",
             post: "Head",
-            photo: "Image/Avaneesh Karthikeyan Technical _coord.jpg",
+            photo: "Image/omkar_technical cord.jpg",
           },
           {
-            name: "Abinaya Jeyapandi",
+            name: "Vaishnavi Pradhan",
             post: "Head",
-            photo: "Image/Abinaya_Tech head.jpg",
+            photo: "Image/VaishnaviP.jpg",
           },
         ],
         coord: [
           {
-            name: "Dhruv Singh",
+            name: "Pradnyesh Morey",
             post: "Coordinator",
-            photo: "Image/Dhruv_technical cord2.jpg",
+            photo: "Image/Pradnyesh.jpg",
           },
           {
-            name: "T Naresh",
+            name: "Trushal Pal",
             post: "Coordinator",
-            photo: "Image/Naresh_technical cord.jpg",
+            photo: "Image/Trushal.jpg",
           },
           {
-            name: "Omkar Raut",
+            name: "Vaishnavi Kunjir",
             post: "Coordinator",
-            photo: "Image/omkar_technical cord.jpg",
+            photo: "Image/VaishnaviK.jpg",
           },
         ],
       },
@@ -121,26 +121,21 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Harshvinder Kaur Bal",
+            name: "Ashutosh Sonwal",
             post: "Head",
-            photo: "Image/Harshvinder Kaur Bal.jpg",
-          },
-          {
-            name: "Preksha Siyal",
-            post: "Head",
-            photo: "Image/Preksha_Siyal_Design_Co-ord_.jpg",
+            photo: "Image/ashutosh_creative cord.jpg",
           },
         ],
         coord: [
           {
-            name: "Aryan Trimbakkar",
+            name: "Tanisha Kasliwal",
             post: "Coordinator",
-            photo: "Image/aryan_design cord.jpg",
+            photo: "Image/Tanisha.jpg",
           },
           {
-            name: "Shreyash Marathe",
+            name: "Sakshi Khedkar",
             post: "Coordinator",
-            photo: "Image/shreyash_design cord new.jpg",
+            photo: "Image/Sakshi.jpg",
           },
         ],
       },
@@ -155,36 +150,26 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Hariom Shukla",
+            name: "Adhira Digraskar",
             post: "Head",
-            photo: "Image/hariom_M head.png",
-          },
-          {
-            name: "Tejas Sulge",
-            post: "Head",
-            photo: "Image/tejas_M head.png",
-          },
-          {
-            name: "Sanket Sondawale",
-            post: "Head",
-            photo: "Image/Sanket_marketing head.jpg",
+            photo: "Image/adhira_marketing cord.png",
           },
         ],
         coord: [
           {
-            name: "Ayaan Dwivedi",
+            name: "Suraj Gore",
             post: "Coordinator",
-            photo: "Image/Ayaan_marketing cord.jpg",
+            photo: "Image/Suraj.jpg",
           },
           {
-            name: "Adhira Digraskar",
+            name: "Gaganraj Singh",
             post: "Coordinator",
-            photo: "Image/adhira_marketing cord.png",
+            photo: "Image/gaganraj.jpg",
           },
           {
-            name: "Yash Salunke",
+            name: "Piyush Goilkar",
             post: "Coordinator",
-            photo: "Image/YASH_Marketing cord.png",
+            photo: "Image/piyush.jpg",
           },
         ],
       },
@@ -199,26 +184,21 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Nandana Anil",
+            name: "Shreyash Marathe",
             post: "Head",
-            photo: "Image/Nandana Anil_PR.jpg",
-          },
-          {
-            name: "Shreyoshi Roy",
-            post: "Head",
-            photo: "Image/SHREYOSHI ROY PR.jpg",
+            photo: "Image/shreyash_design cord new.jpg",
           },
         ],
         coord: [
           {
-            name: "Anushka Jha",
+            name: "Chitrakshi Palav",
             post: "Coordinator",
-            photo: "Image/Anushka_PR cord.jpg",
+            photo: "Image/Chitrakshi.jpg",
           },
           {
-            name: "Shreni Budhale",
+            name: "Shreya Patil",
             post: "Coordinator",
-            photo: "Image/shreni_PR cord.jpg",
+            photo: "Image/ShreyaP.jpg",
           },
         ],
       },
@@ -234,37 +214,32 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Alisha Fatima",
+            name: "SriPranav",
             post: "Head",
-            photo: "Image/Alisha Fatima_Publicity.jpg",
+            photo: "Image/SriPranav_Publicity cord.jpg",
           },
           {
-            name: "Aryan Chalke",
+            name: "Renu Khade",
             post: "Head",
-            photo: "Image/Aryan Chalke _ Publicity .jpg",
-          },
-          {
-            name: "Lokeshwar Nelvai",
-            post: "Head",
-            photo: "Image/Lokeshwar Nelvai_Publicity.jpeg",
+            photo: "Image/RenuKhade.jpg",
           },
           
         ],
         coord: [
           {
-            name: "Spundan Bhagat",
+            name: "Diya Shetty",
             post: "Coordinator",
-            photo: "Image/spundan_P cord.png",
+            photo: "Image/Diya.jpg",
           },
           {
-            name: "SriPranav",
+            name: "Sarthak Patil",
             post: "Coordinator",
-            photo: "Image/SriPranav_Publicity cord.jpg",
+            photo: "Image/sarthak.jpg",
           },
           {
-            name: "Vedant Thakur",
+            name: "Chandrakshi Narkhede",
             post: "Coordinator",
-            photo: "Image/vedant_P cord.png",
+            photo: "Image/Chandrakshi.jpg",
           },
         ],
       },
@@ -280,26 +255,22 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Lavanya Kurup ",
+            name: "Rutuja Wagh",
             post: "Head",
-            photo: "Image/Lavanya kurup creative_.jpg",
+            photo: "Image/rutuja_creative cord.jpg",
           },
-          {
-            name: "Dheeraj Shriyan",
-            post: "Head",
-            photo: "Image/dheeraj_creative head.png",
-          },
+          
         ],
         coord: [
           {
-            name: "Rutuja Wagh",
+            name: "Shreya Yadav",
             post: "Coordinator",
-            photo: "Image/rutuja_creative cord.jpg",
+            photo: "Image/ShreyaY.jpg",
           },
           {
-            name: "Ashutosh Sonwal",
+            name: "Akansha Shinde",
             post: "Coordinator",
-            photo: "Image/ashutosh_creative cord.jpg",
+            photo: "Image/Akansha.jpg",
           },
         ],
       },
@@ -314,26 +285,31 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Serin Kaushik",
+            name: "Snehal Surve",
             post: "Head",
-            photo: "Image/kaushik_SM head.jpg",
+            photo: "Image/SnehalSurve.jpg",
           },
           {
-            name:"Ayush Shah",
-            post:"Head",
-            photo:"Image/Aayush_social_media_head.jpg",
+            name:"Adithya Dogra",
+            post:"CDS Head",
+            photo:"Image/adhityaDogra.jpg",
           },
         ],
         coord: [
           {
-            name: "Kanya Vagal",
+            name: "Chinmay Rane",
             post: "Coordinator",
-            photo: "Image/Kanya_SM cord new.jpg",
+            photo: "Image/Chinmay.jpg",
           },
           {
-            name: "Vishvesh Joshi ",
+            name: "Mitesh Naik",
             post: "Coordinator",
-            photo: "Image/Vishvesh_SM cord.jpg",
+            photo: "Image/Mitesh.jpg",
+          },
+          {
+            name: "Rushika Poojari",
+            post: "Coordinator",
+            photo: "Image/Rushika.jpg",
           },
         ],
       },
