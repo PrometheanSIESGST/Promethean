@@ -12,7 +12,9 @@ import "aos/dist/aos.css";
 import Timerworking from "../Components/Timer";
 import { Link } from 'react-router-dom';
 import Register from "../Pages/Register";
-import Terratalk from "../Images/terra11.jpg"
+import * as ROUTES from "../Constants/routes";
+// import Terratalk from "../Images/terra11.jpg"
+import Terratalk from "../Images/team.jpg"
 const Main = styled.div`
   max-width: 320px;
   margin: 0 auto;
@@ -240,6 +242,7 @@ const LandingPage = () => {
             title="What is Promethean"
             para="Promethean is inspired by the Greek Titan Prometheus (Ancient Greek Προμηθεύς - Fore thinker ). An innovator, problem solver and a futuristic thinker he was a champion of mankind known for his wily intelligence, who gave fire to mortals and also taught them agriculture so that they could progress and take technology to new levels.
               It focuses on real world problems happening in and around the world. Engineering is all about making life better, solving problems and allowing humankind to achieve new feats."
+              buttonLink = {ROUTES.HOME}
           />
           <AboutImage src={PrometheanImage} />
         </FlexDiv>
@@ -252,6 +255,7 @@ const LandingPage = () => {
             para="
             Previously called as PROMETHEAN is an annual poster presentation event organized for our new GSTians, our FEs, to convey how they would consider making our earth a better place as an ENGINEER by proposing solutions.
             "
+            buttonLink = {ROUTES.PROMETHEAN}
           />
           <Image src={Terratalk} right/>
         </FlexDiv>
@@ -263,6 +267,7 @@ const LandingPage = () => {
             para="Terra talks stand out from other forms of presentations as an effective medium to convey accurate easy-to-understand information to a target audience. 
             We cannot survive without the environment, which is the backbone of our survival. To make people aware of this we invite some committed environmental leaders who are also engineers, who work to ensure that mankind preserves the desirable human-nature interaction.
             "
+            buttonLink = {ROUTES.TERRA}
           />
           <Hide src={PrometheanImage} />
         </FlexDiv>
@@ -274,6 +279,7 @@ const LandingPage = () => {
             title="Matrix"
             para="Matrix is annual Quiz organised for our new GSTians, our FEs, where they can use their previous knowledge they have studied so far in a very interesting way.
             "
+            buttonLink = {ROUTES.MATRIX}
           />
         </FlexDiv>      
         <div data-aos="fade-up">{/* <ContactUs /> */}</div>

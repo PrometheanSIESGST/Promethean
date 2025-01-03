@@ -124,7 +124,13 @@ const Navbar = () => {
             <SideNavContent href={ROUTES.TEAM}>TEAM</SideNavContent>
           </Link>
           <Link to={ROUTES.PROMETHEAN}>
-            <SideNavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</SideNavContent>
+            <SideNavContent href={ROUTES.PROMETHEAN}>Sustain X</SideNavContent>
+          </Link>
+          <Link to={ROUTES.TERRA}>
+            <SideNavContent href={ROUTES.TERRA}>Terra Talks</SideNavContent>
+          </Link>
+          <Link to={ROUTES.MATRIX}>
+            <SideNavContent href={ROUTES.MATRIX}>Matrix</SideNavContent>
           </Link>
           <Link to={ROUTES.GALLERY}>
             <SideNavContent href={ROUTES.GALLERY}>GALLERY</SideNavContent>
@@ -141,7 +147,13 @@ const Navbar = () => {
             <NavContent href={ROUTES.TEAM}>TEAM</NavContent>
           </Link>
           <Link to={ROUTES.PROMETHEAN}>
-            <NavContent href={ROUTES.PROMETHEAN}>PROMETHEAN</NavContent>
+            <NavContent href={ROUTES.PROMETHEAN}>SUSTAIN X</NavContent>
+          </Link>
+          <Link to={ROUTES.TERRA}>
+            <NavContent href={ROUTES.TERRA}>TERRA TALKS</NavContent>
+          </Link>
+          <Link to={ROUTES.MATRIX}>
+            <NavContent href={ROUTES.MATRIX}>MATRIX X</NavContent>
           </Link>
           <Link to={ROUTES.GALLERY}>
             <NavContent href={ROUTES.GALLERY}>GALLERY</NavContent>

@@ -64,13 +64,14 @@ import Promethean from "./Pages/Promethean";
 import Blogs from "./Pages/Blogs";
 import Register from "./Pages/Register";
 import MatrixReg from "./Pages/MatrixReg";
+import Terra from "./Pages/Terra";
 
 //Component
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
 import * as ROUTES from "./Constants/routes";
-import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 
 //Blogs
 import BLOG_ONE from "./Pages/Blogssample/blog1";
@@ -123,7 +124,8 @@ const App = () => {
         <Route path={ROUTES.BLOG_NINE} element={<BLOG_NINE/>} />
         <Route path={ROUTES.BLOG_TEN} element={<BLOG_TEN/>} />
         <Route path={ROUTES.BLOG_ELEVEN} element={<BLOG_ELEVEN/>} />
-        <Route path={ROUTES.BLOG_TWELVE} element={<BLOG_TWELVE/>} />
+        <Route path={ROUTES.BLOG_TWELVE} element={<BLOG_TWELVE/>} />\
+        <Route path={ROUTES.TERRA} element={<Terra/>} />
         {/*
         <Route path={ROUTES.BLOG_THIRTEEN} element={<BLOG_THIRTEEN/>} />
         <Route path={ROUTES.BLOG_FOURTEEN} element={<BLOG_FOURTEEN/>} />

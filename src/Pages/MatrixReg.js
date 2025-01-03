@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
-import { toast, ToastContainer } from "react-toastify";
+// import { toast, ToastContainer } from "react-toastify";
 import { QRCodeSVG } from "qrcode.react";
 import { BASE_URL } from "../apis/api";
 
@@ -340,16 +340,16 @@ const MatrixReg = () => {
       setPaymentMethod("cash");
       setTransactionid("");
   
-      toast.success("Registered Successfully");
+      // toast.success("Registered Successfully");
     } catch (error) {
       console.error(error);
-      toast.error("Oops, something went wrong.");
+      // toast.error("Oops, something went wrong.");
     }
   }; 
 
   return (
     <>
-      <ToastContainer />
+      {/* <ToastContainer />
       <center>
         <Main>
           <PromPageHeadText>REGISTRATION FOR <br />MATRIX 2024-25</PromPageHeadText>
@@ -638,7 +638,7 @@ const MatrixReg = () => {
           <FormButton type="submit">Register</FormButton>
         </FormContainer>
         </Main>
-      </center>
+      </center> */}
     </>
   );
 };

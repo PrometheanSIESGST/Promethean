@@ -1,7 +1,7 @@
 export const HOME = "/"
 export const TEAM = "/team"
 export const GALLERY = "/gallery" 
-export const PROMETHEAN = "/event"
+export const PROMETHEAN = "/sustainx"
 export const BLOGS ="/Blogs"
 export const BLOG_ONE  ="/one"
 export const BLOG_TWO  ="/two"
@@ -21,3 +21,6 @@ export const BLOG_FIFTEEN  ="/fifteen"
 export const BLOG_SIXTEEN  ="/sixteen"
 export const BLOG_SEVENTEEN  ="/seventeen"
 export const MATRIX = '/matrix'
+export const REGISTER = '/register'
+export const TERRA = "/terra"
+

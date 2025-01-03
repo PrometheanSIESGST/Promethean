@@ -1,6 +1,59 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+
 import greenLine from "../Images/green_line.jpeg";
+import styled,{keyframes} from "styled-components";
+
+import { Link } from 'react-router-dom'; // If using React Router
+const rainbowAnimation = keyframes`
+  0% {
+    border-color: red;
+  }
+  16.666% {
+    border-color: orange;
+  }
+  33.333% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: green;
+  }
+  66.666% {
+    border-color: blue;
+  }
+  83.333% {
+    border-color: indigo;
+  }
+  100% {
+    border-color: violet;
+  }
+`;
+
+const RegBtn = styled.span`
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  animation: ${rainbowAnimation} 4s linear infinite;
+  background-color:black;
+`;
+
+const BtnLink = styled.a`
+  text-decoration: none;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 5px;
+  font-family: ${(props) => props.theme.Fonts.Poppins};
+  outline: none;
+  color: ${(props) => props.theme.Colors.Header};
+`;
+
 
 const ContentCard = styled.div`
   position: relative;
@@ -87,7 +140,8 @@ const ContentDiv = styled.div`
   }
 `
 
-const Card = ({subTitle , title , para , number}) => {
+const Card = ({subTitle , title , para , number , buttonLink}) => {
+  console.log(buttonLink);
   return (
     <ContentCard>
       <BgNum>{number}</BgNum>
@@ -100,6 +154,13 @@ const Card = ({subTitle , title , para , number}) => {
         <CardStylePara>
           {para}
         </CardStylePara>
+            <RegBtn>
+                  <Link to={buttonLink}>
+                  <BtnLink target="_blank">
+                    Register Here
+                  </BtnLink>
+                  </Link>
+                </RegBtn>
       </ContentDiv>
     </ContentCard>
   );

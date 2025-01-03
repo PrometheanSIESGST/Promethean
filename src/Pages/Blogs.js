@@ -193,7 +193,16 @@ const Blogs = () => {
           <Link to={ROUTES.BLOG_TWELVE}>
             <a href={ROUTES.BLOG_TWELVE}><br/><AboutImage src={Blog12}/><br/><Title>Safeguarding Our Seas: A Dive into Marine Life Conservation</Title><Para>Welcome, ocean enthusiasts! Today, we're delving into the depths of marine life conservation, exploring why it's...</Para><Read>Read more</Read></a>
           </Link>
+          
           </Section>
+
+          {/* <Section>
+          <Link to={ROUTES.BLOG_TWELVE}>
+            <a href={ROUTES.BLOG_TWELVE}><br/><AboutImage src={Blog12}/><br/><Title>Safeguarding Our Seas: A Dive into Marine Life Conservation</Title><Para>Welcome, ocean enthusiasts! Today, we're delving into the depths of marine life conservation, exploring why it's...</Para><Read>Read more</Read></a>
+          </Link>
+          
+          </Section> */}
+
           {/*
           <Section>
           <Link to={ROUTES.BLOG_THIRTEEN}>
