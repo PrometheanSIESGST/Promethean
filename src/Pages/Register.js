@@ -368,7 +368,7 @@ return(
             </FormLabel>
             <FormLabel>
             <center>
-            <StyledLink href="https://chat.whatsapp.com/IrMGH57yS6VFnbgGX3jttV">
+            <StyledLink href="https://chat.whatsapp.com/HGhkX6mC6FKAtKvEb1TW0U">
               <FaWhatsapp style={{ marginRight: '8px', fontSize: '1.1em' }} /> {/* Add the icon here */}
                 Click here to join the Whatsapp Group
             </StyledLink>
