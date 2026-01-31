@@ -224,7 +224,7 @@ const LandingPage = () => {
         <Header>PROMETHEAN 2025</Header>
         <SubHeader><i>An engineer's solutions to environmental problems.</i></SubHeader><br/>
         <SubHeader>Join us in our mission to create a sustainable future.</SubHeader>
-        <Link to='/register'><RegBtn>Register now!</RegBtn></Link>
+        {/* <Link to='/register'><RegBtn>Register now!</RegBtn></Link> */}
       </HeroDiv>
       <Main>
         <FlexDiv reverse data-aos="fade-up">
