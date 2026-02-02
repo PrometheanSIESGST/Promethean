@@ -115,7 +115,7 @@ const Team = () => {
             className={team === 3 ? "active" : "null"}
             onClick={() => setTeam(3)}
           >
-            Design
+            Creative & Design
           </Tabs>
           <Tabs
             className={team === 4 ? "active" : "null"}
@@ -133,21 +133,21 @@ const Team = () => {
             className={team === 6 ? "active" : "null"}
             onClick={() => setTeam(6)}
           >
-            Publicity
+            Publicity & SM
           </Tabs>
 
-          <Tabs
+          {/* <Tabs
             className={team === 7 ? "active" : "null"}
             onClick={() => setTeam(7)}
           >
             Creative
-          </Tabs>
-          <Tabs
+          </Tabs> */}
+          {/* <Tabs
             className={team === 8 ? "active" : "null"}
             onClick={() => setTeam(8)}
           >
             Social Media
-          </Tabs>
+          </Tabs> */}
         </Tab>
       </HeroDiv>
       <Main>

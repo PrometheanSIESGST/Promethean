@@ -28,51 +28,55 @@ export const TeamInfo = [
       {
         head: [
           {
-            name:"Preksha Siyal",
+            name:"T Naresh",
             post:"Chapter Head",
-            photo:"Image/Preksha_Siyal_Design_Co-ord_.jpg"
+            photo:"Image/NARESH.jpg"
           },
 
           {
-            name: "Devdatta Temgire",
+            name: "Shreyash Marathe",
             post: "Chairperson",
-            photo: "Image/Devdatta_Temgire Joint Secretary.jpg",
-          },
-          
-          {
-            name: "Rushikesh Joshi",
-            post: "Secretary",
-            photo: "Image/Rushikesh Joshi _ Treasurer.jpg",
+            photo: "Image/shreyash_design cord.jpg",
           },
          
-          
+          {
+            name: "Adhira Digraskar",
+            post: "Secretary",
+            photo: "Image/adhira_marketing cord.png",
+          },
+         {
+            name: "Vrushabh Shirke",
+            post: "Treasurer",
+            photo: "Image/VR.jpg",
+          },
+         
         ],
         coord: [
           {
-            name: "Shreyash Marathe",
+            name: "Tanisha Kasliwal",
             post: "Vice Chairperson",
-            photo: "Image/shreyash_design cord new.jpg",
+            photo: "Image/Tanisha.jpg",
           },
           {
-            name: "T Naresh",
+            name: "Gaganraj Singh",
             post: "Joint Secretary",
-            photo: "Image/Naresh_technical cord.jpg",
+            photo: "Image/gaganraj.jpg",
           },
           {
-            name: "Adhira Digraskar",
+            name: "Shreya Yadav",
             post: "Joint Secretary",
-            photo: "Image/adhira_marketing cord.png",
+            photo: "Image/ShreyaY.jpg",
           },
           {
-            name: "Omkar Raut",
-            post: "Treasurer",
-            photo: "Image/omkar_technical cord.jpg",
+            name: "Akanksha Shinde",
+            post: "Joint Treasurer",
+            photo: "Image/Akansha.jpg",
           },
         ],
       },
     ],
   },
-  
+ 
   {
     designation: "TECHNICAL TEAM",
     about:
@@ -82,38 +86,38 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Omkar Raut",
+            name: "Trushal Pal",
             post: "Head",
-            photo: "Image/omkar_technical cord.jpg",
+            photo: "Image/Trushal.jpg",
           },
-          {
-            name: "Vaishnavi Pradhan",
-            post: "Head",
-            photo: "Image/VaishnaviP.jpg",
-          },
+          // {
+          //   name: "Vaishnavi Pradhan",
+          //   post: "Head",
+          //   photo: "Image/VaishnaviP.jpg",
+          // },
         ],
         coord: [
           {
-            name: "Pradnyesh Morey",
+            name: "Gaurav Yadav",
             post: "Coordinator",
-            photo: "Image/Pradnyesh.jpg",
+            photo: "Image/GR.jpeg",
           },
           {
-            name: "Trushal Pal",
+            name: "Krishang Javalkar",
             post: "Coordinator",
-            photo: "Image/Trushal.jpg",
+            photo: "Image/KR.jpeg",
           },
           {
-            name: "Vaishnavi Kunjir",
+            name: "Shubronil Chottoraj",
             post: "Coordinator",
-            photo: "Image/VaishnaviK.jpg",
+            photo: "Image/SH.jpeg",
           },
         ],
       },
     ],
   },
   {
-    designation: "DESIGN TEAM",
+    designation: "CREATIVE AND DESIGN TEAM",
     about:
       "Creating innovative posts that will amaze everyone with their vibrant, appealing, and instructive content. They are creative and hardworking individuals that have a real interest in and ability for design.",
     id: 4,
@@ -121,21 +125,41 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Ashutosh Sonwal",
+            name: "Sakshi Khedkar",
             post: "Head",
-            photo: "Image/ashutosh_creative cord.jpg",
+            photo: "Image/Sakshi.jpg",
           },
         ],
         coord: [
           {
-            name: "Tanisha Kasliwal",
+            name: "Chinmayee Mhatre",
             post: "Coordinator",
-            photo: "Image/Tanisha.jpg",
+            photo: "Image/CH.jpeg",
           },
           {
-            name: "Sakshi Khedkar",
+            name: "Akshata Sonsurkar",
             post: "Coordinator",
-            photo: "Image/Sakshi.jpg",
+            photo: "Image/AK.jpeg",
+          },
+           {
+            name: "Ananya Kadam",
+            post: "Coordinator",
+            photo: "Image/ANA.jpeg",
+          },
+          {
+            name: "Arvind Mudaliar",
+            post: "Coordinator",
+            photo: "Image/AR.jpeg",
+          },
+          {
+            name: "Vinay Sawant",
+            post: "Coordinator",
+            photo: "Image/VIN.jpeg",
+          },
+           {
+            name: "Soumya Marathe",
+            post: "Coordinator",
+            photo: "Image/SAU.jpeg",
           },
         ],
       },
@@ -150,27 +174,27 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Adhira Digraskar",
+            name: "Gaganraj Singh",
             post: "Head",
-            photo: "Image/adhira_marketing cord.png",
+            photo: "Image/gaganraj.jpg",
           },
         ],
         coord: [
           {
-            name: "Suraj Gore",
+            name: "Ansh Mohan",
             post: "Coordinator",
-            photo: "Image/Suraj.jpg",
+            photo: "Image/AN.jpeg",
           },
           {
-            name: "Gaganraj Singh",
+            name: "Priyanshu Katakwar",
             post: "Coordinator",
-            photo: "Image/gaganraj.jpg",
+            photo: "Image/PR.jpeg",
           },
-          {
-            name: "Piyush Goilkar",
-            post: "Coordinator",
-            photo: "Image/piyush.jpg",
-          },
+          // {
+          //   // name: "Piyush Goilkar",
+          //   post: "Coordinator",
+          //   photo: "Image/piyush.jpg",
+          // },
         ],
       },
     ],
@@ -184,21 +208,21 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "Shreyash Marathe",
+            name: "Chitrakshi Palav",
             post: "Head",
-            photo: "Image/shreyash_design cord new.jpg",
+            photo: "Image/Chitrakshi.jpg",
           },
         ],
         coord: [
           {
-            name: "Chitrakshi Palav",
+            name: "Shweta Pradeep",
             post: "Coordinator",
-            photo: "Image/Chitrakshi.jpg",
+            photo: "Image/SHW.jpeg",
           },
           {
-            name: "Shreya Patil",
+            name: "Prranjal Sankhe",
             post: "Coordinator",
-            photo: "Image/ShreyaP.jpg",
+            photo: "Image/PR.jpeg",
           },
         ],
       },
@@ -206,7 +230,7 @@ export const TeamInfo = [
   },
 
   {
-    designation: "PUBLICITY TEAM",
+    designation: "PUBLICITY & SOCIAL MEDIA TEAM",
     about:
       "The team is in charge of gathering, illustrating, and disseminating important information to students.",
     id: 7,
@@ -214,105 +238,120 @@ export const TeamInfo = [
       {
         head: [
           {
-            name: "SriPranav",
+            name: "Sarthak Patil",
             post: "Head",
-            photo: "Image/SriPranav_Publicity cord.jpg",
+            photo: "Image/sarthak.jpg",
           },
-          {
-            name: "Renu Khade",
-            post: "Head",
-            photo: "Image/RenuKhade.jpg",
-          },
-          
+          // {
+          //   name: "Renu Khade",
+          //   post: "Head",
+          //   photo: "Image/RenuKhade.jpg",
+          // },
+         
         ],
         coord: [
           {
-            name: "Diya Shetty",
+            name: "Rajita Shetty",
             post: "Coordinator",
-            photo: "Image/Diya.jpg",
+            photo: "Image/RAJ.jpeg",
           },
           {
-            name: "Sarthak Patil",
+            name: "Vishnu Vardhan",
             post: "Coordinator",
-            photo: "Image/sarthak.jpg",
+            photo: "Image/VIS.jpeg",
           },
           {
-            name: "Chandrakshi Narkhede",
+            name: "Meet Bhoir",
             post: "Coordinator",
-            photo: "Image/Chandrakshi.jpg",
+            photo: "Image/ME.jpeg",
+          },
+          {
+            name: "Adya Poojari",
+            post: "Coordinator",
+            photo: "Image/AD.jpeg",
+          },
+          {
+            name: "Jayyant Argade",
+            post: "Coordinator",
+            photo: "Image/JA.jpeg",
+          },
+          {
+            name: "Nimish Devkar",
+            post: "Coordinator",
+            photo: "Image/NI.jpeg",
           },
         ],
       },
     ],
   },
 
-  {
-    designation: "CREATIVE TEAM",
-    about:
-      "They have established their benchmark by working together to achieve a specific goal. Using their creativity, they make the events as appealing as possible. ",
-    id: 8,
-    member: [
-      {
-        head: [
-          {
-            name: "Rutuja Wagh",
-            post: "Head",
-            photo: "Image/rutuja_creative cord.jpg",
-          },
-          
-        ],
-        coord: [
-          {
-            name: "Shreya Yadav",
-            post: "Coordinator",
-            photo: "Image/ShreyaY.jpg",
-          },
-          {
-            name: "Akansha Shinde",
-            post: "Coordinator",
-            photo: "Image/Akansha.jpg",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    designation: "SOCIAL MEDIA TEAM",
-    about:
-      "Creating visually appealing posts with well-written descriptions. Enhancing Promethean’s  internet presence through promoting activities and keeping students updated about contemporary affairs.",
-    id: 9,
-    member: [
-      {
-        head: [
-          {
-            name: "Snehal Surve",
-            post: "Head",
-            photo: "Image/SnehalSurve.jpg",
-          },
-          {
-            name:"Adithya Dogra",
-            post:"CDS Head",
-            photo:"Image/adhityaDogra.jpg",
-          },
-        ],
-        coord: [
-          {
-            name: "Chinmay Rane",
-            post: "Coordinator",
-            photo: "Image/Chinmay.jpg",
-          },
-          {
-            name: "Mitesh Naik",
-            post: "Coordinator",
-            photo: "Image/Mitesh.jpg",
-          },
-          {
-            name: "Rushika Poojari",
-            post: "Coordinator",
-            photo: "Image/Rushika.jpg",
-          },
-        ],
-      },
-    ],
-  },
-];
+  // {
+  //   designation: "CREATIVE TEAM",
+  //   about:
+  //     "They have established their benchmark by working together to achieve a specific goal. Using their creativity, they make the events as appealing as possible. ",
+  //   id: 8,
+  //   member: [
+  //     {
+  //       head: [
+  //         {
+  //           name: "Rutuja Wagh",
+  //           post: "Head",
+  //           photo: "Image/rutuja_creative cord.jpg",
+  //         },
+         
+  //       ],
+  //       coord: [
+  //         {
+  //           name: "Shreya Yadav",
+  //           post: "Coordinator",
+  //           photo: "Image/ShreyaY.jpg",
+  //         },
+  //         {
+  //           name: "Akansha Shinde",
+  //           post: "Coordinator",
+  //           photo: "Image/Akansha.jpg",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   designation: "SOCIAL MEDIA TEAM",
+  //   about:
+  //     "Creating visually appealing posts with well-written descriptions. Enhancing Promethean’s  internet presence through promoting activities and keeping students updated about contemporary affairs.",
+  //   id: 9,
+  //   member: [
+  //     {
+  //       head: [
+  //         {
+  //           name: "Snehal Surve",
+  //           post: "Head",
+  //           photo: "Image/SnehalSurve.jpg",
+  //         },
+  //         {
+  //           name:"Adithya Dogra",
+  //           post:"CDS Head",
+  //           photo:"Image/adhityaDogra.jpg",
+  //         },
+  //       ],
+  //       coord: [
+  //         {
+  //           name: "Chinmay Rane",
+  //           post: "Coordinator",
+  //           photo: "Image/Chinmay.jpg",
+  //         },
+  //         {
+  //           name: "Mitesh Naik",
+  //           post: "Coordinator",
+  //           photo: "Image/Mitesh.jpg",
+  //         },
+  //         {
+  //           name: "Rushika Poojari",
+  //           post: "Coordinator",
+  //           photo: "Image/Rushika.jpg",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  ];
