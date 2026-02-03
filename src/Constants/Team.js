@@ -36,7 +36,7 @@ export const TeamInfo = [
           {
             name: "Shreyash Marathe",
             post: "Chairperson",
-            photo: "Image/shreyash_design cord.jpg",
+            photo: "Image/Shreyash_CP.jpeg",
           },
          
           {
@@ -207,6 +207,11 @@ export const TeamInfo = [
     member: [
       {
         head: [
+          {
+            name: "Anushka Jha",
+            post: "Mentor",
+            photo: "Image/Anushka_PRMentor.jpeg",
+          },
           {
             name: "Chitrakshi Palav",
             post: "Head",
